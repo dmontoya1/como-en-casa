@@ -1,59 +1,35 @@
-{% extends "account/base_auth.html" %}
+{% extends "account/base.html" %}
 
 {% load static i18n %}
 {% load crispy_forms_tags %}
 
 {% block title %}Iniciar Sesión{% endblock %}
 
-{% block content %}
-    <div class="limiter">
-        <div class="container-login100">
-            <div class="wrap-login100 p-b-20">
-                <span class="login100-form-title p-b-70">
-                    Bienvenido
-                </span>
-                <span class="login100-form-avatar mb-3">
-                    <img src="{% static 'icons/ICONOS-27.png' %}" alt="AVATAR">
-                </span>
-                {% if form.non_field_errors %}
-                    <div class="alert alert-block alert-danger">
-                        {% if form_error_title %}<h4 class="alert-heading">{{ form_error_title }}</h4>{% endif %}
-                        <ul>
-                            {{ form.non_field_errors|unordered_list }}
-                        </ul>
-                    </div>
-                {% endif %}
-                <form class="login100-form validate-form login" method="POST" action="{% url 'account_login' %}">
-                    {% csrf_token %}
-                    <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Ingresa tu correo">
-                        <input type="email" name="login" autofocus="autofocus" maxlength="150" class="input100" id="id_login">
-                        <span class="focus-input100" data-placeholder="Correo electrónico"></span>
-                    </div>
+{% block extra_css %}
 
-                    <div class="wrap-input100 validate-input m-b-50" data-validate="Ingresa tu contraseña">
-                        <input type="password" name="password" class="input100" id="id_password">
-                        <span class="focus-input100" data-placeholder="Contraseña"></span>
-                    </div>
-                    <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
-                            Iniciar Sesión
-                        </button>
-                    </div>
+    
+    
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center my-5">
+            <div class="col-md-6">
+                <h1>{% trans "Sign In" %}</h1>
+
+                <form class="login" method="POST" action="{% url 'account_login' %}">
+                    {% csrf_token %}
+                    {{ form|crispy }}
                     {% if redirect_field_value %}
                         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                     {% endif %}
-
-                    <ul class="login-more p-t-190">
-                        <li class="m-b-8">
-                            <a href="{% url 'account_reset_password' %}" class="txt2">
-                                ¿Olvidaste tu contraseña?
-                            </a>
-                        </li>
-                    </ul>
+                    <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a><br>
+                    <button class="primaryAction btn btn-primary" type="submit">{% trans "Sign In" %}</button>
                 </form>
             </div>
         </div>
     </div>
+
+
 {% endblock content %}
 
 

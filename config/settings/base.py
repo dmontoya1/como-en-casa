@@ -75,6 +75,7 @@ LOCAL_APPS = [
     'comoencasa.rooms.apps.RoomsConfig',
     'comoencasa.services.apps.ServicesConfig',
     'comoencasa.users.apps.UsersAppConfig',
+    'comoencasa.webclient.apps.WebclientConfig',
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
