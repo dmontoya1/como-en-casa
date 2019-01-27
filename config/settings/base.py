@@ -74,6 +74,7 @@ LOCAL_APPS = [
     'comoencasa.experiences.apps.ExperiencesConfig',
     'comoencasa.rooms.apps.RoomsConfig',
     'comoencasa.services.apps.ServicesConfig',
+    'comoencasa.testimonies.apps.TestimoniesConfig',
     'comoencasa.users.apps.UsersAppConfig',
     'comoencasa.webclient.apps.WebclientConfig',
     # Your stuff: custom apps go here

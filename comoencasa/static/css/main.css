@@ -114,6 +114,13 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .slick-slide {outline: none !important;}
 
 
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #de1010;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #dc35458f;
+}
 
 
 
@@ -733,7 +740,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .main-menu-m {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #717fe0;
+  background-color: #e74430;
 }
 
 .main-menu-m > li > a {
@@ -2136,6 +2143,7 @@ input.num-product::-webkit-inner-spin-button {
 .cl10 {color: #1d1d1d;}
 .cl11 {color: #f9ba48;}
 .cl12 {color: #ccc;}
+.cl13 {color: #ec0101;}
 
 /*//////////////////////////////////////////////////////////////////
 [ S-Text 0 - 15 ]*/
@@ -2187,6 +2195,7 @@ input.num-product::-webkit-inner-spin-button {
   font-family: Poppins-Light;
   font-size: 14px;
   line-height: 1.7143;
+  text-align: justify;
 }
 
 .stext-109 {
@@ -2407,8 +2416,9 @@ input.num-product::-webkit-inner-spin-button {
 
 .ltext-202 {
   font-family: PlayfairDisplay-Regular;
-  font-size: 28px;
+  font-size: 40px;
   line-height: 1.2857;
+  font-weight: bold;
 }
 
 
@@ -3294,7 +3304,8 @@ span.text-home {
   
   /*---------------------------------------------*/
   .respon2 {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
   }
 
   /*---------------------------------------------*/
@@ -3343,4 +3354,12 @@ span.text-home {
 
 }
 
-
+.blog-item .img {
+  background-size: contain;
+  width: 100%;
+  height: 400px;
+  /* background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
