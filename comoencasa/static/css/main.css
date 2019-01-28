@@ -2652,7 +2652,7 @@ input.num-product::-webkit-inner-spin-button {
 ==================================================================*/
 .bg-none {background-color: transparent;}
 .bg0 {background-color: #fff;}
-.bg1 {background-color: #717fe0;}
+.bg1 {background-color: #f14732;}
 .bg2 {background-color: #e6e6e6;}
 .bg3 {background-color: #222;}
 .bg5 {background-color: rgba(0,0,0,0.5);}
@@ -3362,4 +3362,18 @@ span.text-home {
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
+}
+
+.borderless td, .borderless th, .borderless td {
+  border: none;
+}
+
+.benefit-logo {
+  display: block;
+  text-align: center;
+}
+
+.benefit-name {
+  display: block;
+  text-align: center;
 }

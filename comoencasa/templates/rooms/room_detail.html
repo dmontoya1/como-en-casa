@@ -1,0 +1,261 @@
+{% extends "account/base.html" %}
+
+{% load static i18n humanize %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{object.name}}{% endblock %}
+
+{% block extra_css %}
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+{% endblock %}
+
+{% block menu_desktop %}
+	<!-- Menu desktop -->
+	<div class="menu-desktop">
+		<ul class="main-menu">
+			<li >
+				<a href="/">Inicio</a>
+			</li>
+
+			<li class="active-menu">
+				<a href="/">Habitaciones disponibles</a>
+			</li>
+
+			<li>
+				<a href="/">Servicios</a>
+			</li>
+
+			<li>
+				<a href="/">Experiencias</a>
+			</li>
+
+			<li>
+				<a href="#">Acerca de nosotros</a>
+			</li>
+
+			<li>
+				<a href="#">Contactenos</a>
+			</li>
+
+		</ul>
+	</div>
+{% endblock %}
+
+{% block menu_mobile %}
+	<!-- Menu Mobile -->
+	<div class="menu-mobile">
+		<ul class="main-menu-m">
+			<li class="active-menu">
+				<a href="/">Inicio</a>
+			</li>
+
+			<li class="active-menu">
+				<a href="/">Habitaciones disponibles</a>
+			</li>
+
+			<li>
+				<a href="/">Servicios</a>
+			</li>
+
+			<li>
+				<a href="/">Experiencias</a>
+			</li>
+
+			<li>
+				<a href="#">Acerca de nosotros</a>
+			</li>
+
+			<li>
+				<a href="#">Contactenos</a>
+			</li>
+			{% if request.user.is_authenticated%}
+				<li>
+					<a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+						Mi Perfil
+					</a>
+				</li>
+
+				<li>
+					<a href="{% url 'account_logout' %}" class="stext-102 cl2 hov-cl1 trans-04">
+						Cerrar sesion
+					</a>
+				</li>
+			{% else %}
+				<li>
+					<a href="{% url 'account_login' %}" class="stext-102 cl2 hov-cl1 trans-04">
+						Iniciar Sesion
+					</a>
+				</li>
+				<li>
+					<a href="{% url 'account_signup' %}" class="stext-102 cl2 hov-cl1 trans-04">
+						Registrate
+					</a>
+				</li>
+			{% endif %}
+		</ul>
+	</div>
+{% endblock %}
+
+{% block content %}
+    <!-- Product Detail -->
+	<section class="sec-product-detail bg0 p-t-65 p-b-60">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-7 p-b-30">
+					<div class="p-l-25 p-r-30 p-lr-0-lg">
+						<div class="wrap-slick3 flex-sb flex-w">
+							<div class="wrap-slick3-dots"></div>
+							<div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
+
+							<div class="slick3 gallery-lb">
+								{% for image in object.related_images.all %}
+									<div class="item-slick3" data-thumb="{{image.image.url}}">
+										<div class="wrap-pic-w pos-relative">
+											<img src="{{image.image.url}}" alt="IMG-PRODUCT">
+
+											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="{{image.image.url}}">
+												<i class="fa fa-expand"></i>
+											</a>
+										</div>
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+					
+				<div class="col-md-6 col-lg-5 p-b-30">
+					<div class="p-r-50 p-t-5 p-lr-0-lg">
+						<h4 class="mtext-105 cl2 js-name-detail p-b-14">
+							{{object.name}}
+						</h4>
+
+						<h5>
+							<i class="fas fa-map-marker-alt"></i>
+							{{object.sector}}
+						</h5>
+
+						<span class="mtext-106 cl2">
+							$ {{object.price|intcomma}}
+						</span>
+
+						<p class="stext-102 cl3 p-t-23">
+							{{object.short_description}}
+						</p>
+						
+						<!--  -->
+						<div class="p-t-33">
+							<div class="flex-w flex-l-m p-b-10">
+								<table class="table borderless">
+									<thead>
+										<tr>
+											<th></th>
+											<th></th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										{% for item in object.related_items.all %}
+											<tr>
+												<td scope="row"><img src={{item.logo.url}} alt="" width="20" height="20"></td>
+												<td>{{item.name}}</td>
+												<td>{{item.value}}</td>
+											</tr>
+										{% endfor %}
+									</tbody>
+								</table>
+							</div>
+
+							<div class="flex-w flex-l-m p-b-10 p-t-20">
+								<div class="size-204 flex-w flex-m respon6-next">
+									<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
+										Confirmar recepcion
+									</button>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bor10 m-t-50 p-t-43 p-b-40">
+				<!-- Tab01 -->
+				<div class="tab01">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item p-b-10">
+							<a class="nav-link active" data-toggle="tab" href="#description" role="tab">Descripción</a>
+						</li>
+						<li class="nav-item p-b-10">
+							<a class="nav-link" data-toggle="tab" href="#benefits" role="tab">Beneficios incluidos</a>
+						</li>
+						<li class="nav-item p-b-10">
+							<a class="nav-link" data-toggle="tab" href="#services" role="tab">Servicios disponibles</a>
+						</li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content p-t-43">
+						<!-- - -->
+						<div class="tab-pane fade show active" id="description" role="tabpanel">
+							<div class="how-pos2 p-lr-15-md">
+								<p class="stext-102 cl6">
+									{{object.description}}
+								</p>
+							</div>
+						</div>
+
+						<!-- - -->
+						<div class="tab-pane fade" id="benefits" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-10 col-md-8 col-lg-6 m-lr-auto">
+									<div class="row">
+										{% for b in object.category.related_benefits.all %}
+											<div class="col-4 col-sm-4 col-md-2 mb-3">
+												<span class="benefit-logo"><img src="{{b.image.url}}"" alt="" width="20" height="20"></span>
+												<span class="benefit-name">{{b.name}}</span>
+											</div>
+										{% endfor %}
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- - -->
+						<div class="tab-pane fade" id="services" role="tabpanel">
+							<div class="row">
+								<div class="col-sm-10 col-md-8 col-lg-6 m-lr-auto">
+									<div class="row">
+										{% for b in object.category.related_services.all %}
+											<div class="col-4 col-sm-4 col-md-2 mb-3">
+												<span class="benefit-logo"><img src="{{b.image.url}}"" alt="" width="20" height="20"></span>
+												<span class="benefit-name">{{b.name}}</span>
+											</div>
+										{% endfor %}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="bg6 flex-c-m flex-w size-302 m-t-73 p-tb-15">
+			<span class="stext-107 cl6 p-lr-25">
+				CODIGO: {{object.code}}
+			</span>
+
+			<span class="stext-107 cl6 p-lr-25">
+				Categoría: {{object.category}}
+			</span>
+		</div>
+	</section>
+
+
+{% endblock content %}
+
+

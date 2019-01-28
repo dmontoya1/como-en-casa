@@ -4,6 +4,8 @@ from .models.rooms import Room
 from .models.room_images import RoomImages
 from .models.room_items import RoomItems
 from .models.category import Category
+from .models.category_benefits import CategoryBenefits
+from .models.category_services import CategoryServices
 
 
 class RoomItemsInline(admin.StackedInline):
@@ -20,6 +22,22 @@ class RoomImagesInline(admin.StackedInline):
 
     model = RoomImages
     extra = 1
+
+
+class CategoryBenefitsInline(admin.StackedInline):
+    """
+    """
+
+    model = CategoryBenefits
+    extra = 0
+
+
+class CategoryServicesInline(admin.StackedInline):
+    """
+    """
+
+    model = CategoryServices
+    extra = 0
 
 
 @admin.register(Room)
@@ -39,3 +57,4 @@ class CategoryAdmin(admin.ModelAdmin):
 
     list_display = ('name', 'parent')
     search_fields = ["name", ]
+    inlines = [CategoryBenefitsInline, CategoryServicesInline]

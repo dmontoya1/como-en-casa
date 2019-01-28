@@ -10,8 +10,8 @@ from . import views
 app_name = 'webclient'
 urlpatterns = [
     path("", views.Home.as_view(), name="home"),
-    path("about/",TemplateView.as_view(template_name="pages/about.html"),name="about",
-    ),
+    path("about/",TemplateView.as_view(template_name="pages/about.html"),name="about"),
+    path('room/<int:pk>/', views.RoomDetailView.as_view(), name='room-detail'),
     
 ] 
 

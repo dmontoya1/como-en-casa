@@ -18,8 +18,22 @@ class Room(models.Model):
         'Código del anuncio',
         max_length=255
     )
+    price = models.IntegerField(
+        'Precio de la habitacion',
+        default=0,
+    )
+    sector = models.CharField(
+        'Sector',
+        max_length=255,
+        default=''
+    )
+    short_description = models.CharField(
+        'Descripcion Corta',
+        max_length=255,
+        default=''
+    )
     description = models.TextField(
-        'Descripción'
+        'Descripción larga'
     )
     agent = models.ForeignKey(
         User,
