@@ -9,6 +9,7 @@ www.{$DOMAIN_NAME} {
         header_upstream X-Forwarded-Proto {scheme}
         header_upstream X-CSRFToken {~csrftoken}
     }
+    root /var/www/
     log stdout
     errors stdout
     gzip
