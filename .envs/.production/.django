@@ -3,8 +3,8 @@
 # DJANGO_READ_DOT_ENV_FILE=True
 DJANGO_SETTINGS_MODULE=config.settings.production
 DJANGO_SECRET_KEY=XVFEfaCILU3yuToWvbz03l7hEWOL2q5S5F3ZDVCtP5Ins6t9bEUtUZMMBFBLlAXR
-DJANGO_ADMIN_URL=GUcxTceGicxBvsje06ZLznPu0xpMXTYP/
-DJANGO_ALLOWED_HOSTS=.comoencasa.com
+DJANGO_ADMIN_URL=admin/
+DJANGO_ALLOWED_HOSTS=.comoencasahbt.com
 
 # Security
 # ------------------------------------------------------------------------------
@@ -19,9 +19,9 @@ MAILGUN_DOMAIN=smtp.mailgun.org
 
 # AWS
 # ------------------------------------------------------------------------------
-DJANGO_AWS_ACCESS_KEY_ID=
-DJANGO_AWS_SECRET_ACCESS_KEY=
-DJANGO_AWS_STORAGE_BUCKET_NAME=
+DJANGO_AWS_ACCESS_KEY_ID=AKIAJ6FUDTIPW7UZ2ULA
+DJANGO_AWS_SECRET_ACCESS_KEY=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
+DJANGO_AWS_STORAGE_BUCKET_NAME=comoencasa
 
 # django-allauth
 # ------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ WEB_CONCURRENCY=4
 
 # Sentry
 # ------------------------------------------------------------------------------
-SENTRY_DSN=
+SENTRY_DSN=https://f5fdc4b45ebf4b328f5976d3cb79a741@sentry.io/1383640
 
 
 # Redis
