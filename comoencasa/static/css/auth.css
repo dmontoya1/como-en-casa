@@ -12,32 +12,32 @@
 
 @font-face {
   font-family: SansPro;
-  src: url('../fonts/sans_pro/SourceSansPro-Regular.ttf'); 
+  src: url('../fonts/Monserrat/Monserrat-Regular.ttf'); 
 }
 
 @font-face {
   font-family: SansPro-Black;
-  src: url('../fonts/sans_pro/SourceSansPro-Black.ttf'); 
+  src: url('../fonts/Monserrat/Monserrat-Black.ttf'); 
 }
 
 @font-face {
   font-family: SansPro-Bold;
-  src: url('../fonts/sans_pro/SourceSansPro-Bold.ttf'); 
+  src: url('../fonts/Monserrat/Monserrat-Bold.ttf'); 
 }
 
 @font-face {
   font-family: SansPro-SemiBold;
-  src: url('../fonts/sans_pro/SourceSansPro-SemiBold.ttf'); 
+  src: url('../fonts/Monserrat/Monserrat-SemiBold.ttf'); 
 }
 
 @font-face {
   font-family: SansPro-Light;
-  src: url('../fonts/sans_pro/SourceSansPro-Light.ttf'); 
+  src: url('../fonts/Monserrat/Monserrat-Light.ttf'); 
 }
 
 @font-face {
   font-family: SansPro-ExtraLight;
-  src: url('../fonts/sans_pro/SourceSansPro-ExtraLight.ttf'); 
+  src: url('../fonts/Monserrat/Monserrat-ExtraLight.ttf'); 
 }
 
 
