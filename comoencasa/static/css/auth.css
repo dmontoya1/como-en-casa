@@ -12,12 +12,12 @@
 
 @font-face {
   font-family: SansPro;
-  src: url('../fonts/Monserrat/Monserrat-Regular.ttf'); 
+  src: url('/static/fonts/Monserrat/Monserrat-Regular.ttf'); 
 }
 
 @font-face {
   font-family: SansPro-Black;
-  src: url('../fonts/Monserrat/Monserrat-Black.ttf'); 
+  src: url('/static/fonts/Monserrat/Monserrat-Black.ttf'); 
 }
 
 @font-face {
