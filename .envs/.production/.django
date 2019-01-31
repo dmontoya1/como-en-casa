@@ -21,7 +21,7 @@ MAILGUN_DOMAIN=smtp.mailgun.org
 # ------------------------------------------------------------------------------
 #DJANGO_AWS_ACCESS_KEY_ID=AKIAJ6FUDTIPW7UZ2ULA
 #DJANGO_AWS_SECRET_ACCESS_KEY=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
-#DJANGO_AWS_STORAGE_BUCKET_NAME=comoencasa
+DJANGO_AWS_STORAGE_BUCKET_NAME=comoencasa
 
 # django-allauth
 # ------------------------------------------------------------------------------
