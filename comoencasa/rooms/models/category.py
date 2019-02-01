@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 
 
 class Category(models.Model):
@@ -24,6 +25,8 @@ class Category(models.Model):
         upload_to='images/category',
         blank=True, null=True
     )
+    slug = models.SlugField(unique=True, null=True, blank=True)
+    is_active = models.BooleanField(default=True)
 
     class Meta:
         verbose_name = "Categoria"
@@ -31,6 +34,10 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+        super(Category, self).save(*args, **kwargs)
 
     def get_absolute_url(self):
         return reverse("Category_detail", kwargs={"pk": self.pk})

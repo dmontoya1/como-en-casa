@@ -57,4 +57,5 @@ class CategoryAdmin(admin.ModelAdmin):
 
     list_display = ('name', 'parent')
     search_fields = ["name", ]
+    readonly_fields = ('slug', )
     inlines = [CategoryBenefitsInline, CategoryServicesInline]

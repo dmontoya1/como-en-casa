@@ -11,6 +11,7 @@ app_name = 'webclient'
 urlpatterns = [
     path("", views.Home.as_view(), name="home"),
     path("about/",TemplateView.as_view(template_name="pages/about.html"),name="about"),
+    path('rooms/', views.RoomListView.as_view(), name='room-list'),
     path('room/<int:pk>/', views.RoomDetailView.as_view(), name='room-detail'),
     
 ] 
