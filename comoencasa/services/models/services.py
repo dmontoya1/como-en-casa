@@ -16,6 +16,11 @@ class Services(models.Model):
     description = models.TextField(
         'Descripción'
     )
+    image = models.FileField(
+        'Imagen',
+        upload_to='services/',
+        blank=True
+    )
 
 
     def __str__(self):
