@@ -20,7 +20,7 @@ RUN pip install --upgrade pip==18.1
 RUN pip install --no-cache-dir -r /requirements/production.txt \
     && rm -rf /requirements
 
-RUN chown django:django home/django/app/
+# RUN chown django:django /home/django/app/
 COPY ./compose/production/django/entrypoint /entrypoint
 RUN sed -i 's/\r//' /entrypoint
 RUN chmod +x /entrypoint
