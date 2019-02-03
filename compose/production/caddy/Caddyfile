@@ -7,7 +7,8 @@ www.{$DOMAIN_NAME} {
         header_upstream Host {host}
         header_upstream X-Real-IP {remote}
         header_upstream X-Forwarded-Proto {scheme}
-        header_upstream X-CSRFToken {~csrftoken}
+        transparent
+        except /static /media
     }
     root /var/www/
     log stdout
