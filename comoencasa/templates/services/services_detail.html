@@ -19,11 +19,11 @@
 				<a href="/">Inicio</a>
 			</li>
 
-			<li class="active-menu">
+			<li>
 				<a href="{% url 'webclient:room-list' %}">Habitaciones disponibles</a>
 			</li>
 
-			<li>
+			<li class="active-menu">
 				<a href="{% url 'webclient:services-list' %}">Servicios</a>
 			</li>
 
@@ -51,11 +51,11 @@
 				<a href="/">Inicio</a>
 			</li>
 
-			<li class="active-menu">
+			<li>
 				<a href="{% url 'webclient:room-list' %}">Habitaciones disponibles</a>
 			</li>
 
-			<li>
+			<li class="active-menu">
 				<a href="{% url 'webclient:services-list' %}">Servicios</a>
 			</li>
 
@@ -110,7 +110,7 @@
 							<div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
 							<div class="slick3 gallery-lb">
-								{% for image in object.related_images.all %}
+								{% for image in object.images.all %}
 									<div class="item-slick3" data-thumb="{{image.image.url}}">
 										<div class="wrap-pic-w pos-relative">
 											<img src="{{image.image.url}}" alt="IMG-PRODUCT">
@@ -128,51 +128,36 @@
 					
 				<div class="col-md-6 col-lg-5 p-b-30">
 					<div class="p-r-50 p-t-5 p-lr-0-lg">
-						<h4 class="mtext-105 cl2 js-name-detail p-b-14">
-							{{object.name}}
-						</h4>
+							<h2 class="mtext-115 cl2 js-name-detail p-b-14">
+								{{object.name}}
+							</h2>
+	
+							<h5 class="mb-4">
+								<i class="fas fa-map-marker-alt mr-3"></i>
+								{{object.location}}
+							</h5>
+							
+							<i class="fas fa-stopwatch mr-3"></i>
+							<select class="prices mb-4" name="prices" id="prices" style="width: 80%">
+								<option value="" selected disabled>Selecciona una opción</option>
+								{% for option in object.related_options.all %}
+									<option value="{{option.price}}">{{option.time}} {{option.get_option_display}}</option>
+								{% endfor %}
+							</select>
 
-						<h5>
-							<i class="fas fa-map-marker-alt"></i>
-							{{object.sector}}
-						</h5>
+							<h5 class="my-4 d-none price-service">
+								<i class="fas fa-dollar-sign mr-3"></i>
+								<span class="option-price"></span>
+							</h5>
 
-						<span class="mtext-106 cl2">
-							$ {{object.price|intcomma}}
-						</span>
-
-						<p class="stext-102 cl3 p-t-23">
-							{{object.short_description}}
-						</p>
-						
 						<!--  -->
 						<div class="p-t-33">
-							<div class="flex-w flex-l-m p-b-10">
-								<table class="table borderless">
-									<thead>
-										<tr>
-											<th></th>
-											<th></th>
-											<th></th>
-										</tr>
-									</thead>
-									<tbody>
-										{% for item in object.related_items.all %}
-											<tr>
-												<td scope="row"><img src={{item.logo.url}} alt="" width="20" height="20"></td>
-												<td>{{item.name}}</td>
-												<td>{{item.value}}</td>
-											</tr>
-										{% endfor %}
-									</tbody>
-								</table>
-							</div>
-
 							<div class="flex-w flex-l-m p-b-10 p-t-20">
 								<div class="size-204 flex-w flex-m respon6-next">
-									<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
-										Confirmar recepcion
-									</button>
+									<a href="https://wa.me/573003430556?text=Quisiera%20informacion%20acerca%20del%20servicio%20{{object.name}}" 
+										class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+										Solicitar información
+									</a>
 								</div>
 							</div>	
 						</div>
@@ -188,12 +173,6 @@
 						<li class="nav-item p-b-10">
 							<a class="nav-link active" data-toggle="tab" href="#description" role="tab">Descripción</a>
 						</li>
-						<li class="nav-item p-b-10">
-							<a class="nav-link" data-toggle="tab" href="#benefits" role="tab">Beneficios incluidos</a>
-						</li>
-						<li class="nav-item p-b-10">
-							<a class="nav-link" data-toggle="tab" href="#services" role="tab">Servicios disponibles</a>
-						</li>
 					</ul>
 
 					<!-- Tab panes -->
@@ -206,38 +185,6 @@
 								</p>
 							</div>
 						</div>
-
-						<!-- - -->
-						<div class="tab-pane fade" id="benefits" role="tabpanel">
-							<div class="row">
-								<div class="col-sm-10 col-md-8 col-lg-6 m-lr-auto">
-									<div class="row">
-										{% for b in object.category.related_benefits.all %}
-											<div class="col-4 col-sm-4 col-md-2 mb-3">
-												<span class="benefit-logo"><img src="{{b.image.url}}"" alt="" width="20" height="20"></span>
-												<span class="benefit-name">{{b.name}}</span>
-											</div>
-										{% endfor %}
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- - -->
-						<div class="tab-pane fade" id="services" role="tabpanel">
-							<div class="row">
-								<div class="col-sm-10 col-md-8 col-lg-6 m-lr-auto">
-									<div class="row">
-										{% for b in object.category.related_services.all %}
-											<div class="col-4 col-sm-4 col-md-2 mb-3">
-												<span class="benefit-logo"><img src="{{b.image.url}}"" alt="" width="20" height="20"></span>
-												<span class="benefit-name">{{b.name}}</span>
-											</div>
-										{% endfor %}
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 
 				</div>
@@ -248,14 +195,33 @@
 			<span class="stext-107 cl6 p-lr-25">
 				CODIGO: {{object.code}}
 			</span>
-
-			<span class="stext-107 cl6 p-lr-25">
-				Categoría: {{object.category}}
-			</span>
 		</div>
 	</section>
 
 
 {% endblock content %}
+
+{% block extra_js %}
+<script src="{% static 'js/jquery.priceformat.min.js' %}"></script>
+<script>
+	$(document).ready(function() {
+		$('.prices').select2({
+			width: 'resolve',
+		});
+	});
+
+	$('#prices').on('change', function(){
+		price = $(this).val()
+		console.log(price)
+		$('.option-price').text(price)
+		$('.option-price').priceFormat({
+			centsLimit: 0,
+			prefix: '',
+			thousandsSeparator: '.',
+		});
+		$('.price-service').removeClass('d-none')
+	})
+</script>
+{% endblock %}
 
 

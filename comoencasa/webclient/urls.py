@@ -12,7 +12,11 @@ urlpatterns = [
     path("", views.Home.as_view(), name="home"),
     path("about/",TemplateView.as_view(template_name="pages/about.html"),name="about"),
     path('rooms/', views.RoomListView.as_view(), name='room-list'),
+    path('services/', views.ServicesListView.as_view(), name='services-list'),
+    path('experiences/', views.ExperiencesListView.as_view(), name='experiences-list'),
     path('room/<int:pk>/', views.RoomDetailView.as_view(), name='room-detail'),
+    path('service/<int:pk>/', views.ServiceDetailView.as_view(), name='service-detail'),
+    path('experience/<int:pk>/', views.ExperiencesDetailView.as_view(), name='experience-detail'),
     
 ] 
 

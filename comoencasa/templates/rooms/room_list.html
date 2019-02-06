@@ -24,11 +24,11 @@
 			</li>
 
 			<li>
-				<a href="/">Servicios</a>
+                <a href="{% url 'webclient:services-list' %}">Servicios</a>
 			</li>
 
 			<li>
-				<a href="/">Experiencias</a>
+                <a href="{% url 'webclient:experiences-list' %}">Experiencias</a>
 			</li>
 
 			<li>
@@ -56,11 +56,11 @@
 			</li>
 
 			<li>
-				<a href="/">Servicios</a>
+                <a href="{% url 'webclient:services-list' %}">Servicios</a>
 			</li>
 
 			<li>
-				<a href="/">Experiencias</a>
+                <a href="{% url 'webclient:experiences-list' %}">Experiencias</a>
 			</li>
 
 			<li>
@@ -79,18 +79,18 @@
 
 				<li>
 					<a href="{% url 'account_logout' %}" class="stext-102 cl2 hov-cl1 trans-04">
-						Cerrar sesion
+						Cerrar sesión
 					</a>
 				</li>
 			{% else %}
 				<li>
 					<a href="{% url 'account_login' %}" class="stext-102 cl2 hov-cl1 trans-04">
-						Iniciar Sesion
+						Iniciar sesión
 					</a>
 				</li>
 				<li>
 					<a href="{% url 'account_signup' %}" class="stext-102 cl2 hov-cl1 trans-04">
-						Registrate
+						Regístrate
 					</a>
 				</li>
 			{% endif %}

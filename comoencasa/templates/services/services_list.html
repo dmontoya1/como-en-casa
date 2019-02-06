@@ -1,0 +1,158 @@
+{% extends "account/base.html" %}
+
+{% load static i18n humanize %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{object.name}}{% endblock %}
+
+{% block extra_css %}
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+{% endblock %}
+
+{% block menu_desktop %}
+	<!-- Menu desktop -->
+	<div class="menu-desktop">
+		<ul class="main-menu">
+			<li >
+				<a href="/">Inicio</a>
+			</li>
+
+			<li>
+				<a href="{% url 'webclient:room-list' %}">Habitaciones disponibles</a>
+			</li>
+
+			<li class="active-menu">
+                <a href="{% url 'webclient:services-list' %}">Servicios</a>
+			</li>
+
+			<li>
+				<a href="{% url 'webclient:experiences-list' %}">Experiencias</a>
+			</li>
+
+			<li>
+				<a href="#">Acerca de nosotros</a>
+			</li>
+
+			<li>
+				<a href="#">Contactenos</a>
+			</li>
+
+		</ul>
+	</div>
+{% endblock %}
+
+{% block menu_mobile %}
+	<!-- Menu Mobile -->
+	<div class="menu-mobile">
+		<ul class="main-menu-m">
+			<li>
+				<a href="/">Inicio</a>
+			</li>
+
+			<li>
+				<a href="{% url 'webclient:room-list' %}">Habitaciones disponibles</a>
+			</li>
+
+			<li class="active-menu">
+				<a href="{% url 'webclient:services-list' %}">Servicios</a>
+			</li>
+
+			<li>
+				<a href="{% url 'webclient:experiences-list' %}">Experiencias</a>
+			</li>
+
+			<li>
+				<a href="#">Acerca de nosotros</a>
+			</li>
+
+			<li>
+				<a href="#">Contactenos</a>
+			</li>
+			{% if request.user.is_authenticated%}
+				<li>
+					<a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+						Mi Perfil
+					</a>
+				</li>
+
+				<li>
+					<a href="{% url 'account_logout' %}" class="stext-102 cl2 hov-cl1 trans-04">
+						Cerrar sesión
+					</a>
+				</li>
+			{% else %}
+				<li>
+					<a href="{% url 'account_login' %}" class="stext-102 cl2 hov-cl1 trans-04">
+						Iniciar sesión
+					</a>
+				</li>
+				<li>
+					<a href="{% url 'account_signup' %}" class="stext-102 cl2 hov-cl1 trans-04">
+						Regístrate
+					</a>
+				</li>
+			{% endif %}
+		</ul>
+	</div>
+{% endblock %}
+
+{% block content %}
+<div class="bg0 m-t-23 p-b-140">
+    <div class="container">
+        <!-- <div class="flex-w flex-sb-m p-b-52">
+            <div class="flex-w flex-l-m filter-tope-group m-tb-10">
+                <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
+                    Todas los habitaciones
+                </button>
+
+                {% for category in categories %}
+                    <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".{{category.slug}}">
+                        {{category.name}}
+                    </button>
+                {% endfor %}
+
+            </div>
+        </div> -->
+
+        <div class="row isotope-grid">
+            {% for service in object_list %}
+                <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item">
+                    <!-- Block2 -->
+                    <div class="block2">
+                        <div class="block2-pic hov-img0">
+							{% for image in service.images.all %}
+                                {% if forloop.first %}
+                                    <img src="{{image.image.url}}" alt="IMG-PRODUCT">
+                                {% endif %}
+							{% endfor %}
+							<a href="{% url 'webclient:service-detail' service.pk %}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+								Ver detalle
+							</a>
+                        </div>
+
+                        <div class="block2-txt flex-w flex-t p-t-14">
+                            <div class="block2-txt-child1 flex-col-l ">
+                                <a href="{% url 'webclient:service-detail' service.pk %}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                    {{service.name}}
+                                </a>
+
+                                <span class="stext-105 cl3">
+                                    {{service.code}}    
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock content %}
+
+

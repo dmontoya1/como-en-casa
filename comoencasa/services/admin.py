@@ -1,14 +1,23 @@
 from django.contrib import admin
 
 from .models.services import Services
-from .models.option_service import OptionServices
+from .models.services_images import ServicesImage
+from .models.services_option import ServicesOption
 
 
-class OptionServicesInline(admin.StackedInline):
+class ServicesOptionInline(admin.StackedInline):
     """
     """
 
-    model = OptionServices
+    model = ServicesOption
+    extra = 0
+
+
+class ServicesImageInline(admin.StackedInline):
+    """
+    """
+
+    model = ServicesImage
     extra = 0
 
 
@@ -19,4 +28,4 @@ class ServicesAdmin(admin.ModelAdmin):
 
     list_display = ('name', 'code')
     search_fields = ('name', 'code')
-    inlines = [OptionServicesInline, ]
+    inlines = [ServicesOptionInline, ServicesImageInline]

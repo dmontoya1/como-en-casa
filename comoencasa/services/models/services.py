@@ -9,17 +9,16 @@ class Services(models.Model):
         'Nombre',
         max_length=255
     )
+    location = models.CharField(
+        'Ubicación',
+        max_length=255
+    )
     code = models.CharField(
         'Código',
         max_length=15
     )
     description = models.TextField(
         'Descripción'
-    )
-    image = models.FileField(
-        'Imagen',
-        upload_to='services/',
-        blank=True
     )
 
 
