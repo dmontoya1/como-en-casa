@@ -144,6 +144,16 @@
 						<p class="stext-102 cl3 p-t-23">
 							{{object.short_description}}
 						</p>
+
+						<p class="stext-102 cl3 p-t-23">
+							{% if object.available %}
+								<i class="fas fa-check-square" style="color: green;"></i>
+								Habitacion disponible
+							{% else %}
+								<i class="fas fa-times-circle" style="color:red"></i>
+								Habitacion NO disponible
+							{% endif %}
+						</p>
 						
 						<!--  -->
 						<div class="p-t-33">
