@@ -36,7 +36,7 @@
 			</li>
 
 			<li>
-				<a href="#">Contactenos</a>
+				<a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
 			</li>
 
 		</ul>
@@ -68,7 +68,7 @@
 			</li>
 
 			<li>
-				<a href="#">Contactenos</a>
+				<a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
 			</li>
 			{% if request.user.is_authenticated%}
 				<li>

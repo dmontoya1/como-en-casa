@@ -71,6 +71,7 @@ THIRD_PARTY_APPS = [
     'rest_framework',
 ]
 LOCAL_APPS = [
+    'comoencasa.contact_form.apps.ContactFormConfig',
     'comoencasa.experiences.apps.ExperiencesConfig',
     'comoencasa.rooms.apps.RoomsConfig',
     'comoencasa.services.apps.ServicesConfig',

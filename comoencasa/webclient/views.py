@@ -1,10 +1,14 @@
 
+from django.contrib import messages
 from django.db.models import Q
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
+from django.urls import reverse
 from django.views.generic import TemplateView
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
 
+from contact_form.models.contact_form import ContactForm
 from experiences.models.experiences import Experiences
 from rooms.models.category import Category
 from rooms.models.rooms import Room
@@ -82,3 +86,23 @@ class ExperiencesDetailView(DetailView):
     """
 
     model = Experiences
+
+
+class ContactFormView(TemplateView):
+    """
+    """
+
+    template_name = 'webclient/contact_form.html'
+
+    def post(self, request):
+        c_form = ContactForm(
+            full_name=request.POST['full_name'],
+            email=request.POST['email'],
+            contact_type=request.POST['contact_type'],
+            message=request.POST['message']
+        )
+        print (c_form)
+        c_form.save()
+        messages.add_message(request, messages.INFO, 'Formulario creado exitosamente. Pronto nos pondremos en contacto contigo')
+        return HttpResponseRedirect(reverse('webclient:contact_form'))
+

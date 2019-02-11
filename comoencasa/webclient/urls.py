@@ -17,6 +17,7 @@ urlpatterns = [
     path('room/<int:pk>/', views.RoomDetailView.as_view(), name='room-detail'),
     path('service/<int:pk>/', views.ServiceDetailView.as_view(), name='service-detail'),
     path('experience/<int:pk>/', views.ExperiencesDetailView.as_view(), name='experience-detail'),
+    path('contact-form/', views.ContactFormView.as_view(), name='contact_form'),
     
 ] 
 

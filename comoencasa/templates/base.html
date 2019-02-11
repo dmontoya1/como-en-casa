@@ -80,7 +80,7 @@
 									</li>
 
 									<li>
-										<a href="#">Contactenos</a>
+										<a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
 									</li>
 
 								</ul>
@@ -140,7 +140,7 @@
 						</li>
 
 						<li>
-							<a href="#">Contactenos</a>
+							<a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
 						</li>
 						{% if request.user.is_authenticated%}
 							<li>
@@ -231,9 +231,12 @@
 		</div>
 	</aside>
 
+
 	{% block content %}
 
 	{% endblock %}
+
+	
 
 
 	{% block footer %}
@@ -243,31 +246,40 @@
 				<div class="row">
 					<div class="col-sm-6 col-lg-3 p-b-50">
 						<h4 class="stext-301 cl0 p-b-30">
-							Categories
+							Que te ofrecemos
 						</h4>
 
 						<ul>
 							<li class="p-b-10">
-								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-									Women
+								<a href="{% url 'webclient:room-list' %}" class="stext-107 cl7 hov-cl1 trans-04">
+									Habitaciones
 								</a>
 							</li>
 
 							<li class="p-b-10">
-								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-									Men
+								<a href="{% url 'webclient:services-list' %}" class="stext-107 cl7 hov-cl1 trans-04">
+									Servicios
 								</a>
 							</li>
 
 							<li class="p-b-10">
-								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-									Shoes
+								<a href="{% url 'webclient:experiences-list' %}" class="stext-107 cl7 hov-cl1 trans-04">
+									Experiencias
 								</a>
 							</li>
 
+						</ul>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 p-b-50">
+						<h4 class="stext-301 cl0 p-b-30">
+							Ayuda
+						</h4>
+
+						<ul>
 							<li class="p-b-10">
-								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-									Watches
+								<a href="{% url 'webclient:contact_form' %}" class="stext-107 cl7 hov-cl1 trans-04">
+									Contactenos
 								</a>
 							</li>
 						</ul>
@@ -275,44 +287,9 @@
 
 					<div class="col-sm-6 col-lg-3 p-b-50">
 						<h4 class="stext-301 cl0 p-b-30">
-							Help
+							Ponerse en contacto
 						</h4>
 
-						<ul>
-							<li class="p-b-10">
-								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-									Track Order
-								</a>
-							</li>
-
-							<li class="p-b-10">
-								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-									Returns 
-								</a>
-							</li>
-
-							<li class="p-b-10">
-								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-									Shipping
-								</a>
-							</li>
-
-							<li class="p-b-10">
-								<a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-									FAQs
-								</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="col-sm-6 col-lg-3 p-b-50">
-						<h4 class="stext-301 cl0 p-b-30">
-							GET IN TOUCH
-						</h4>
-
-						<p class="stext-107 cl7 size-201">
-							Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
-						</p>
 
 						<div class="p-t-27">
 							<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
@@ -323,30 +300,9 @@
 								<i class="fa fa-instagram"></i>
 							</a>
 
-							<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-								<i class="fa fa-pinterest-p"></i>
-							</a>
 						</div>
 					</div>
 
-					<div class="col-sm-6 col-lg-3 p-b-50">
-						<h4 class="stext-301 cl0 p-b-30">
-							Newsletter
-						</h4>
-
-						<form>
-							<div class="wrap-input1 w-full p-b-4">
-								<input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@example.com">
-								<div class="focus-input1 trans-04"></div>
-							</div>
-
-							<div class="p-t-18">
-								<button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
-									Subscribe
-								</button>
-							</div>
-						</form>
-					</div>
 				</div>
 
 				<div class="p-t-40">
@@ -363,12 +319,16 @@
 
 	{% endblock%}
 
+	<a href="https://wa.me/573003430556?text=Quisiera%20información%20acerca%20de%20los%20servicios%20" class="float" target="_blank">
+		<i class="fa fa-whatsapp my-float"></i>
+	</a>
+
 	<!-- Back to top -->
-	<div class="btn-back-to-top" id="myBtn">
+	<!-- <div class="btn-back-to-top" id="myBtn">
 		<span class="symbol-btn-back-to-top">
 			<i class="zmdi zmdi-chevron-up"></i>
 		</span>
-	</div>
+	</div> -->
 
 	<!-- Modal1 -->
 	<div class="wrap-modal1 js-modal1 p-t-60 p-b-20">
@@ -377,7 +337,7 @@
 		<div class="container">
 			<div class="bg0 p-t-60 p-b-30 p-lr-15-lg how-pos3-parent">
 				<button class="how-pos3 hov3 trans-04 js-hide-modal1">
-					<img src="images/icons/icon-close.png" alt="CLOSE">
+					<img src="{% static '/icons/icon-close.png' %}" alt="CLOSE">
 				</button>
 
 				<div class="row">
