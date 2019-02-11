@@ -45,7 +45,7 @@ class RoomAdmin(admin.ModelAdmin):
     """
     """
 
-    list_display = ('name', 'code', 'category', 'agent',)
+    list_display = ('name', 'code', 'category', 'agent', 'available')
     search_fields = ["name", "code"]
     inlines = [RoomItemsInline, RoomImagesInline ]
 

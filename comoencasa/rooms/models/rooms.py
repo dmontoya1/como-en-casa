@@ -47,6 +47,10 @@ class Room(models.Model):
         on_delete=models.SET_NULL,
         blank=True, null=True
     )
+    available = models.BooleanField(
+        'Habitacion disponible?',
+        default=True
+    )
 
 
     def __str__(self):
