@@ -344,11 +344,11 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item p-b-10">
-                        <a class="nav-link active" data-toggle="tab" href="#services" role="tab">Servicios</a>
+                        <a class="nav-link active" href="{% url 'webclient:services-list' %}" role="tab">Ver todos los Servicios</a>
                     </li>
 
                     <li class="nav-item p-b-10">
-                        <a class="nav-link" data-toggle="tab" href="#experiences" role="tab">Experiencias</a>
+                        <a class="nav-link" href="{% url 'webclient:experiences-list' %}" role="tab">Ver todas las Experiencias</a>
                     </li>
                 </ul>
 
@@ -366,7 +366,7 @@
                                             <div class="block2-pic hov-img0">
                                                 {% for image in service.images.all %}
                                                     {% if forloop.first %}
-                                                        <img src="{{image.image.url}}" alt="IMG-PRODUCT">
+                                                        <img src="{{image.image.url}}" alt="IMG-PRODUCT" width="270" height="200">
                                                     {% endif %}
                                                 {% endfor %}
 
@@ -378,7 +378,7 @@
                                             <div class="block2-txt flex-w flex-t p-t-14">
                                                 <div class="block2-txt-child1 flex-col-l ">
                                                     <a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                        {{service.name}}
+                                                        Servicio: {{service.name}}
                                                     </a>
 
                                                 </div>
@@ -386,15 +386,6 @@
                                         </div>
                                     </div>
                                 {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- - -->
-                    <div class="tab-pane fade" id="experiences" role="tabpanel">
-                        <!-- Slide2 -->
-                        <div class="wrap-slick2">
-                            <div class="slick2">
                                 {% for e in experiences %}
                                     <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
                                         <!-- Block2 -->
@@ -402,7 +393,7 @@
                                             <div class="block2-pic hov-img0">
                                                 {% for image in e.images.all %}
                                                     {% if forloop.first %}
-                                                        <img src="{{image.image.url}}" alt="IMG-PRODUCT">
+                                                        <img src="{{image.image.url}}" alt="IMG-PRODUCT" width="270" height="200">
                                                     {% endif %}
                                                 {% endfor %}
 
@@ -414,7 +405,7 @@
                                             <div class="block2-txt flex-w flex-t p-t-14">
                                                 <div class="block2-txt-child1 flex-col-l ">
                                                     <a href="{% url 'webclient:experience-detail' e.pk %}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                        {{e.name}}
+                                                        Experiencia: {{e.name}}
                                                     </a>
                                                 </div>
 
