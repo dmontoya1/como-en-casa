@@ -3,8 +3,6 @@
 {% load static i18n humanize %}
 {% load crispy_forms_tags %}
 
-{% block title %}{{object.name}}{% endblock %}
-
 {% block extra_css %}
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -113,7 +111,7 @@
 								{% for image in object.related_images.all %}
 									<div class="item-slick3" data-thumb="{{image.image.url}}">
 										<div class="wrap-pic-w pos-relative">
-											<img src="{{image.image.url}}" alt="IMG-PRODUCT">
+											<img src="{{image.image.url}}" alt="IMG-PRODUCT" height="300">
 
 											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="{{image.image.url}}">
 												<i class="fa fa-expand"></i>

@@ -3,8 +3,6 @@
 {% load static i18n humanize %}
 {% load crispy_forms_tags %}
 
-{% block title %}{{object.name}}{% endblock %}
-
 {% block extra_css %}
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -124,7 +122,7 @@
                         <div class="block2-pic hov-img0">
                             {% for image in room.related_images.all %}
                                 {% if forloop.first %}
-                                    <img src="{{image.image.url}}" alt="IMG-PRODUCT">
+                                    <img src="{{image.image.url}}" alt="IMG-PRODUCT" width="270" height="200">
                                 {% endif %}
                             {% endfor %}
                         </div>
@@ -136,7 +134,19 @@
                                 </a>
 
                                 <span class="stext-105 cl3">
-                                    ${{room.price|intcomma}}
+                                   Precio: ${{room.price|intcomma}}
+                                </span>
+                                <span class="stext-105 cl3">
+                                   Código: {{room.code}}
+                                </span>
+                                <span class="stext-105 cl3">
+									{% if object.available %}
+										<i class="fas fa-check-square" style="color: green;"></i>
+										Habitacion disponible
+									{% else %}
+										<i class="fas fa-times-circle" style="color:red"></i>
+										Habitacion NO disponible
+									{% endif %}
                                 </span>
                             </div>
                         </div>
