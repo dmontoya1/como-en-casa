@@ -20,7 +20,6 @@ class RoomImages(models.Model):
         upload_to='images/rooms'
     )
     
-
     class Meta:
         verbose_name = 'Imagen de la habitacion'
         verbose_name_plural = 'Imagenes de la habitacion'

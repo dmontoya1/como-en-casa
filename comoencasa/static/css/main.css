@@ -686,13 +686,13 @@ body {
 .main-menu-m {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #e74430;
+  background-color: #fff;
 }
 
 .main-menu-m > li > a {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 14px;
-  color: white;
+  color: #000;
   line-height: 2.8;
   padding: 8px 20px 8px 20px;
 }
@@ -1908,6 +1908,7 @@ input.num-product::-webkit-inner-spin-button {
 .block1 {
   position: relative;
   border: 1px solid #e6e6e6;
+  margin-bottom: 20px;
 }
 
 .block1-txt {
@@ -3330,4 +3331,23 @@ span.text-home {
 
 .my-float{
 	margin-top:16px;
+}
+
+ul.category-filter {
+  width: 100%;
+}
+
+li.category-filter-item {
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  li.category-filter-item {
+    display: block;
+  }
+}
+
+
+.container-about-us {
+  padding: 50px 0 100px 0;
 }

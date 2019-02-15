@@ -73,6 +73,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     'comoencasa.contact_form.apps.ContactFormConfig',
     'comoencasa.experiences.apps.ExperiencesConfig',
+    'comoencasa.general_config.apps.GeneralConfigConfig',
     'comoencasa.rooms.apps.RoomsConfig',
     'comoencasa.services.apps.ServicesConfig',
     'comoencasa.testimonies.apps.TestimoniesConfig',

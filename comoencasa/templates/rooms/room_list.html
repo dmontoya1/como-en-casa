@@ -30,7 +30,7 @@
 			</li>
 
 			<li>
-				<a href="#">Acerca de nosotros</a>
+				<a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
 			</li>
 
 			<li>
@@ -62,7 +62,7 @@
 			</li>
 
 			<li>
-				<a href="#">Acerca de nosotros</a>
+				<a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
 			</li>
 
 			<li>
@@ -101,18 +101,26 @@
     <div class="container">
         <div class="flex-w flex-sb-m p-b-52">
             <div class="flex-w flex-l-m filter-tope-group m-tb-10">
-                <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-                    Todas las habitaciones
-                </button>
+				<ul class="category-filter">
+					<li class="category-filter-item">
+						<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
+							Todas las habitaciones
+						</button>
+					</li>
+					{% for category in categories %}
+					<li class="category-filter-item">
+						<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".{{category.slug}}">
+							{{category.name}}
+						</button>
+					</li>
+					{% endfor %}
+					<li class="category-filter-item">
+						<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".available">
+							Ver solo habitaciones disponibles
+						</button>
+					</li>
 
-                {% for category in categories %}
-                    <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".{{category.slug}}">
-                        {{category.name}}
-                    </button>
-				{% endfor %}
-				<button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".available">
-					Ver solo habitaciones disponibles
-				</button>
+				</ul>
 
             </div>
         </div>

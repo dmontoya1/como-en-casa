@@ -3,6 +3,158 @@
 {% load static humanize %}
 
 
+{% block menu_desktop %}
+	<!-- Menu desktop -->
+	<div class="menu-desktop">
+		<ul class="main-menu">
+			<li >
+				<a href="/">Inicio</a>
+			</li>
+
+			<li >
+				<a href="{% url 'webclient:room-list' %}">Habitaciones disponibles</a>
+			</li>
+
+			<li>
+                <a href="{% url 'webclient:services-list' %}">Servicios</a>
+			</li>
+
+			<li>
+                <a href="{% url 'webclient:experiences-list' %}">Experiencias</a>
+			</li>
+
+			<li class="active-menu">
+				<a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
+			</li>
+
+			<li>
+                <a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
+			</li>
+
+		</ul>
+	</div>
+{% endblock %}
+
+{% block menu_mobile %}
+	<!-- Menu Mobile -->
+	<div class="menu-mobile">
+		<ul class="main-menu-m">
+			<li class="active-menu">
+				<a href="/">Inicio</a>
+			</li>
+
+			<li>
+				<a href="{% url 'webclient:room-list' %}">Habitaciones disponibles</a>
+			</li>
+
+			<li>
+                <a href="{% url 'webclient:services-list' %}">Servicios</a>
+			</li>
+
+			<li>
+                <a href="{% url 'webclient:experiences-list' %}">Experiencias</a>
+			</li>
+
+			<li class="active-menu">
+				<a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
+			</li>
+
+			<li>
+                <a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
+			</li>
+			{% if request.user.is_authenticated%}
+				<li>
+					<a href="#" class="stext-102 cl2 hov-cl1 trans-04">
+						Mi Perfil
+					</a>
+				</li>
+
+				<li>
+					<a href="{% url 'account_logout' %}" class="stext-102 cl2 hov-cl1 trans-04">
+						Cerrar sesión
+					</a>
+				</li>
+			{% else %}
+				<li>
+					<a href="{% url 'account_login' %}" class="stext-102 cl2 hov-cl1 trans-04">
+						Iniciar sesión
+					</a>
+				</li>
+				<li>
+					<a href="{% url 'account_signup' %}" class="stext-102 cl2 hov-cl1 trans-04">
+						Regístrate
+					</a>
+				</li>
+			{% endif %}
+		</ul>
+	</div>
+{% endblock %}
+
 {% block content %}
+
+    <div class="container container-about-us">
+        <div class="row">
+            <div class="col-12 m-b-100">
+                <h1 class="pb-5 text-center">Nuestra empresa</h1>
+                <p style="text-align: justify;">{{contact.about}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 p-b-40">
+                <div class="blog-item">
+                    <div class="img" 
+                        style="background-image: url(/media/{{contact.mision_image}});">
+                    </div>
+                    <div class="p-t-15">
+                        <h4 class="p-b-12">
+                            <a href="#" class="mtext-101 cl2 hov-cl1 trans-04">
+                                Mision
+                            </a>
+                        </h4>
+
+                        <p class="stext-108 cl6">
+                            {{contact.mision}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 p-b-40">
+                <div class="blog-item">
+                    <div class="img" 
+                        style="background-image: url(/media/{{contact.vision_image}});">
+                    </div>
+                    <div class="p-t-15">
+                        <h4 class="p-b-12">
+                            <a href="#" class="mtext-101 cl2 hov-cl1 trans-04">
+                                Vision
+                            </a>
+                        </h4>
+
+                        <p class="stext-108 cl6">
+                            {{contact.vision}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 p-b-40">
+                <div class="blog-item">
+                    <div class="img" 
+                        style="background-image: url(/media/{{contact.corporative_values_image}});">
+                    </div>
+                    <div class="p-t-15">
+                        <h4 class="p-b-12">
+                            <a href="#" class="mtext-101 cl2 hov-cl1 trans-04">
+                                Valores Corporativos
+                            </a>
+                        </h4>
+
+                        <p class="stext-108 cl6">
+                            {{contact.corporative_values}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

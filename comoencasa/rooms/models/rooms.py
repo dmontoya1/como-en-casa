@@ -6,6 +6,7 @@ from .category import Category
 
 User = get_user_model()
 
+
 class Room(models.Model):
     """
     """
