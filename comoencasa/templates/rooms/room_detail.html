@@ -227,7 +227,7 @@
 							<div class="row">
 								<div class="col-sm-10 col-md-8 col-lg-6 m-lr-auto">
 									<div class="row">
-										{% for b in object.category.related_benefits.all %}
+										{% for b in object.category.parent.related_benefits.all %}
 											<div class="col-4 col-sm-4 col-md-2 mb-3">
 												<span class="benefit-logo"><img src="{{b.image.url}}"" alt="" width="20" height="20"></span>
 												<span class="benefit-name">{{b.name}}</span>
@@ -243,7 +243,7 @@
 							<div class="row">
 								<div class="col-sm-10 col-md-8 col-lg-6 m-lr-auto">
 									<div class="row">
-										{% for b in object.category.related_services.all %}
+										{% for b in object.category.parent.related_services.all %}
 											<div class="col-4 col-sm-4 col-md-2 mb-3">
 												<span class="benefit-logo"><img src="{{b.image.url}}"" alt="" width="20" height="20"></span>
 												<span class="benefit-name">{{b.name}}</span>
