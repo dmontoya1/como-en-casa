@@ -26,7 +26,7 @@ class Home(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(Home, self).get_context_data(**kwargs)
         categories = Category.objects.filter(parent=None)
-        rooms = Room.objects.all()
+        rooms = Room.objects.all()[:10]
         testimonies = Testimonies.objects.all()
         services = Services.objects.all()
         experiences = Experiences.objects.all()
