@@ -1,7 +1,6 @@
 from django.contrib import admin
 
-from .models import Police, CompanyInfo
-
+from .models import Police, CompanyInfo, CorporativeValues
 
 @admin.register(Police)
 class PoliceAdmin(admin.ModelAdmin):
@@ -13,5 +12,11 @@ class PoliceAdmin(admin.ModelAdmin):
 
 @admin.register(CompanyInfo)
 class CompanyInfoAdmin(admin.ModelAdmin):
+    """
+    """
+
+
+@admin.register(CorporativeValues)
+class CorporativeValuesAdmin(admin.ModelAdmin):
     """
     """

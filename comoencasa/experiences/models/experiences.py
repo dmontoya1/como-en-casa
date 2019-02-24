@@ -24,11 +24,15 @@ class Experiences(models.Model):
         'Precio',
         default=0
     )
-    
+
+    short_description = models.CharField(
+        'Descripcion corta',
+        max_length=255,
+        default=''
+    )
 
     def __str__(self):
         return self.name
 
-    
     class Meta:
         verbose_name = 'Experiencia'

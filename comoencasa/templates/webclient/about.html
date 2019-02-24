@@ -94,13 +94,13 @@
 
     <div class="container container-about-us">
         <div class="row">
-            <div class="col-12 m-b-100">
+            <div class="col-12 m-b-100 px-4">
                 <h1 class="pb-5 text-center">Nuestra empresa</h1>
                 <p style="text-align: justify;">{{contact.about}}</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-4 p-b-40">
+            <div class="col-sm-6 col-md-4 p-b-40 px-4">
                 <div class="blog-item">
                     <div class="img" 
                         style="background-image: url(/media/{{contact.mision_image}});">
@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 p-b-40">
+            <div class="col-sm-6 col-md-4 p-b-40 px-4">
                 <div class="blog-item">
                     <div class="img" 
                         style="background-image: url(/media/{{contact.vision_image}});">
@@ -136,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 p-b-40">
+            <div class="col-sm-6 col-md-4 p-b-40 px-4">
                 <div class="blog-item">
                     <div class="img" 
                         style="background-image: url(/media/{{contact.corporative_values_image}});">
@@ -148,9 +148,13 @@
                             </a>
                         </h4>
 
-                        <p class="stext-108 cl6">
-                            {{contact.corporative_values}}
-                        </p>
+                        <ul class="corporative-values cl6">
+                            {% for v in corporative %}
+                                <li>
+                                    {{v.value}}
+                                </li>
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
             </div>

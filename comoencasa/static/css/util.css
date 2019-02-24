@@ -29,10 +29,10 @@ a:hover {text-decoration: none;}
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6,p {margin: 0px;}
 
-ul, li {
+/* ul, li {
 	margin: 0px;
 	list-style-type: none;
-}
+} */
 
 
 /*---------------------------------------------*/
@@ -3117,6 +3117,7 @@ iframe {border: none;}
 .txt-center {text-align: center;}
 .txt-left {text-align: left;}
 .txt-right {text-align: right;}
+.txt-justify {text-align: justify;}
 .txt-middle {vertical-align: middle;}
 
 

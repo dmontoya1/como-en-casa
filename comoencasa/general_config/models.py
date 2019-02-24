@@ -48,9 +48,6 @@ class CompanyInfo(models.Model):
         'Imagen Vision',
         upload_to='images/company/'
     )
-    corporative_values = models.TextField(
-        'Valores Corporativos'
-    )
     corporative_values_image = models.ImageField(
         'Imagen Valores Corporativos',
         upload_to='images/company/'
@@ -61,3 +58,20 @@ class CompanyInfo(models.Model):
 
     class Meta:
         verbose_name = "Informacion Como En Casa" 
+
+
+class CorporativeValues(models.Model):
+    """
+    """
+
+    value = models.CharField(
+        'Valor',
+        max_length=255,
+    )
+
+    def __str__(self):
+        return self.value
+
+    class Meta:
+        verbose_name = 'Valor Corporativo'
+        verbose_name_plural = 'Valores Corporativo'

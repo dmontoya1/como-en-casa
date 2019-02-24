@@ -122,7 +122,7 @@
                         <div class="block2-pic hov-img0">
                             {% for image in experience.images.all %}
                                 {% if forloop.first %}
-                                    <img src="{{image.image.url}}" alt="IMG-PRODUCT">
+                                    <img src="{{image.image.url}}" alt="IMG-PRODUCT" width="270" height="170">
                                 {% endif %}
 							{% endfor %}
 							<a href="{% url 'webclient:experience-detail' experience.pk %}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
@@ -136,8 +136,8 @@
                                     {{experience.name}}
                                 </a>
 
-                                <span class="stext-105 cl3">
-                                    ${{experience.price|intcomma}}
+                                <span class="stext-109 txt-justify cl3">
+                                    {{experience.short_description}}
                                 </span>
                             </div>
                         </div>

@@ -10,7 +10,7 @@ from django.views.generic.list import ListView
 
 from contact_form.models.contact_form import ContactForm
 from experiences.models.experiences import Experiences
-from general_config.models import CompanyInfo
+from general_config.models import CompanyInfo, CorporativeValues
 from rooms.models.category import Category
 from rooms.models.rooms import Room
 from services.models.services import Services
@@ -26,7 +26,7 @@ class Home(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(Home, self).get_context_data(**kwargs)
         categories = Category.objects.filter(parent=None)
-        rooms = Room.objects.all()[:10]
+        rooms = Room.objects.all()[:11]
         testimonies = Testimonies.objects.all()
         services = Services.objects.all()
         experiences = Experiences.objects.all()
@@ -47,6 +47,7 @@ class AboutUs(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(AboutUs, self).get_context_data(**kwargs)
         context['contact'] = CompanyInfo.objects.first()
+        context['corporative'] = CorporativeValues.objects.all()
         return context
 
 

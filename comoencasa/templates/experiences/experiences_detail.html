@@ -135,13 +135,17 @@
 							{{object.location}}
 						</h5>
 
-						<h5 class="mb-4">
-							<i class="fas fa-stopwatch mr-3"></i>
-							{{object.total_time}}
-						</h5>
-						<h5 class="mb-4">
+						<i class="fas fa-filter mr-3"></i>
+						<select class="prices mb-4" name="prices" id="prices" style="width: 80%">
+							<option value="" selected disabled>Selecciona una opción</option>
+							{% for option in object.related_options.all %}
+								<option value="{{option.price}}">{{option.option}}</option>
+							{% endfor %}
+						</select>
+
+						<h5 class="my-4 d-none price-service">
 							<i class="fas fa-dollar-sign mr-3"></i>
-							{{object.price|intcomma}}
+							<span class="option-price"></span>
 						</h5>
 						
 
@@ -149,7 +153,6 @@
 							{{object.short_description}}
 						</p>
 						
-						<!--  -->
 						<div class="p-t-33">
 
 							<div class="flex-w flex-l-m p-b-10 p-t-20">
@@ -225,6 +228,25 @@
 
 {% endblock content %}
 
-https://wa.me/número?text=mensaje
+{% block extra_js %}
+	<script src="{% static 'js/jquery.priceformat.min.js' %}"></script>
+	<script>
+		$(document).ready(function() {
+			$('.prices').select2({
+				width: 'resolve',
+			});
+		});
 
-
+		$('#prices').on('change', function(){
+			price = $(this).val()
+			console.log(price)
+			$('.option-price').text(price)
+			$('.option-price').priceFormat({
+				centsLimit: 0,
+				prefix: '',
+				thousandsSeparator: '.',
+			});
+			$('.price-service').removeClass('d-none')
+		})
+	</script>
+{% endblock %}
