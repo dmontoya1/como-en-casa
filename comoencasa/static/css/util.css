@@ -3166,13 +3166,15 @@ iframe {border: none;}
 .wrap-pic-s,
 .wrap-pic-max-s,
 .wrap-pic-w,
+.wrap-pic-w1,
 .wrap-pic-max-w,
 .wrap-pic-h,
 .wrap-pic-max-h {
 	display: block;
 }
 
-.wrap-pic-w img {width: 100%; height: 550px;}
+.wrap-pic-w img {width: 100%;}
+.wrap-pic-w1 img {width: 100%; height: 550px;}
 .wrap-pic-max-w img {max-width: 100%;}
 
 .wrap-pic-h img {height: 100%;}
