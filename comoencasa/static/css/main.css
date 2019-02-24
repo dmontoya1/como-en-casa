@@ -1387,7 +1387,7 @@ body {
   position: absolute;
   z-index: 100;
   width: 83.333333%;
-  right: 0;
+  /* right: 0; */
   top: calc(50% - 20px);
 }
 
@@ -1416,7 +1416,8 @@ body {
 
 /*---------------------------------------------*/
 .wrap-slick3-dots {
-  width: 11.111111%;
+  /* width: 11.111111%; */
+  height: 140px;
 }
 
 .slick3 {
@@ -1424,10 +1425,15 @@ body {
 }
 
 .slick3-dots li {
-  display: block;
+  display: inherit;
   position: relative;
   width: 100%;
-  margin-bottom: 27px;
+  margin-top: 25px;
+}
+
+ul.slick3-dots {
+  display: inline-flex;
+  height: 140px;
 }
 
 .slick3-dots li img {
