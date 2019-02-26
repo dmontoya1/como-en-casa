@@ -31,7 +31,7 @@
                                 <h2>Lista de beneficios</h2><br>
                             </div>
                             {% for b in category.related_benefits.all %}
-                                <div class="col-4 col-sm-4 col-md-2 mb-3">
+                                <div class="col-4 col-sm-4 mb-3">
                                     <span class="benefit-logo"><img src="{{b.image.url}}"" alt="" width="20" height="20"></span>
                                     <span class="benefit-name">{{b.name}}</span>
                                 </div>
@@ -44,7 +44,7 @@
                                 <h2>Lista de servicios</h2><br>
                             </div>
                             {% for b in category.related_services.all %}
-                                <div class="col-4 col-sm-4 col-md-2 mb-3">
+                                <div class="col-4 col-sm-4 mb-3">
                                     <span class="benefit-logo"><img src="{{b.image.url}}"" alt="" width="20" height="20"></span>
                                     <span class="benefit-name">{{b.name}}</span>
                                 </div>
