@@ -10,7 +10,8 @@
     <section class="sec-product-detail bg0 p-t-65 p-b-60">
         <div class="container">
             {% for category in categories %}
-                <div class="row">
+            <section class="my-5">
+                <div class="row justify-content-center">
                     <div class="col-sm-4">
                         <div class="block1 wrap-pic-w">
                             <img src="/media/{{category.image}}" alt="IMG-BANNER" width="450" height="250">
@@ -25,10 +26,13 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                </div>
+                <div class="row">
+                    
+                    <div class="col-sm-6">
                         <div class="row">
                             <div class="col-12">
-                                <h2>Lista de beneficios</h2><br>
+                                <h2 class="text-center">Lista de beneficios</h2><br>
                             </div>
                             {% for b in category.related_benefits.all %}
                                 <div class="col-4 col-sm-4 mb-3">
@@ -38,10 +42,10 @@
                             {% endfor %}
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
                         <div class="row">
                             <div class="col-12">
-                                <h2>Lista de servicios</h2><br>
+                                <h2 class="text-center">Lista de servicios</h2><br>
                             </div>
                             {% for b in category.related_services.all %}
                                 <div class="col-4 col-sm-4 mb-3">
@@ -52,6 +56,7 @@
                         </div>
                     </div>
                 </div>
+            </section>
             {% endfor %}
         </div>
     </section>
