@@ -120,3 +120,15 @@ class ContactFormView(TemplateView):
         messages.add_message(request, messages.INFO, 'Formulario creado exitosamente. Pronto nos pondremos en contacto contigo')
         return HttpResponseRedirect(reverse('webclient:contact_form'))
 
+
+class AcommodationTypes(TemplateView):
+    """
+    """
+
+    template_name = 'webclient/acommodation_types.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(AcommodationTypes, self).get_context_data(**kwargs)
+        categories = Category.objects.filter(parent=None)
+        context['categories'] = categories
+        return context

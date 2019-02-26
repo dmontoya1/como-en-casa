@@ -16,8 +16,6 @@
 		<!--===============================================================================================-->	
 			<link rel="icon" type="image/png" href="{% static 'icons/favicon.png' %}"/>
 		<!--===============================================================================================-->
-			<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
-		<!--===============================================================================================-->
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<!--===============================================================================================-->
 			<link rel="stylesheet" type="text/css" href="{% static 'fonts/iconic/css/material-design-iconic-font.min.css' %}">
@@ -73,6 +71,14 @@
 										<!-- <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Habitaciones disponibles
 										</a> -->
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Dropdown</a>
+										<div class="dropdown-menu">
+										  <a class="dropdown-item" href="#">Action</a>
+										  <a class="dropdown-item" href="#">Another action</a>
+										  <a class="dropdown-item" href="#">Something else here</a>
+										</div>
 									</li>
 
 									<li>
@@ -255,9 +261,6 @@
 	{% block content %}
 
 	{% endblock %}
-
-	
-
 
 	{% block footer %}
 		<!-- Footer -->
