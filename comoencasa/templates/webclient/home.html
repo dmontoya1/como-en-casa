@@ -77,11 +77,9 @@
                                            No Disponible
                                         </div>
                                     {% endif%}
-                                    {% for image in room.related_images.all %}
-                                        {% if forloop.first %}
-                                            <img src="{{image.image.url}}" alt="IMG-PRODUCT" >
-                                        {% endif %}
-                                    {% endfor %}
+                                    {% with room.related_images.all|first as img_first %}
+                                        <img src="{{image_first.image.url}}" alt="IMG-PRODUCT" width="350" height="240">
+                                    {% endwith %}
                                 </div>
                                 <div class="to-ho-hotel-con-23">
                                     <div class="to-ho-hotel-con-2"> 
