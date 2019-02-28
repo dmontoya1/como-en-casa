@@ -170,13 +170,13 @@ th {
 /* =  TOP MENU BAR
 /*-------------------------------------------------*/
 
-/* .main {
-    background: url(../images/slide2.jpg) no-repeat;
+.main {
+    background: url(/static/images/slide2.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
-} */
+}
 .top-section {
     background: rgba(0, 0, 0, 0.67);
     padding: 5px 0px;
@@ -409,11 +409,11 @@ th {
     padding-top: 80px;
     padding-bottom: 80px;
 }
-/* .inn-detail {
-    background: url(../images/h-detail.jpg) no-repeat;
+.inn-detail {
+    background: url(/static/images/h-detail.jpg) no-repeat;
     background-attachment: fixed;
     background-size: 40%;
-} */
+}
 .inn-bod {
     width: 55%;
     float: right;
@@ -909,14 +909,14 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
 .mm-1 ul li {
     /* margin-right: 12px; */
 }
-/* #drop-page li {
+#drop-page li {
     width: 100%;
     float: left;
     
     list-style-type: none;
-    background: url(../images/icon/arrow.png) no-repeat center left;
+    background: url(/static/images/icon/arrow.png) no-repeat center left;
     background-size: 10px;
-} */
+}
 #drop-page li a {} #drop-page li a:hover {
     padding-left: 25px !important;
 }
@@ -927,15 +927,15 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
 /* =  BOOKING FORM AND BOOKING PAGE
 /*-------------------------------------------------*/
 
-/* .inn-booking {
-    background: url(../images/slide2.jpg) no-repeat;
+.inn-booking {
+    background: url(/static/images/slide2.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
-} */
+}
 .inn-booking:before {
     content: '';
     position: absolute;
@@ -1564,11 +1564,11 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     font-weight: 500;
     font-size: 18px;
 }
-/* .inn-hotel-1 {
-    background: url(../images/hotel/bg.jpg) no-repeat;
+.inn-hotel-1 {
+    background: url(/static/images/hotel/bg.jpg) no-repeat;
     background-attachment: fixed;
     background-size: 40%;
-} */
+}
 
 /*-------------------------------------------------*/
 /* =  REGISTER LOGIN POPUPS
@@ -1871,12 +1871,12 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     font-size: 12px;
     line-height: 18px;
 }
-/* .db-cent-1 {
+.db-cent-1 {
     padding: 116px 50px 30px 50px;
-    background: url(../images/slide2.jpg) no-repeat center center;
+    background: url(/static/images/slide2.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
-} */
+}
 .db-cent-1:before {
     content: '';
     position: absolute;
