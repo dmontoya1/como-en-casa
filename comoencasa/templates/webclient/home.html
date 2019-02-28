@@ -2,493 +2,371 @@
 
 {% load static humanize %}
 
-
 {% block content %}
-
-    {% if messages  %}
-        {% for message in messages %}
-        <div class="alert alert-danger">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            {{message}}
-        </div>
-        {% endfor %}
-    {% endif %}
-    <!-- Slider -->
-    <section class="section-slide">
-        <div class="wrap-slick1 rs1-slick1">
-            <div class="slick1">
-                <div class="item-slick1" style="background-image: url(/static/images/hospitalidad.jpg);">
-                    <div class="container h-full">
-                        <div class="flex-col-l-m h-full p-t-100 p-b-30">
-                            <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
-                                <span class="ltext-202 cl0 respon2">
-                                    Como En Casa HBT
-                                </span>
-                            </div>
-                                
-                            <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-                                <h2 class="ltext-104 cl0 p-t-19 p-b-43 respon1">
-                                    Hospitalidad
-                                </h2>
-                            </div>
-                                
-                        </div>
+    <div>
+        <div class="slider fullscreen">
+            <ul class="slides">
+                <li> <img src="{% static 'images/hospitalidad.jpg' %}" alt="">
+                    <!-- random image -->
+                    <div class="caption center-align slid-cap">
+                        <h2>Hospitalidad</h2>
+                        <p>
+                            Reconocemos de las necesidades del otro, de su dignidad y su diversidad. Por eso, la clave de control de calidad de la hospitalidad se enfoca en
+                            saber si el usuario se ha sentido “como en casa”
+                        </p> 
                     </div>
-                </div>
-
-                <div class="item-slick1" style="background-image: url(/static/images/bienestar.jpg);">
-                    <div class="container h-full">
-                        <div class="flex-col-l-m h-full p-t-100 p-b-30">
-                            <div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
-                                <span class="ltext-202 cl0 respon2">
-                                    Como En Casa HBT
-                                </span>
-                            </div>
-                                
-                            <div class="layer-slick1 animated visible-false" data-appear="lightSpeedIn" data-delay="800">
-                                <h2 class="ltext-104 cl0 p-t-19 p-b-43 respon1">
-                                    Bienestar
-                                </h2>
-                            </div>
-                        </div>
+                </li>
+                <li> <img src="{% static 'images/bienestar.jpg' %}" alt="">
+                    <!-- random image -->
+                    <div class="caption center-align slid-cap">
+                        <h2>Bienestar</h2>
+                        <p>
+                            Este está íntimamente relacionado con las
+                            necesidades y los gustos de las personas, por esto tratamos
+                            de cumplirlas conservando siempre en condiciones óptimas el
+                            lugar de acogida, en el cual se pueda gozar de espacios
+                            limpios e higiénicos, mobiliario en muy buenas condiciones,
+                            espacio suficiente para compartir y sentirse cómodo.
+                        </p>
                     </div>
-                </div>
-
-                <div class="item-slick1" style="background-image: url(/static/images/tranquilidad.jpg);">
-                    <div class="container h-full">
-                        <div class="flex-col-l-m h-full p-t-100 p-b-30">
-                            <div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">
-                                <span class="ltext-202 cl0 respon2">
-                                    Como En Casa HBT
-                                </span>
-                            </div>
-                                
-                            <div class="layer-slick1 animated visible-false" data-appear="rotateInUpRight" data-delay="800">
-                                <h2 class="ltext-104 cl0 p-t-19 p-b-43 respon1">
-                                    Tranquilidad
-                                </h2>
-                            </div>
-                                
-                        </div>
+                </li>
+                <li> <img src="{% static 'images/tranquilidad.jpg' %}" alt="">
+                    <!-- random image -->
+                    <div class="caption center-align slid-cap">
+                        <h2>Tranquilidad</h2>
+                        <p>
+                            Buscamos siempre que los usuarios gocen
+                            de un estado de bienestar, calma, apacibilidad, placidez,
+                            relajación, reposo, serenidad, silencio, plenitud y sosiego en el
+                            momento que lo desee, por esto implementamos nuestro manual de convivencia 
+                            para que no existan situaciones ajenas que perturben
+                            este estado y puedan gozar de un ambiente tranquilo.
+                        </p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Home Text -->
-    <div class="container p-tb-80">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center mb-3" style="font-size: 4em;"">Como En Casa HBT</h1>
-                <h3 class="text-center mb-3" style="font-size: 2em;"">Hospitalidad, Bienestar y Tranquilidad</h3>
-                <span class="text-home">
-                    Como En Casa es un complejo habitacional de estudiantes y personas adultas que cuentan con un trabajo estable; 
-                    estamos ubicados en la ciudad de Pereira y disponemos de 48 habitaciones ubicadas estratégicamente en 11 sedes en diferentes partes de la ciudad, 
-                    este nuevo concepto de vivienda busca satisfacer las necesidades de los usuarios, ofreciéndoles servicios y experiencias adicionales que contribuyan 
-                    a la comodidad y a la sensación de sentirse como en casa.
-                </span>
-            </div>
+                </li>
+            </ul>
         </div>
     </div>
-
-
-    <!-- Banner -->
-    <div class="sec-banner bg0">
-        <div class="flex-w flex-c-m">
-            {% for category in categories %}
-                <div class="size-202 m-lr-auto respon4">
-                    <!-- Block1 -->
-                    <div class="block1 wrap-pic-w">
-                        <img src="media/{{category.image}}" alt="IMG-BANNER" width="450" height="250">
-
-                        <a href="#" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
-                            <div class="block1-txt-child1 flex-col-l">
-                                <span class="block1-name ltext-102 trans-04 p-b-8">
-                                    {{category.name}}
-                                </span>
-
-                                <span class="block1-info stext-102 trans-04">
-                                    {{category.description}}
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-
-
-    <!-- Rooms -->
-    <section class="sec-product bg0 p-t-80">
+    <!--Nuestras Habitaciones-->
+    <div class="hom1 hom-com pad-bot-40">
         <div class="container">
-            <div class="p-b-32">
-                <h3 class="ltext-105 cl5 txt-center respon1">
-                    Tipos de habitaciones
-                </h3>
-            </div>
-
-            <!-- Tab01 -->
-            <div class="tab01">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item p-b-10">
-                        <a class="nav-link" href="{% url 'webclient:room-list' %}" role="tab">Ver todas las habitaciones</a>
-                    </li>
-
-                </ul>
-
-                <!-- Tab panes -->
-                <div class="tab-content p-t-50">
-                    <!-- - -->
-                    <div class="tab-pane fade show active" id="plus" role="tabpanel">
-                        <!-- Slide2 -->
-                        <div class="wrap-slick2">
-                            <div class="slick2">
-                                {% for room in rooms %}
-                                    <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-                                        <!-- Block2 -->
-                                        <div class="block2">
-                                            <div class="block2-pic hov-img0">
-                                                {% for image in room.related_images.all %}
-                                                    {% if forloop.first %}
-                                                        <img src="{{image.image.url}}" alt="IMG-PRODUCT" width="270" height="200">
-                                                    {% endif %}
-                                                {% endfor %}
-                                                
-    
-                                                <a href="{% url 'webclient:room-detail' room.pk %}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-                                                    Ver detalle
-                                                </a>
-                                            </div>
-    
-                                            <div class="block2-txt flex-w flex-t p-t-14">
-                                                <div class="block2-txt-child1 flex-col-l ">
-                                                    <a href="{% url 'webclient:room-detail' pk=room.pk %}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                        {{room.name|upper}}
-                                                    </a>
-    
-                                                    <span class="stext-105 cl3">
-                                                       Precio: ${{room.price|intcomma}}
-                                                    </span>
-                                                    <span class="stext-105 cl3">
-                                                       Código: {{room.code}}
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                {% endfor %}
-                                <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-                                    <!-- Block2 -->
-                                    <div class="block2">
-                                        <div class="block2-pic hov-img0">
-                                            <img src="{% static 'images/see-all.jpeg' %}" alt="IMG-PRODUCT" width="270" height="200">
-                                            
-
-                                            <a href="{% url 'webclient:room-list' %}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-                                                Ver más
-                                            </a>
-                                        </div>
-
-                                        <div class="block2-txt flex-w flex-t p-t-14">
-                                            <div class="block2-txt-child1 flex-col-l ">
-                                                <a href="{% url 'webclient:room-list' %}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                    Ver todas las habitaciones
-                                                </a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <!-- Locations -->
-    <section class="sec-product bg0 p-t-80">
-        <div class="container">
-            <div class="p-b-32">
-                <h3 class="ltext-105 cl5 txt-center respon1">
-                    Ubicaciones estratégicas
-                </h3>
-            </div>
-
-            <!-- Tab01 -->
-            <div class="tab01">
-                <!-- Tab panes -->
-                <div class="tab-content p-t-50">
-                    <!-- - -->
-                    <div class="tab-pane fade show active" id="best-seller-1" role="tabpanel">
-                        <!-- Slide2 -->
-                        <div class="wrap-slick2">
-                            <div class="slick2">
-                                <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-                                    <!-- Block2 -->
-                                    <div class="block2">
-                                        <div class="block2-pic hov-img0">
-                                            <div id="mask">
-                                                <iframe width="270" height="270" 
-                                                src="https://maps.google.com/maps?width=270%&amp;height=270&amp;hl=en&amp;coord=4.813794988574022, -75.69843149288319&amp;q=calle%2024%20%23%208-15+(Sena%20Pereira)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" 
-                                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                            </div>
-                                        </div>
-                                        <div class="block2-txt flex-w flex-t p-t-14">
-                                            <div class="block2-txt-child1 flex-col-l ">
-                                                <a href="#" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                    Universidad Andina
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-                                    <!-- Block2 -->
-                                    <div class="block2">
-                                        <div id="mask">
-                                            <iframe width="270" height="270" 
-                                            src="https://maps.google.com/maps?width=270&amp;height=270&amp;hl=en&amp;coord=4.814128547411837, -75.70069742318994&amp;q=Cra%208%20%23%2026-30+(Sena%20Pereira)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed"
-                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                        </div>
-
-                                        <div class="block2-txt flex-w flex-t p-t-14">
-                                            <div class="block2-txt-child1 flex-col-l ">
-                                                <a href="#" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                    Sena Pereira
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-                                    <!-- Block2 -->
-                                    <div class="block2">
-                                        <div id="mask">
-                                            <iframe width="270" height="270" 
-                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                                            src="https://maps.google.com/maps?width=100%&height=600&hl=es&coord=4.813859134482552, -75.69476008415224&q=Calle%2019%20%23%208-58+(Como%20en%20casa)&ie=UTF8&t=&z=16&iwloc=B&output=embed"></iframe>
-                                        </div>
-
-                                        <div class="block2-txt flex-w flex-t p-t-14">
-                                            <div class="block2-txt-child1 flex-col-l ">
-                                                <a href="#" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                    Casas en el centro
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-                                    <!-- Block2 -->
-                                    <div class="block2">
-                                        <div id="mask">
-                                            <iframe width="270" height="270" 
-                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                                            src="https://maps.google.com/maps?width=100%&height=600&hl=es&coord=4.813859134482552, -75.69476008415224&q=Calle%2019%20%23%208-58+(Como%20en%20casa)&ie=UTF8&t=&z=16&iwloc=B&output=embed"></iframe>
-                                        </div>
-
-                                        <div class="block2-txt flex-w flex-t p-t-14">
-                                            <div class="block2-txt-child1 flex-col-l ">
-                                                <a href="#" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                    Casas en el centro
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-                                    <!-- Block2 -->
-                                    <div class="block2">
-                                        <div id="mask">
-                                            <iframe width="270" height="270" 
-                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                                            src="https://maps.google.com/maps?width=100%&height=600&hl=es&coord=4.813859134482552, -75.69476008415224&q=Calle%2019%20%23%208-58+(Como%20en%20casa)&ie=UTF8&t=&z=16&iwloc=B&output=embed"></iframe>
-                                        </div>
-
-                                        <div class="block2-txt flex-w flex-t p-t-14">
-                                            <div class="block2-txt-child1 flex-col-l ">
-                                                <a href="#" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                    Casas en el centro
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-                                    <!-- Block2 -->
-                                    <div class="block2">
-                                        <div id="mask">
-                                            <iframe width="270" height="270" 
-                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                                            src="https://maps.google.com/maps?width=100%&height=600&hl=es&coord=4.813859134482552, -75.69476008415224&q=Calle%2019%208-58+(Como%20en%20casa)&ie=UTF8&t=&z=16&iwloc=B&output=embed"></iframe>
-                                        </div>
-
-                                        <div class="block2-txt flex-w flex-t p-t-14">
-                                            <div class="block2-txt-child1 flex-col-l ">
-                                                <a href="#" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                    Casas en el centro
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Experiences -->
-    <section class="sec-product bg0 p-t-80">
-        <div class="container">
-            <div class="p-b-32">
-                <h3 class="ltext-105 cl5 txt-center respon1">
-                    Servicios y Experiencias
-                </h3>
-            </div>
-
-            <!-- Tab01 -->
-            <div class="tab01">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item p-b-10">
-                        <a class="nav-link active" href="{% url 'webclient:services-list' %}" role="tab">Ver todos los Servicios</a>
-                    </li>
-
-                    <li class="nav-item p-b-10">
-                        <a class="nav-link" href="{% url 'webclient:experiences-list' %}" role="tab">Ver todas las Experiencias</a>
-                    </li>
-                </ul>
-
-                <!-- Tab panes -->
-                <div class="tab-content p-t-50">
-                    <!-- - -->
-                    <div class="tab-pane fade show active" id="services" role="tabpanel">
-                        <!-- Slide2 -->
-                        <div class="wrap-slick2">
-                            <div class="slick2">
-                                {% for service in services %}
-                                    <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-                                        <!-- Block2 -->
-                                        <div class="block2">
-                                            <div class="block2-pic hov-img0">
-                                                {% for image in service.images.all %}
-                                                    {% if forloop.first %}
-                                                        <img src="{{image.image.url}}" alt="IMG-PRODUCT" width="270" height="200">
-                                                    {% endif %}
-                                                {% endfor %}
-
-                                                <a href="{% url 'webclient:service-detail' service.pk %}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-                                                    Ver detalle
-                                                </a>
-                                            </div>
-
-                                            <div class="block2-txt flex-w flex-t p-t-14">
-                                                <div class="block2-txt-child1 flex-col-l ">
-                                                    <a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                        Servicio: {{service.name}}
-                                                    </a>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                {% endfor %}
-                                {% for e in experiences %}
-                                    <div class="item-slick2 p-l-15 p-r-15 p-t-15 p-b-15">
-                                        <!-- Block2 -->
-                                        <div class="block2">
-                                            <div class="block2-pic hov-img0">
-                                                {% for image in e.images.all %}
-                                                    {% if forloop.first %}
-                                                        <img src="{{image.image.url}}" alt="IMG-PRODUCT" width="270" height="200">
-                                                    {% endif %}
-                                                {% endfor %}
-
-                                                <a href="{% url 'webclient:experience-detail' e.pk %}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-                                                    Ver detalle
-                                                </a>
-                                            </div>
-
-                                            <div class="block2-txt flex-w flex-t p-t-14">
-                                                <div class="block2-txt-child1 flex-col-l ">
-                                                    <a href="{% url 'webclient:experience-detail' e.pk %}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                        Experiencia: {{e.name}}
-                                                    </a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Testimonies -->
-    <section class="sec-blog bg0 p-t-60 p-b-90">
-        <div class="container">
-            <div class="p-b-66">
-                <h3 class="ltext-105 cl5 txt-center respon1">
-                    Testimonios
-                </h3>
-            </div>
-
             <div class="row">
-                {% for t in testimonies %}
-                    <div class="col-sm-6 col-md-4 p-b-40">
-                        <div class="blog-item">
+                <div class="hom1-title">
+                    <h2>Nuestras habitaciones</h2>
+                    <div class="head-title">
+                        <div class="hl-1 hl-1-block"></div>
+                        <div class="hl-2 hl-2-block"></div>
+                        <div class="hl-3 hl-3-block"></div>
+                    </div>
+                    <p>Como En Casa HBT te ofrece las mejores habitaciones múltiples de vivienda en habitacioens altamente confortables.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="to-ho-hotel">
+                    <!-- HOTEL GRID -->
+                    {% for room in rooms %}
+                        <div class="col-md-4">
+                            <div class="to-ho-hotel-con to-ho-hotel-con-block">
+                                <div class="to-ho-hotel-con-1">
+                                    {% if room.available %}
+                                        <div class="hom-hot-av-tic">
+                                            Disponible
+                                        </div>
+                                    {% else %}
+                                        <div class="hom-hot-av-tic1">
+                                           No Disponible
+                                        </div>
+                                    {% endif%}
+                                    {% for image in room.related_images.all %}
+                                        {% if forloop.first %}
+                                            <img src="{{image.image.url}}" alt="IMG-PRODUCT" >
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="to-ho-hotel-con-23">
+                                    <div class="to-ho-hotel-con-2"> 
+                                        <a href="{% url 'webclient:room-detail' room.pk %}">
+                                            <h4>{{room.name}}</h4>
+                                        </a>
+                                    </div>
+                                    <div class="to-ho-hotel-con-3">
+                                        <ul>
+                                            <li>Sector: {{room.sector}}
+                                                <div class="dir-rat-star ho-hot-rat-star"> 
+                                                    Codigo: {{room.code}} 
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="ho-hot-pri">${{room.price|intcomma}}</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="row rooms-btn text-center">
+                <div class="col-3">
+                    <a href="{% url 'webclient:room_list' %}" class="waves-effect waves-light">Ver todas las habitaciones</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner Unete -->
+    <div class="offer offer-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="offer-l"> 
+                        <span class="ol-1"></span> 
+                        <span class="ol-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span> 
+                        <span class="ol-4">Únete ya a nuestra comunidad</span>
+                        <span class="ol-3"></span>
+                        <span class="ol-6">Habitaciones desde</span>
+                        <span class="ol-5">$260.000</span>
+                        <ul>
+                            <li>
+                                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img src="{% static 'images/wifi.svg' %}" alt="">
+                                </a><span>Wifi gratis</span>
+                            </li>
+                            <li>
+                                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img src="{% static 'images/mobiliario.svg' %}" alt=""> 
+                                </a><span>Mobiliario</span>
+                            </li>
+                            <li>
+                                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img src="{% static 'images/agua.svg' %}" alt=""> 
+                                </a><span>Agua</span>
+                            </li>
+                            <li>
+                                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img src="{% static 'images/energia.svg' %}" alt=""> 
+                                </a><span>Energía</span>
+                            </li>
+                            <li>
+                                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img src="{% static 'images/cocina.svg' %}" alt=""> 
+                                </a><span>Cocina</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="offer-r">
+                        <div class="or-1"> <span class="or-11">lo</span> <span class="or-12">quiero</span> </div>
+                        <div class="or-2"> <span class="or-21">Obten un</span> <span class="or-22">10%</span> <span class="or-23">descuento*</span> <span class="or-24">Código: CECHBTWEB</span> <span class="or-25"></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Canales de distribucion -->
+    <div class="blog hom-com pad-bot-0">
+        <div class="container">
+            <div class="row">
+                <div class="hom1-title">
+                    <h2>Un mundo de posibilidades</h2>
+                    <div class="head-title">
+                        <div class="hl-1 hl-1-block"></div>
+                        <div class="hl-2 hl-2-block"></div>
+                        <div class="hl-3 hl-3-block"></div>
+                    </div>
+                    <p>Aenean euismod sem porta est consectetur posuere. Praesent nisi velit, porttitor ut imperdiet a, pellentesque id mi.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <div class="col-md-3 n2-event">
+                        <!--event IMAGE-->
+                        <div class="n21-event hovereffect"> <img src="images/event/1.jpg" alt="">
+                            <div class="overlay"> <a href="booking.html"><span class="ev-book">Book Now</span></a> </div>
+                        </div>
+                        <!--event DETAILS-->
+                        <div class="n22-event n22-event-block">
+                            <a href="#!"><h4>Servicios de alquiler</h4></a> 
+                            <span class="event-date">Precios desde $25.000</span> 
+                            <p>undergraduate applicants are admitted on a need-blind basis, and the university offers undergraduate applicants</p>
+                            <!--event SHARE-->
+                        </div>
+                    </div>
+                    <div class="col-md-3 n2-event">
+                        <!--event IMAGE-->
+                        <div class="n21-event hovereffect"> <img src="images/event/2.jpg" alt="">
+                            <div class="overlay"> <a href="booking.html"><span class="ev-book">Book Now</span></a> </div>
+                        </div>
+                        <!--event DETAILS-->
+                        <div class="n22-event n22-event-block">
+                            <a href="#!"><h4>Amoblados</h4></a>
+                            <span class="event-date">Precios desde $25.000</span>
+                            <p>undergraduate applicants are admitted on a need-blind basis, and the university offers undergraduate applicants</p>
+                            <!--event SHARE-->
+                        </div>
+                    </div>
+                    <div class="col-md-3 n2-event">
+                        <!--event IMAGE-->
+                        <div class="n21-event hovereffect"> <img src="images/event/3.jpg" alt="">
+                            <div class="overlay"> <a href="booking.html"><span class="ev-book">Book Now</span></a> </div>
+                        </div>
+                        <!--event DETAILS-->
+                        <div class="n22-event n22-event-block">
+                            <a href="#!"><h4>Casa Campestre</h4></a>
+                            <span class="event-date">Precios desde $60.000</span>
+                            <p>undergraduate applicants are admitted on a need-blind basis, and the university offers undergraduate applicants</p>
+                            <!--event SHARE-->
+                        </div>
+                    </div>
+                    <div class="col-md-3 n2-event">
+                        <!--event IMAGE-->
+                        <div class="n21-event hovereffect"> <img src="images/event/4.jpg" alt="">
+                            <div class="overlay"> <a href="booking.html"><span class="ev-book">Book Now</span></a> </div>
+                        </div>
+                        <!--event DETAILS-->
+                        <div class="n22-event n22-event-block">
+                            <a href="#!"><h4>Excursiones</h4></a>
+                            <span class="event-date">Precios desde $120.000</span>
+                            <p>undergraduate applicants are admitted on a need-blind basis, and the university offers undergraduate applicants</p>
+                            <!--event SHARE-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unicaciones estrategicas -->
+    <div class="blog hom-com pad-bot-0">
+        <div class="container">
+            <div class="row">
+                <div class="hom1-title">
+                    <h2>Ubicaciones estratégicas</h2>
+                    <div class="head-title">
+                        <div class="hl-1 hl-1-block"></div>
+                        <div class="hl-2 hl-2-block"></div>
+                        <div class="hl-3 hl-3-block"></div>
+                    </div>
+                    <p>Aenean euismod sem porta est consectetur posuere. Praesent nisi velit, porttitor ut imperdiet a, pellentesque id mi.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inn-services head-typo typo-com typo-com-block mar-bot-0">
+                        <div id="portfoliolist">
+                            <div class="portfolio logo" data-cat="logo">
+                                <div class="portfolio-wrapper"> <img src="{% static 'images/andina.jpg' %}" alt="" width="245" height="185"/>
+                                    <div class="label">
+                                        <div class="label-text"> <a class="text-title">Universidad Andina</a> <span class="text-category">Logo</span> </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio logo" data-cat="logo">
+                                <div class="portfolio-wrapper"> <img src="{% static 'images/parque-lago.jpg' %}" alt="" width="245" height="185" />
+                                    <div class="label">
+                                        <div class="label-text"> <a class="text-title">Parque el lago</a> <span class="text-category">Logo</span> </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio logo" data-cat="logo">
+                                <div class="portfolio-wrapper"> <img src="{% static 'images/sena.jpg' %}" alt="" width="245" height="185" />
+                                    <div class="label">
+                                        <div class="label-text"> <a class="text-title">Sena Pereira</a> <span class="text-category">Logo</span> </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio logo" data-cat="logo">
+                                <div class="portfolio-wrapper"> <img src="{% static 'images/colombo.jpg' %}" alt="" width="245" height="185" />
+                                    <div class="label">
+                                        <div class="label-text"> <a class="text-title">Colombo Americano</a> <span class="text-category">Logo</span> </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio logo" data-cat="logo">
+                                <div class="portfolio-wrapper"> <img src="{% static 'images/parque-banderas.jpg' %}" alt="" width="245" height="185" />
+                                    <div class="label">
+                                        <div class="label-text"> <a class="text-title">Parque Banderas</a> <span class="text-category">Logo</span> </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio logo" data-cat="logo">
+                                <div class="portfolio-wrapper"> <img src="{% static 'images/rosales.jpg' %}" alt="" width="245" height="185" />
+                                    <div class="label">
+                                        <div class="label-text"> <a class="text-title">Clínica los Rosales</a> <span class="text-category">Logo</span> </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio logo" data-cat="logo">
+                                <div class="portfolio-wrapper"> <img src="{% static 'images/libre.jpg' %}" alt="" width="245" height="185" />
+                                    <div class="label">
+                                        <div class="label-text"> <a class="text-title">Universidad libre Sede Belmonte</a> <span class="text-category">Logo</span> </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio logo" data-cat="logo">
+                                <div class="portfolio-wrapper"> <img src="{% static 'images/utp.jpeg' %}" alt="" width="245" height="185" />
+                                    <div class="label">
+                                        <div class="label-text"> <a class="text-title">Universidad Tecnológica</a> <span class="text-category">Logo</span> </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TEstimonios -->
+    <div class="blog hom-com">
+        <div class="container">
+            <div class="row">
+                <div class="hom1-title">
+                    <h2>Testimonios</h2>
+                    <div class="head-title">
+                        <div class="hl-1 hl-1-block"></div>
+                        <div class="hl-2 hl-2-block"></div>
+                        <div class="hl-3 hl-3-block"></div>
+                    </div>
+                    <p>
+                        Comentarios de nuestra comunidad
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    {% for t in testimonies %}
+                        <div class="col-md-4 n2-event">
+                            <!--event IMAGE-->
                             <div class="img" 
                                 style="background-image: url(media/{{t.image}});">
                             </div>
-                            <!-- <div class="hov-img0">
-                                <img src="media/{{t.image}}" alt="IMG-BLOG">
-                            </div> -->
-
-                            <div class="p-t-15">
-
-                                <h4 class="p-b-12 text-center">
-                                    <a href="#" class="mtext-101 cl2 hov-cl1 trans-04">
-                                        {{t.name}}
-                                    </a>
-                                </h4>
-                                <div class="stext-107 flex-w p-b-14">
-                                    <span class="m-r-3">
-                                        <span class="cl5">
-                                            {{t.profesion}}
-                                        </span>
-                                    </span>
-
-                                    
-                                </div>
-
-                                <p class="stext-108 cl6">
-                                    {{t.detail}}
+                            <!--event DETAILS-->
+                            <div class="n22-event n22-event-block m-t-50">
+                                <a href="#!"><h4 class="text-center">{{t.name}}</h4></a> 
+                                <span class="event-date">{{t.profesion}}</span> 
+                                <p class="text-justify">
+                                        {{t.detail}}
                                 </p>
+                                <!--event SHARE-->
                             </div>
                         </div>
-                    </div>
-                {% endfor  %}
+                    {% endfor %}
+                    
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 {% endblock %}
