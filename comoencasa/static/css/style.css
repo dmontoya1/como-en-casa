@@ -494,18 +494,19 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     line-height: 32px;
     float: left;
     padding: 5px 12px;
-    border: 1px solid #e7e7e7;
+    border: 1px solid #b1aa9c;
     margin: 0px 5px 5px 0px;
     width: 49%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    color: #b1aa9c;
 }
 .inn-com-list-point ul li i {
     color: #61a019;
 }
 .inn-room-price {
-    background: #f4364f;
+    background: #a19365;
     padding: 7px 25px;
     color: #fff;
     text-transform: uppercase;
@@ -561,10 +562,10 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     margin-bottom: 0px;
 }
 .r-com ul li {
-    background: url('/static/images/h-check.png') no-repeat left center;
     background-size: 10px;
     padding-left: 20px;
     line-height: 28px;
+    color: #fff;
 }
 .r2-ratt {
     margin-bottom: 10px;
@@ -591,6 +592,17 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     color: #fff;
     font-size: 12px;
 }
+.r2-not-available {
+    background: #a82f20;
+    display: inline-block;
+    padding: 5px 10px 2px 10px;
+    /* margin-top: 10px; */
+
+    border-radius: 44px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+}
 .room-price {
     text-decoration: line-through;
 }
@@ -600,7 +612,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     font-size: 32px;
     font-weight: 600;
     font-family: 'Quicksand', sans-serif;
-    color: #333;
+    color: #d6b46c;
 }
 .room-price span {
     font-size: 35px;
@@ -652,7 +664,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
 .r-com-1 h4 {
     font-size: 24px;
     font-weight: 600;
-    color: #f4364f;
+    color: #d4b26a;
 }
 .r2-available-1 {
     margin-top: 0px;
@@ -1087,7 +1099,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
 /* =  INNER BANNER
 /*-------------------------------------------------*/
 .inn-banner {
-    margin-top: 72px;
+    margin-top: 38px;
     position: relative;
     overflow: hidden;
     background: url('/static/images/inn-bg.jpg') no-repeat;
@@ -1248,7 +1260,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
 }
 .re-room-list-2 h4 {
     margin-top: 0px;
-    /* color: #213d44; */
+    color: #f6f6fa;
     /* text-transform: uppercase; */
     
     font-weight: 600;
@@ -1266,7 +1278,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
 .hot-list-p3-2 {
     font-size: 32px;
     font-weight: 600;
-    color: #2a2b33;
+    color: #ab9465;
     padding: 0px 0px;
 }
 .hot-page2-alp-quot-btn {

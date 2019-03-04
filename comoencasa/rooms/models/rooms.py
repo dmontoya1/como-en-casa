@@ -53,10 +53,13 @@ class Room(models.Model):
         default=True
     )
 
-
     def __str__(self):
         return '{} ({})'.format(self.name, self.code)
-    
+
+    def get_related_rooms(self):
+        rooms = Room.objects.filter(category=self.category)
+        print(rooms)
+        return rooms
 
     class Meta:
         verbose_name = 'Habitación'
