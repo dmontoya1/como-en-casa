@@ -64,3 +64,4 @@ class Room(models.Model):
     class Meta:
         verbose_name = 'Habitación'
         verbose_name_plural = 'Habitaciones'
+        ordering = ['-id']

@@ -1,0 +1,118 @@
+{% extends "account/base.html" %}
+
+{% load static i18n humanize %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    <!-- Product Detail -->
+  {% with room.related_images.all|first as img_first %}
+	  <div class="inn-body-section inn-detail"
+         style="background: url({{img_first.image.url}}) no-repeat;
+           background-attachment: fixed;
+           background-size: 40%;">
+  {% endwith %}
+    <div class="container">
+      <div class="row">
+        <div class="inn-bod">
+          <div class="inn-detail-p1 inn-com">
+            <h2>{{ object.name }}</h2>
+            <ul>
+                <li>Código : {{ object.code }}</li>
+              </ul>
+            <p>{{ object.description }}</p>
+          </div>
+          <div class="inn-detail-p1 inn-com inn-com-list-point">
+            <div class="detail-title">
+              <h2>Servicios</h2>
+            </div>
+            <ul>
+              {% for s in object.category.parent.related_services.all %}
+                <li><i class="fa fa-check" aria-hidden="true"></i> {{ s }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="inn-detail-p1 inn-com inn-com-list-point">
+            <div class="detail-title">
+              <h2>Beneficios</h2>
+            </div>
+            <ul>
+              {% for b in object.category.parent.related_benefits.all %}
+                <li><i class="fa fa-check" aria-hidden="true"></i> {{ b }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="inn-detail-p1 inn-com inn-com-price">
+            <div class="detail-title">
+              <h2>Precio</h2>
+            </div>
+            <h4 style="color: #b1aa9c">Precio mensual</h4>
+            <span class="inn-room-price">${{ object.price|intcomma }}</span>
+          </div>
+          <div class="inn-detail-p1 inn-com">
+            <div class="detail-title">
+              <h2>Galeria de fotos</h2>
+              <p>a procedure intended to establish the quality, performance, or reliability of something, especially before it is taken into widespread use.</p>
+            </div>
+            <div class="room-photo-all">
+              {% for image in object.related_images.all %}
+                <div class="col-md-3 room-photo">
+                  <div class="gall-grid room-photo-gal">
+                    <img class="materialboxed" data-caption="Imagen de la habitacion" src="{{ image.image.url }}" alt="" />
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="inn-detail-p1 inn-com">
+            <div class="detail-title">
+              <h2>Habitaciones relacionadas</h2>
+              <p>a procedure intended to establish the quality, performance, or reliability of something, especially before it is taken into widespread use.</p>
+            </div>
+            <div class="re-room">
+              <ul>
+                {% for room in object.get_related_rooms %}
+                  <li>
+                    <div class="re-room-list">
+                      <div class="col-md-3 re-room-list-1">
+                        {% with room.related_images.all|first as img_first %}
+                          <img src="{{img_first.image.url}}" alt="IMG-PRODUCT">
+                        {% endwith %}
+                      </div>
+                      <div class="col-md-6 re-room-list-2">
+                        <h4>{{ room.name }}</h4>
+                        <p>
+                          <b>Servicios:</b>
+                          {% for s in room.category.parent.related_services.all %}
+                            {{ s }},
+                          {% endfor %}
+                        </p>
+                        <p>
+                          <b>Beneficios:</b>
+                          {% for b in room.category.parent.related_benefits.all %}
+                            {{ b }},
+                          {% endfor %}
+                        </p>
+
+                      </div>
+                      <div class="col-md-3 re-room-list-3">
+                        <span class="hot-list-p3-1">Precio</span>
+                        <span class="hot-list-p3-2">${{ room.price|intcomma }}</span>
+                        <a href="{% url 'webclient:room-detail' room.pk %}" class="hot-page2-alp-quot-btn spec-btn-text">Detalle</a>
+                      </div>
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock content %}
+
+
