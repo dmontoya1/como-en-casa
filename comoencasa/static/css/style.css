@@ -650,6 +650,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     width: 47%;
     float: left;
     margin: 10px;
+    height: 1300px;
 }
 .r-com-1 {
     width: 100%;

@@ -41,7 +41,7 @@
               <!--ROOM IMAGE-->
               <div class="r1 r-com r-com-1 r1-1">
                 {% with room.related_images.all|first as img_first %}
-                  <img src="{{img_first.image.url}}" alt="IMG-PRODUCT">
+                  <img src="{{img_first.image.url}}" alt="IMG-PRODUCT" width="500" height="375">
                 {% endwith %}
               </div>
               <!--ROOM RATING-->
