@@ -281,8 +281,10 @@
     .db-cent-wr-con {
         width: 80%;
     }
-    .room-1 {
-        width: 100%;
+    .room-1{
+      width: 100%;
+      float: left;
+      margin: 10px 0px;
     }
     .page-head {
         width: 80%
@@ -351,4 +353,11 @@
 	.hp-book-in ul li a {
 		display: block;
 	}	
+}
+
+@media screen and (max-width: 516px) {
+  .room-1{
+    height: 100%;
+  }
+
 }
