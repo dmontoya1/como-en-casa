@@ -28,7 +28,7 @@
             </div>
             <ul>
               {% for s in object.category.parent.related_services.all %}
-                <li><i class="fa fa-check" aria-hidden="true"></i> {{ s }}</li>
+                <li><img src="{{ s.image.url }}" width="20" height="20" alt=""> {{ s }}</li>
               {% endfor %}
             </ul>
           </div>
@@ -38,7 +38,7 @@
             </div>
             <ul>
               {% for b in object.category.parent.related_benefits.all %}
-                <li><i class="fa fa-check" aria-hidden="true"></i> {{ b }}</li>
+                <li><img src="{{ b.image.url }}" width="20" height="20" alt=""> {{ b }}</li>
               {% endfor %}
             </ul>
           </div>
@@ -58,7 +58,7 @@
               {% for image in object.related_images.all %}
                 <div class="col-md-3 room-photo">
                   <div class="gall-grid room-photo-gal">
-                    <img class="materialboxed" data-caption="Imagen de la habitacion" src="{{ image.image.url }}" alt="" width="150" height="120" />
+                    <img class="materialboxed" data-caption="Imagen de la habitacion" src="{{ image.image.url }}" alt=""  />
                   </div>
                 </div>
               {% endfor %}

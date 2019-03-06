@@ -60,19 +60,15 @@
               </div>
               <!--ROOM Services-->
               <div class="r3 r-com r-com-1">
+                <h4>Descripción</h4>
+                <span style="color: #fff;">{{ room.short_description }}</span>
+              </div>
+              <!--ROOM Services-->
+              <div class="r3 r-com r-com-1">
                 <h4>Servicios</h4>
                 <ul>
                   {% for s in room.category.parent.related_services.all %}
                     <li><i class="fa fa-check" style="color: #d4b26a;"></i> {{ s }}</li>
-                  {% endfor %}
-                </ul>
-              </div>
-              <!--ROOM Benefits-->
-              <div class="r3 r-com r-com-1">
-                <h4>Beneficios</h4>
-                <ul>
-                  {% for b in room.category.parent.related_benefits.all %}
-                    <li><i class="fa fa-check" style="color: #d4b26a;"></i> {{ b }}</li>
                   {% endfor %}
                 </ul>
               </div>

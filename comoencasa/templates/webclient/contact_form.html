@@ -1,104 +1,17 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %}
 
 {% load static i18n %}
 {% load crispy_forms_tags %}
 
 {% block title %}Contáctanos{% endblock %}
 
-{% block extra_css %}
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
-
-{% endblock %}
-{% block menu_desktop %}
-	<!-- Menu desktop -->
-	<div class="menu-desktop">
-		<ul class="main-menu">
-			<li >
-				<a href="/">Inicio</a>
-			</li>
-
-			<li >
-				<a href="{% url 'webclient:room-list' %}">Habitaciones disponibles</a>
-			</li>
-
-			<li>
-                <a href="{% url 'webclient:services-list' %}">Servicios</a>
-			</li>
-
-			<li>
-                <a href="{% url 'webclient:experiences-list' %}">Experiencias</a>
-			</li>
-
-			<li>
-				<a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
-			</li>
-
-			<li class="active-menu">
-                <a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
-			</li>
-
-		</ul>
-	</div>
-{% endblock %}
-
-{% block menu_mobile %}
-	<!-- Menu Mobile -->
-	<div class="menu-mobile">
-		<ul class="main-menu-m">
-			<li class="active-menu">
-				<a href="/">Inicio</a>
-			</li>
-
-			<li>
-				<a href="{% url 'webclient:room-list' %}">Habitaciones disponibles</a>
-			</li>
-
-			<li>
-                <a href="{% url 'webclient:services-list' %}">Servicios</a>
-			</li>
-
-			<li>
-                <a href="{% url 'webclient:experiences-list' %}">Experiencias</a>
-			</li>
-
-			<li>
-				<a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
-			</li>
-
-			<li class="active-menu">
-				<a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
-			</li>
-			{% if request.user.is_authenticated%}
-				<li>
-					<a href="#" class="stext-102 cl2 hov-cl1 trans-04">
-						Mi Perfil
-					</a>
-				</li>
-
-				<li>
-					<a href="{% url 'account_logout' %}" class="stext-102 cl2 hov-cl1 trans-04">
-						Cerrar sesión
-					</a>
-				</li>
-			{% else %}
-				<li>
-					<a href="{% url 'account_login' %}" class="stext-102 cl2 hov-cl1 trans-04">
-						Iniciar sesión
-					</a>
-				</li>
-				<li>
-					<a href="{% url 'account_signup' %}" class="stext-102 cl2 hov-cl1 trans-04">
-						Regístrate
-					</a>
-				</li>
-			{% endif %}
-		</ul>
-	</div>
-{% endblock %}
 {% block content %}
-    <div class="col-12 form-box">
-        {% if messages  %}
+  <!--TOP SECTION-->
+		<div class="inn-body-section inn-booking">
+			<div class="container">
+				<div class="row">
+          {% if messages  %}
             {% for message in messages %}
             <div class="alert alert-info">
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -106,6 +19,62 @@
             </div>
             {% endfor %}
         {% endif %}
+					<!--TYPOGRAPHY SECTION-->
+					<div class="col-md-6">
+						<div class="book-title">
+							<h2>Contáctanos</h2>
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="book-form inn-com-form">
+							<form class="col s12" method="POST" id="contact" action=".">
+                {% csrf_token %}
+								<div class="row">
+									<div class="input-field col s12">
+										<input type="text" class="validate" name="full_name" id="full_name" required>
+										<label>Nombre completo</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<input type="email" class="validate" name="email" id="email" required>
+										<label>Email</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<select name="contact_type" id="id_contact_type" required>
+                      <option value="" disabled selected>Selecciona un motivo</option>
+                      <option value="PE">Petición</option>
+                      <option value="QU">Queja</option>
+                      <option value="PR">Pregunta</option>
+                      <option value="RE">Reclamo</option>
+                      <option value="SU">Sugerencia</option>
+                      <option value="FE">Felicitación</option>
+                    </select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+                    <textarea type="textarea" id="message" name="message" rows="4" placeholder="Ingresa tu mensaje"></textarea>
+										<label for="from">Mensaje</label>
+									</div>
+
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<input type="submit" value="Enviar" class="form-btn"> </div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--END TYPOGRAPHY SECTION-->
+				</div>
+			</div>
+		</div>
+    {% comment %}<div class="col-12 form-box">
+
 
         <div class="limiter">
             <div class="container-login100">
@@ -175,7 +144,7 @@
             </div>
         </div>
     </div>
-
+    {%endcomment %}
 
 {% endblock content %}
 

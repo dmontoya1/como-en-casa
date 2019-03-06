@@ -93,9 +93,11 @@
     }
     .book-title h2 {
         margin-bottom: 10px;
+          font-size: 43px;
     }
     .book-title p {
         color: #ffffff;
+        font-size: 15px;
     }
     .bot-gal {
         margin-bottom: 40px;
@@ -237,10 +239,10 @@
         right: 10%;
     }
     .slid-cap p {
-        display: none;
+        font-size: 14px;
     }
     .slid-cap h2 {
-        font-size: 42px;
+        font-size: 33px;
     }
     .slider.fullscreen {
         height: 400px;

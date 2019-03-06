@@ -500,7 +500,8 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    color: #b1aa9c;
+    color: #2e333b;
+    background: #a19365;
 }
 .inn-com-list-point ul li i {
     color: #61a019;
@@ -952,7 +953,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
 .inn-booking:before {
     content: '';
     position: absolute;
-    background: linear-gradient(to right, rgba(29, 31, 31, 0.78) 14%, rgba(0, 0, 0, 0.18) 66%);
+    background: linear-gradient(to right, rgba(29, 31, 31, 0.3) 14%, rgba(0, 0, 0, 0.18) 66%);
     top: 0px;
     bottom: 0px;
     left: 0px;
@@ -1141,6 +1142,14 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     font-size: 13px;
 }
 
+li.corporative-values {
+    color: #b1aa9c;
+}
+
+a.about-title {
+    color: #ab9466;
+}
+
 /*-------------------------------------------------*/
 /* =  MOBILE MENU
 /*-------------------------------------------------*/
@@ -1283,7 +1292,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     padding: 0px 0px;
 }
 .hot-page2-alp-quot-btn {
-    background: #f4b936;
+    background: #ab9464;
     padding: 7px;
     color: #000;
     text-transform: uppercase;
@@ -1291,7 +1300,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
     font-family: 'Quicksand', sans-serif;
     border-radius: 2px;
     font-size: 14px;
-    border: 1px solid #c58d11;
+    border: 1px solid #aa9463;
     display: block;
     text-align: center;
 }
