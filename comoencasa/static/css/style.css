@@ -4611,7 +4611,7 @@ form .stars label:before {
     border-radius: 50%;
   }
 
-  .float{
+.float{
 	position:fixed;
 	width:60px;
 	height:60px;
