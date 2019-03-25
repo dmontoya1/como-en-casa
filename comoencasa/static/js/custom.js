@@ -38,8 +38,35 @@ $(document).ready(function() {
     });
 });
 
-    /*==================================================================
-    [ Isotope ]*/
+//PORTFOLIO FILTER
+$(function() {
+
+    var filterList = {
+
+        init: function() {
+
+            // MixItUp plugin
+            // http://mixitup.io
+            $('#portfoliolist').mixItUp({
+                selectors: {
+                    target: '.portfolio',
+                    filter: '.filter'
+                },
+                load: {
+                    filter: '.logo'
+                }
+            });
+
+        }
+
+    };
+
+    // Run the show!
+    filterList.init();
+
+
+});
+
     var $topeContainer = $('.isotope-grid');
     var $filter = $('.filter-tope-group');
 
@@ -79,7 +106,7 @@ $(document).ready(function() {
         });
     });
 
-    /*==================================================================*/
+
 
 //DATE PICKER	
 $(function() {
