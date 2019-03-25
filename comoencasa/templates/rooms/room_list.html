@@ -1,4 +1,4 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %}
 
 {% load static i18n humanize %}
 {% load crispy_forms_tags %}
@@ -6,91 +6,105 @@
 
 {% block content %}
 
-	<!--HEADER SECTION-->
-	<section>
-		<!--TOP BANNER-->
-		<div class="inn-banner">
-			<div class="container">
-				<div class="row">
-					<h4>Nuestras habitaciones</h4>
-					<p>Nuestras habitaciones se encuentran adecuadas para qué disfrutes de HOSPITALIDAD BIENESTAR Y TRANQUILIDAD en tu estancia, disfruta de confort pleno y siéntete Como En Casa.
-						<p>
-							<ul>
-								<li><a href="/">Inicio</a> </li>
-								<li><a href="{% url 'webclient:room_list' %}">Habitaciones</a> </li>
-							</ul>
-				</div>
-			</div>
-		</div>
-		<!--TOP SECTION-->
-		<div class="inn-body-section pad-bot-70">
-			<div class="container">
-				<div class="row">
-					<div class="page-head">
-						<h2>Nuestras Habitaciones</h2>
-						<div class="head-title">
-							<div class="hl-1"></div>
-							<div class="hl-2"></div>
-							<div class="hl-3"></div>
-						</div>
-						<p>Nuestras habitaciones se encuentran adecuadas para qué disfrutes de HOSPITALIDAD BIENESTAR Y TRANQUILIDAD en tu estancia, disfruta de confort pleno y siéntete Como En Casa.</p>
-					</div>
-          {% for room in object_list %}
-            <!--ROOM SECTION-->
-            <div class="room room-1">
-              <!--ROOM IMAGE-->
-              <div class="r1 r-com r-com-1 r1-1">
-                {% with room.related_images.all|first as img_first %}
-                  <img src="{{img_first.image.url}}" alt="IMG-PRODUCT" width="500" height="375">
-                {% endwith %}
-              </div>
-              <!--ROOM RATING-->
-              <div class="r2 r-com r-com-1">
-                <h3 style="color: #ffffff;">{{ room.name }}</h3>
-                <ul>
-                  <li>Código : {{ room.code }}</li>
-                </ul>
-                {% if room.available %}
-                    <div class="r2-available r2-available-1">Disponible</div>
-                {% else %}
-                    <div class="r2-not-available r2-available-1">
-                       No Disponible
-                    </div>
-                {% endif%}
-              </div>
-              <!--ROOM Services-->
-              <div class="r3 r-com r-com-1">
-                <h4>Descripción</h4>
-                <span style="color: #fff;">{{ room.short_description }}</span>
-              </div>
-              <!--ROOM Services-->
-              <div class="r3 r-com r-com-1">
-                <h4>Servicios</h4>
-                <ul>
-                  {% for s in room.category.parent.related_services.all %}
-                    <li><i class="fa fa-check" style="color: #d4b26a;"></i> {{ s }}</li>
-                  {% endfor %}
-                </ul>
-              </div>
-              <!--ROOM PRICE-->
-              <div class="r4 r-com r-com-1">
-                <h4>Precio</h4>
-                <p>Precio mensual</p>
-                <p>
-                  <span class="room-price-1">${{ room.price|intcomma }}</span>
-              </div>
-              <!--ROOM BOOKING BUTTON-->
-              <div class="r5 r-com r-com-1 r5-1">
-                <a href="{% url 'webclient:room-detail' room.pk %}" class="inn-room-book">Detalle</a> </div>
+  <!--HEADER SECTION-->
+  <section>
+    <!--TOP BANNER-->
+    <div class="inn-banner">
+      <div class="container">
+        <div class="row">
+          <h4>Nuestras habitaciones</h4>
+          <p>Nuestras habitaciones se encuentran adecuadas para qué disfrutes de HOSPITALIDAD BIENESTAR Y TRANQUILIDAD
+            en tu estancia, disfruta de confort pleno y siéntete Como En Casa.
+          <p>
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="{% url 'webclient:room_list' %}">Habitaciones</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--TOP SECTION-->
+    <div class="inn-body-section pad-bot-70">
+      <div class="container">
+        <div class="row">
+          <div class="page-head">
+            <h2>Nuestras Habitaciones</h2>
+            <div class="head-title">
+              <div class="hl-1"></div>
+              <div class="hl-2"></div>
+              <div class="hl-3"></div>
             </div>
-            <!--END ROOM SECTION-->
-          {% endfor %}
-				</div>
-			</div>
-		</div>
-		<!--TOP SECTION-->
-	</section>
-	<!--END HEADER SECTION-->
+            <p>Nuestras habitaciones se encuentran adecuadas para qué disfrutes de HOSPITALIDAD BIENESTAR Y TRANQUILIDAD
+              en tu estancia, disfruta de confort pleno y siéntete Como En Casa.</p>
+          </div>
+          <div class="flex-w flex-l-m filter-tope-group m-tb-10">
+            <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
+              Todas las habitaciones
+            </button>
+            {% for cat in categories %}
+              <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".{{ cat.slug }}">
+                {{ cat }}
+              </button>
+            {% endfor %}
+          </div>
+          <div class="isotope-grid">
+            {% for room in object_list %}
+              <!--ROOM SECTION-->
+              <div class="room room-1 isotope-item {{ room.category.slug }}">
+                <!--ROOM IMAGE-->
+                <div class="r1 r-com r-com-1 r1-1">
+                  {% with room.related_images.all|first as img_first %}
+                    <img src="{{ img_first.image.url }}" alt="IMG-PRODUCT" width="500" height="375">
+                  {% endwith %}
+                </div>
+                <!--ROOM RATING-->
+                <div class="r2 r-com r-com-1">
+                  <h3 style="color: #ffffff;">{{ room.name }}</h3>
+                  <ul>
+                    <li>Código : {{ room.code }}</li>
+                  </ul>
+                  {% if room.available %}
+                    <div class="r2-available r2-available-1">Disponible</div>
+                  {% else %}
+                    <div class="r2-not-available r2-available-1">
+                      No Disponible
+                    </div>
+                  {% endif %}
+                </div>
+                <!--ROOM Services-->
+                <div class="r3 r-com r-com-1">
+                  <h4>Descripción</h4>
+                  <span style="color: #fff;">{{ room.short_description }}</span>
+                </div>
+                <!--ROOM Services-->
+                <div class="r3 r-com r-com-1">
+                  <h4>Servicios</h4>
+                  <ul>
+                    {% for s in room.category.parent.related_services.all %}
+                      <li><i class="fa fa-check" style="color: #d4b26a;"></i> {{ s }}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                <!--ROOM PRICE-->
+                <div class="r4 r-com r-com-1">
+                  <h4>Precio</h4>
+                  <p>Precio mensual</p>
+                  <p>
+                    <span class="room-price-1">${{ room.price|intcomma }}</span>
+                </div>
+                <!--ROOM BOOKING BUTTON-->
+                <div class="r5 r-com r-com-1 r5-1">
+                  <a href="{% url 'webclient:room-detail' room.pk %}" class="inn-room-book">Detalle</a></div>
+              </div>
+              <!--END ROOM SECTION-->
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--TOP SECTION-->
+  </section>
+  <!--END HEADER SECTION-->
 {% endblock %}
 
 

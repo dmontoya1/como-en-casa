@@ -192,7 +192,11 @@
 	}
 	.last-sec-spa {
 		margin-bottom: 100px;
-	}	
+	}
+  .inn-detail {
+    background: none !important;
+
+  }
 }
 /*-------------------------------------------------------*/
 /* When the browser is between 0px and 767px wide,below css will be applied.

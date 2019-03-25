@@ -409,11 +409,6 @@ th {
     padding-top: 80px;
     padding-bottom: 80px;
 }
-.inn-detail {
-    background: url(/static/images/h-detail.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: 40%;
-}
 .inn-bod {
     width: 55%;
     float: right;
@@ -4628,4 +4623,10 @@ form .stars label:before {
 
 .my-float{
 	margin-top:16px;
+}
+
+button.stext-106 {
+    background: none;
+    color: #fff;
+    border: none;
 }
