@@ -4630,3 +4630,13 @@ button.stext-106 {
     color: #fff;
     border: none;
 }
+.collapsible-header {
+    display: block;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 7px 1rem;
+    background-color: #2e333b !important;
+    border-bottom: 1px solid #ddd;
+    color: #fff;
+}
