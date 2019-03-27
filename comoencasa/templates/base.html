@@ -57,7 +57,7 @@
 						</li>
 						<li><a href="{% url 'webclient:room_list' %}">Nuestras habitaciones</a>
 						</li>
-						<li><a href="#">Tipos de alojamientos</a>
+						<li><a href="{% url 'webclient:acommodation_types' %}">Tipos de alojamientos</a>
 						</li>
 						<li><a href="#">Ubicaciones estratégicas</a>
 						</li>
@@ -86,7 +86,7 @@
 						<ul id='drop-room' class='dropdown-content drop-con-man'>
 							<li><a href="{% url 'webclient:room_list' %}">Nuestras habitaciones</a>
 							</li>
-							<li><a href="#">Tipos de alojamientos</a>
+							<li><a href="{% url 'webclient:acommodation_types' %}">Tipos de alojamientos</a>
 							</li>
 							<li><a href="#">Ubicaciones Estratégicas</a>
 							</li>
@@ -138,7 +138,7 @@
                                         <ul>
                                           <li><a href="{% url 'webclient:room_list' %}">Habitaciones</a>
                                           </li>
-                                          <li><a href="#">Tipos de alojamiento</a>
+                                          <li><a href="{% url 'webclient:acommodation_types' %}">Tipos de alojamiento</a>
                                           </li>
                                           <li><a href="#">Ubicaciones Estrategicas</a>
                                           </li>
@@ -215,7 +215,6 @@
 	<script src="{% static 'js/materialize.min.js' %}" type="text/javascript"></script>
 	<script src="{% static 'js/jquery.mixitup.min.js' %}" type="text/javascript"></script>
 	<script src="{% static 'js/custom.js' %}"></script>
-	<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
 </body>
 
 </html>
