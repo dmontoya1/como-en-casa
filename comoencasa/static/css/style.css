@@ -124,7 +124,7 @@ td,
 th {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    color: #f5f5f5;
+    color: #f5f5f5 !important;
 }
 .wed-top {
     color: #fff;
@@ -4557,7 +4557,7 @@ form .stars label:before {
 }
 .foot-social-block ul li i {
     border: 1px solid #727070;
-    color: #727070;
+    color: #f5f5f5;
 }
 .footer-block ul li {
     list-style-type: none;
