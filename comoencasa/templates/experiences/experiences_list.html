@@ -1,155 +1,78 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %}
+{% load static humanize %}
 
-{% load static i18n humanize %}
-{% load crispy_forms_tags %}
+{% block extra_css %}{% endblock %}
 
-{% block extra_css %}
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    
-{% endblock %}
-
-{% block menu_desktop %}
-	<!-- Menu desktop -->
-	<div class="menu-desktop">
-		<ul class="main-menu">
-			<li >
-				<a href="/">Inicio</a>
-			</li>
-
-			<li>
-				<a href="{% url 'webclient:room-list' %}">Habitaciones disponibles</a>
-			</li>
-
-			<li>
-                <a href="{% url 'webclient:services-list' %}">Servicios</a>
-			</li>
-
-			<li class="active-menu">
-				<a href="{% url 'webclient:experiences-list' %}">Experiencias</a>
-			</li>
-
-			<li>
-				<a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
-			</li>
-
-			<li>
-				<a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
-			</li>
-
-		</ul>
-	</div>
-{% endblock %}
-
-{% block menu_mobile %}
-	<!-- Menu Mobile -->
-	<div class="menu-mobile">
-		<ul class="main-menu-m">
-			<li class="active-menu">
-				<a href="/">Inicio</a>
-			</li>
-
-			<li>
-				<a href="{% url 'webclient:room-list' %}">Habitaciones disponibles</a>
-			</li>
-
-			<li>
-                <a href="{% url 'webclient:services-list' %}">Servicios</a>
-			</li>
-
-			<li class="active-menu">
-				<a href="{% url 'webclient:experiences-list' %}">Experiencias</a>
-			</li>
-
-			<li>
-				<a href="#">Acerca de nosotros</a>
-			</li>
-
-			<li>
-				<a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
-			</li>
-			{% if request.user.is_authenticated%}
-				<li>
-					<a href="#" class="stext-102 cl2 hov-cl1 trans-04">
-						Mi Perfil
-					</a>
-				</li>
-
-				<li>
-					<a href="{% url 'account_logout' %}" class="stext-102 cl2 hov-cl1 trans-04">
-						Cerrar sesión
-					</a>
-				</li>
-			{% else %}
-				<li>
-					<a href="{% url 'account_login' %}" class="stext-102 cl2 hov-cl1 trans-04">
-						Iniciar sesión
-					</a>
-				</li>
-				<li>
-					<a href="{% url 'account_signup' %}" class="stext-102 cl2 hov-cl1 trans-04">
-						Regístrate
-					</a>
-				</li>
-			{% endif %}
-		</ul>
-	</div>
-{% endblock %}
 
 {% block content %}
-<div class="bg0 m-t-23 p-b-140">
+  <div class="inn-banner">
     <div class="container">
-        <div class="flex-w flex-sb-m p-b-52">
-            <!-- <div class="flex-w flex-l-m filter-tope-group m-tb-10">
-                <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-                    Todas las habitaciones
-                </button>
-
-                {% for category in categories %}
-                    <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".{{category.slug}}">
-                        {{category.name}}
-                    </button>
-                {% endfor %}
-
-            </div> -->
-        </div>
-
-        <div class="row isotope-grid">
-            {% for experience in object_list %}
-                <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item {{experience.category.slug}}">
-                    <!-- Block2 -->
-                    <div class="block2">
-                        <div class="block2-pic hov-img0">
-                            {% for image in experience.images.all %}
-                                {% if forloop.first %}
-                                    <img src="{{image.image.url}}" alt="IMG-PRODUCT" width="270" height="170">
-                                {% endif %}
-							{% endfor %}
-							<a href="{% url 'webclient:experience-detail' experience.pk %}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
-								Ver detalle
-							</a>
-                        </div>
-
-                        <div class="block2-txt flex-w flex-t p-t-14">
-                            <div class="block2-txt-child1 flex-col-l ">
-                                <a href="{% url 'webclient:experience-detail' experience.pk %}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                    {{experience.name}}
-                                </a>
-
-                                <span class="stext-109 txt-justify cl3">
-                                    {{experience.short_description}}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-
-        </div>
-
+      <div class="row">
+        <h4>Experiencias</h4>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+        <p>
+        <ul>
+          <li><a href="#">Home</a>
+          </li>
+          <li><a href="#">Experiencias</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
+  </div>
+  <!--TOP SECTION-->
+  <div class="inn-body-section pad-bot-55">
+    <div class="container">
+      <div class="row">
+        <div class="page-head">
+          <h2>Experiencias</h2>
+          <div class="head-title">
+            <div class="hl-1"></div>
+            <div class="hl-2"></div>
+            <div class="hl-3"></div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            laoreet.</p>
+        </div>
+        <!--TYPOGRAPHY SECTION-->
+        <div class="col-md-12">
+          <div class="head-typo typo-com">
+            <h2>Experiencias</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+              desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+              search for 'lorem ipsum' will uncover many web sites still in their infancy. </p>
+            <!--EVENT-->
+            <div class="aminities">
+              <ul>
+                {% for experience in object_list %}
+                  <li class="aminities-line">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    <div class="row amini-body">
+                      <div class="col-md-4">
+                        {% with experience.images.all|first as img_first %}
+                          <img src="{{img_first.image.url}}" alt="IMG-PRODUCT" width="350" height="240" >
+                        {% endwith %}
+                      </div>
+                      <div class="col-md-8">
+                        <h4>{{ experience }}</h4>
+                        <p>{{ experience.description }}</p>
+                      </div>
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <!--END EVENT-->
+          </div>
+        </div>
 
+        <!--END TYPOGRAPHY SECTION-->
+      </div>
+    </div>
+  </div>
+  <!--TOP SECTION-->
 
 {% endblock content %}
 
