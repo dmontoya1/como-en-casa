@@ -862,10 +862,11 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
 .aminities ul li h4 {
     font-size: 22px;
     margin-bottom: 15px;
+    color: #ab9465;
 }
 .aminities ul li p {
     padding-top: 0px;
-    color: #8c8c8c;
+    color: #f5f5f5;;
 }
 .aminities-line::after {
     content: '';
