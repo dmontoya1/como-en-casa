@@ -58,7 +58,7 @@
               {% for image in object.related_images.all %}
                 <div class="col-md-3 room-photo">
                   <div class="gall-grid room-photo-gal">
-                    <img class="materialboxed" data-caption="Imagen de la habitacion" src="{{ image.image.url }}" alt=""  />
+                    <img class="materialboxed" data-caption="Imagen de la habitacion" src="{{ image.image.url }}" alt="" width="150" height="120"/>
                   </div>
                 </div>
               {% endfor %}

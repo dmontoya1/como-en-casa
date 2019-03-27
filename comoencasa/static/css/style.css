@@ -763,7 +763,7 @@ td {} .inn-com p {} .inn-com-form {} .inn-com-form form {
 }
 .page-head p {
     font-size: 18px;
-    color: #6e7680;
+    color: #b1aa9c;
     margin-bottom: 0px;
 }
 .inn-page-com {}
@@ -4639,4 +4639,11 @@ button.stext-106 {
     background-color: #2e333b !important;
     border-bottom: 1px solid #ddd;
     color: #fff;
+}
+.collapsible-body {
+    display: none;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 2rem;
+    background: #494c50;
 }
