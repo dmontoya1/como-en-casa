@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static humanize %}
 
-{% block extra_css%}{% endblock %}
+{% block extra_css %}{% endblock %}
 
 
 {% block content %}
@@ -9,68 +9,72 @@
   <!--HEADER SECTION-->
   <section>
     <!--TOP BANNER-->
-		<div class="inn-banner">
-			<div class="container">
-				<div class="row">
-					<h4>Hotel Aminities</h4>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
-					</p>
-					<ul>
-						<li><a href="#">Home</a>
-						</li>
-						<li><a href="#">Collapsible</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!--TOP SECTION-->
-		<div class="inn-body-section pad-bot-55">
-			<div class="container">
-				<div class="row">
-					<div class="page-head">
-						<h2>Tipos de alojamiento</h2>
-						<div class="head-title">
-							<div class="hl-1"></div>
-							<div class="hl-2"></div>
-							<div class="hl-3"></div>
-						</div>
-						<p>Disfruta de diferentes servicios y beneficios según el tipo de alojamiento en el que vivas.</p>
-					</div>
-					<!--TYPOGRAPHY SECTION-->
+    <div class="inn-banner">
+      <div class="container">
+        <div class="row">
+          <h4>Tipos de alojamiento</h4>
+          <p>Disfruta de diferentes servicios y beneficios según el tipo de alojamiento en el que vivas.</p>
+          <ul>
+            <li><a href="/">Inicio</a>
+            </li>
+            <li><a href="#">Tipos de Alojamiento</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--TOP SECTION-->
+    <div class="inn-body-section pad-bot-55">
+      <div class="container">
+        <div class="row">
+          <div class="page-head">
+            <h2>Tipos de alojamiento</h2>
+            <div class="head-title">
+              <div class="hl-1"></div>
+              <div class="hl-2"></div>
+              <div class="hl-3"></div>
+            </div>
+
+            <p>Como En Casa HBT te hace posible vivir en un lugar acorde a tus necesidades; si quieres disfrutar mejor
+              tu tiempo libre y hacer deporte tu mejor opción es el Apartamento Moderno, si la ubicación es lo mas
+              importante para ti, las Casas Confortables en el centro son buena alternativa para optimizar tiempos de
+              desplazamientos y gastos adicionales en transporte; y si solo deseas pasar una noche y disfrutar de
+              confort y privacidad el alojamiento para estancias cortas es lo que necesitas.</p>
+          </div>
+          <!--TYPOGRAPHY SECTION-->
           {% for cat in categories %}
-					  <div class="col-md-4">
-						<div class="head-typo typo-com collap-expand">
-							<h2>{{ cat }}</h2>
-							{% comment %}<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>{% endcomment %}
-							<ul class="collapsible popout" data-collapsible="accordion">
-								<li>
-									<div class="collapsible-header"><i class="material-icons">filter_drama</i>Servicios</div>
-									<div class="collapsible-body">
-                    <ul>
-                      {% for s in cat.related_services.all %}
-                        <li>
+            <div class="col-md-4">
+              <div class="head-typo typo-com collap-expand">
+                <h2>{{ cat }}</h2>
+                {% comment %}<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>{% endcomment %}
+                <ul class="collapsible popout" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Servicios</div>
+                    <div class="collapsible-body">
+                      <ul>
+                        {% for s in cat.related_services.all %}
+                          <li>
                           <li><img src="{{ s.image.url }}" width="20" height="20" alt=""> {{ s }}</li>
-                        </li>
-                      {% endfor %}
-                    </ul>
-									</div>
-								</li>
-								<li>
-									<div class="collapsible-header"><i class="material-icons">place</i>Beneficios</div>
-									<div class="collapsible-body">
-                    <ul>
-                      {% for b in cat.related_benefits.all %}
-                        <li><img src="{{ b.image.url }}" width="20" height="20" alt=""> {{ b }}</li>
-                      {% endfor %}
-                    </ul>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">place</i>Beneficios</div>
+                    <div class="collapsible-body">
+                      <ul>
+                        {% for b in cat.related_benefits.all %}
+                          <li><img src="{{ b.image.url }}" width="20" height="20" alt=""> {{ b }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           {% endfor %}
-					{% comment %}<div class="col-md-4">
+          {% comment %}<div class="col-md-4">
 						<div class="head-typo typo-com collap-expand">
 							<h2>Apartamento Moderno</h2>
 							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
@@ -106,11 +110,11 @@
 							</ul>
 						</div>
 					</div>{% endcomment %}
-					<!--END TYPOGRAPHY SECTION-->
-				</div>
-			</div>
-		</div>
-		<!--TOP SECTION-->
+          <!--END TYPOGRAPHY SECTION-->
+        </div>
+      </div>
+    </div>
+    <!--TOP SECTION-->
   </section>
   <!--END HEADER SECTION-->
 {% endblock %}

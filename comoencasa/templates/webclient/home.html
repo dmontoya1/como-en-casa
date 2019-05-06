@@ -3,388 +3,421 @@
 {% load static humanize %}
 
 {% block content %}
-    <div>
-        <div class="slider fullscreen">
-            <ul class="slides">
-                <li> <img src="{% static 'images/hospitalidad.jpg' %}" alt="">
-                    <!-- random image -->
-                    <div class="caption center-align slid-cap">
-                        <h2>Hospitalidad</h2>
-                        <p>
-                            Reconocemos de las necesidades del otro, de su dignidad y su diversidad. Por eso, la clave de control de calidad de la hospitalidad se enfoca en
-                            saber si el usuario se ha sentido “como en casa”
-                        </p> 
+  <div>
+    <div class="slider fullscreen">
+      <ul class="slides">
+        <li><img src="{% static 'images/hospitalidad.jpg' %}" alt="">
+          <!-- random image -->
+          <div class="caption center-align slid-cap">
+            <h2>Hospitalidad</h2>
+            <p>
+              Reconocemos de las necesidades del otro, de su dignidad y su diversidad. Por eso, la clave de control de
+              calidad de la hospitalidad se enfoca en
+              saber si el usuario se ha sentido “como en casa”
+            </p>
+          </div>
+        </li>
+        <li><img src="{% static 'images/bienestar.jpg' %}" alt="">
+          <!-- random image -->
+          <div class="caption center-align slid-cap">
+            <h2>Bienestar</h2>
+            <p>
+              Este está íntimamente relacionado con las
+              necesidades y los gustos de las personas, por esto tratamos
+              de cumplirlas conservando siempre en condiciones óptimas el
+              lugar de acogida, en el cual se pueda gozar de espacios
+              limpios e higiénicos, mobiliario en muy buenas condiciones,
+              espacio suficiente para compartir y sentirse cómodo.
+            </p>
+          </div>
+        </li>
+        <li><img src="{% static 'images/tranquilidad.jpg' %}" alt="">
+          <!-- random image -->
+          <div class="caption center-align slid-cap">
+            <h2>Tranquilidad</h2>
+            <p>
+              Buscamos siempre que los usuarios gocen
+              de un estado de bienestar, calma, apacibilidad, placidez,
+              relajación, reposo, serenidad, silencio, plenitud y sosiego en el
+              momento que lo desee, por esto implementamos nuestro manual de convivencia
+              para que no existan situaciones ajenas que perturben
+              este estado y puedan gozar de un ambiente tranquilo.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Nuestras Habitaciones-->
+  <div class="hom1 hom-com pad-bot-40">
+    <div class="container">
+      <div class="row">
+        <div class="hom1-title">
+          <h2>Nuestras habitaciones</h2>
+          <div class="head-title">
+            <div class="hl-1 hl-1-block"></div>
+            <div class="hl-2 hl-2-block"></div>
+            <div class="hl-3 hl-3-block"></div>
+          </div>
+          <p>Como En Casa HBT es un complejo habitacional de estudiantes y personas laboralmente activas; estamos
+            ubicados en la ciudad de Pereira; disponemos de 48 habitaciones amobladas y ubicadas estratégicamente en 11
+            sedes, este nuevo concepto de vivienda busca satisfacer las necesidades de los usuarios, ofreciendo
+            servicios y experiencias a nuestra comunidad que contribuyan a la HOSPITALIDAD BIENESTAR Y TRANQUILIDAD.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="to-ho-hotel">
+          <!-- HOTEL GRID -->
+          {% for room in rooms %}
+            <div class="col-md-4">
+              <div class="to-ho-hotel-con to-ho-hotel-con-block">
+                <div class="to-ho-hotel-con-1">
+                  {% if room.available %}
+                    <div class="hom-hot-av-tic">
+                      Disponible
                     </div>
-                </li>
-                <li> <img src="{% static 'images/bienestar.jpg' %}" alt="">
-                    <!-- random image -->
-                    <div class="caption center-align slid-cap">
-                        <h2>Bienestar</h2>
-                        <p>
-                            Este está íntimamente relacionado con las
-                            necesidades y los gustos de las personas, por esto tratamos
-                            de cumplirlas conservando siempre en condiciones óptimas el
-                            lugar de acogida, en el cual se pueda gozar de espacios
-                            limpios e higiénicos, mobiliario en muy buenas condiciones,
-                            espacio suficiente para compartir y sentirse cómodo.
-                        </p>
+                  {% else %}
+                    <div class="hom-hot-av-tic1">
+                      No Disponible
                     </div>
-                </li>
-                <li> <img src="{% static 'images/tranquilidad.jpg' %}" alt="">
-                    <!-- random image -->
-                    <div class="caption center-align slid-cap">
-                        <h2>Tranquilidad</h2>
-                        <p>
-                            Buscamos siempre que los usuarios gocen
-                            de un estado de bienestar, calma, apacibilidad, placidez,
-                            relajación, reposo, serenidad, silencio, plenitud y sosiego en el
-                            momento que lo desee, por esto implementamos nuestro manual de convivencia 
-                            para que no existan situaciones ajenas que perturben
-                            este estado y puedan gozar de un ambiente tranquilo.
-                        </p>
-                    </div>
-                </li>
+                  {% endif %}
+                  {% with room.related_images.all|first as img_first %}
+                    <img src="{{ img_first.image.url }}" alt="IMG-PRODUCT" width="350" height="240">
+                  {% endwith %}
+                </div>
+                <div class="to-ho-hotel-con-23">
+                  <div class="to-ho-hotel-con-2">
+                    <a href="{% url 'webclient:room-detail' room.pk %}">
+                      <h4>{{ room.name }}</h4>
+                    </a>
+                  </div>
+                  <div class="to-ho-hotel-con-3">
+                    <ul>
+                      <li>Sector: {{ room.sector }}
+                        <div class="dir-rat-star ho-hot-rat-star">
+                          Codigo: {{ room.code }}
+                        </div>
+                      </li>
+                      <li>
+                        <span class="ho-hot-pri">${{ room.price|intcomma }}</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="row rooms-btn text-center">
+        <div class="col-3">
+          <a href="{% url 'webclient:room_list' %}" class="waves-effect waves-light">Ver todas las habitaciones</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner Unete -->
+  <div class="offer offer-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="offer-l">
+            <span class="ol-1"></span>
+            <span class="ol-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+            <span class="ol-4">Únete ya a nuestra comunidad</span>
+            <span class="ol-3"></span>
+            <span class="ol-6">Habitaciones desde</span>
+            <span class="ol-5">$260.000</span>
+            <ul>
+              <li>
+                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img
+                  src="{% static 'images/wifi.svg' %}" alt="">
+                </a><span>Wifi gratis</span>
+              </li>
+              <li>
+                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img
+                  src="{% static 'images/mobiliario.svg' %}" alt="">
+                </a><span>Mobiliario</span>
+              </li>
+              <li>
+                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img
+                  src="{% static 'images/agua.svg' %}" alt="">
+                </a><span>Agua</span>
+              </li>
+              <li>
+                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img
+                  src="{% static 'images/energia.svg' %}" alt="">
+                </a><span>Energía</span>
+              </li>
+              <li>
+                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img
+                  src="{% static 'images/cocina.svg' %}" alt="">
+                </a><span>Cocina</span>
+              </li>
             </ul>
+          </div>
         </div>
-    </div>
-    <!--Nuestras Habitaciones-->
-    <div class="hom1 hom-com pad-bot-40">
-        <div class="container">
-            <div class="row">
-                <div class="hom1-title">
-                    <h2>Nuestras habitaciones</h2>
-                    <div class="head-title">
-                        <div class="hl-1 hl-1-block"></div>
-                        <div class="hl-2 hl-2-block"></div>
-                        <div class="hl-3 hl-3-block"></div>
-                    </div>
-                    <p>Como En Casa HBT es un complejo habitacional de estudiantes y personas laboralmente activas; estamos ubicados en la ciudad de Pereira; y disponemos de 48 habitaciones amobladas y ubicadas estratégicamente en 11 sedes, este nuevo concepto de vivienda busca satisfacer las necesidades de los usuarios, ofreciendo servicios y experiencias a nuestra comunidad que contribuyan a la HOSPITALIDAD BIENESTAR Y TRANQUILIDAD.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="to-ho-hotel">
-                    <!-- HOTEL GRID -->
-                    {% for room in rooms %}
-                        <div class="col-md-4">
-                            <div class="to-ho-hotel-con to-ho-hotel-con-block">
-                                <div class="to-ho-hotel-con-1">
-                                    {% if room.available %}
-                                        <div class="hom-hot-av-tic">
-                                            Disponible
-                                        </div>
-                                    {% else %}
-                                        <div class="hom-hot-av-tic1">
-                                           No Disponible
-                                        </div>
-                                    {% endif%}
-                                    {% with room.related_images.all|first as img_first %}
-                                        <img src="{{img_first.image.url}}" alt="IMG-PRODUCT" width="350" height="240">
-                                    {% endwith %}
-                                </div>
-                                <div class="to-ho-hotel-con-23">
-                                    <div class="to-ho-hotel-con-2"> 
-                                        <a href="{% url 'webclient:room-detail' room.pk %}">
-                                            <h4>{{room.name}}</h4>
-                                        </a>
-                                    </div>
-                                    <div class="to-ho-hotel-con-3">
-                                        <ul>
-                                            <li>Sector: {{room.sector}}
-                                                <div class="dir-rat-star ho-hot-rat-star"> 
-                                                    Codigo: {{room.code}} 
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span class="ho-hot-pri">${{room.price|intcomma}}</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="row rooms-btn text-center">
-                <div class="col-3">
-                    <a href="{% url 'webclient:room_list' %}" class="waves-effect waves-light">Ver todas las habitaciones</a>
-                </div>
-            </div>
+        <div class="col-md-6">
+          <div class="offer-r">
+            <div class="or-1"><span class="or-11">lo</span> <span class="or-12">quiero</span></div>
+            <div class="or-2"><span class="or-21">Obten un</span> <span class="or-22">10%</span> <span class="or-23">descuento*</span>
+              <span class="or-24">Código: CECHBTWEB</span> <span class="or-25"></span></div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Banner Unete -->
-    <div class="offer offer-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="offer-l"> 
-                        <span class="ol-1"></span> 
-                        <span class="ol-2">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </span> 
-                        <span class="ol-4">Únete ya a nuestra comunidad</span>
-                        <span class="ol-3"></span>
-                        <span class="ol-6">Habitaciones desde</span>
-                        <span class="ol-5">$260.000</span>
-                        <ul>
-                            <li>
-                                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img src="{% static 'images/wifi.svg' %}" alt="">
-                                </a><span>Wifi gratis</span>
-                            </li>
-                            <li>
-                                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img src="{% static 'images/mobiliario.svg' %}" alt=""> 
-                                </a><span>Mobiliario</span>
-                            </li>
-                            <li>
-                                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img src="{% static 'images/agua.svg' %}" alt=""> 
-                                </a><span>Agua</span>
-                            </li>
-                            <li>
-                                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img src="{% static 'images/energia.svg' %}" alt=""> 
-                                </a><span>Energía</span>
-                            </li>
-                            <li>
-                                <a href="#!" class="waves-effect waves-light btn-large offer-btn"><img src="{% static 'images/cocina.svg' %}" alt=""> 
-                                </a><span>Cocina</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="offer-r">
-                        <div class="or-1"> <span class="or-11">lo</span> <span class="or-12">quiero</span> </div>
-                        <div class="or-2"> <span class="or-21">Obten un</span> <span class="or-22">10%</span> <span class="or-23">descuento*</span> <span class="or-24">Código: CECHBTWEB</span> <span class="or-25"></span> </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Canales de distribucion -->
+  <div class="blog hom-com pad-bot-0">
+    <div class="container">
+      <div class="row">
+        <div class="hom1-title">
+          <h2>Un mundo de posibilidades</h2>
+          <div class="head-title">
+            <div class="hl-1 hl-1-block"></div>
+            <div class="hl-2 hl-2-block"></div>
+            <div class="hl-3 hl-3-block"></div>
+          </div>
+          <p>Explora un portafolio de servicios y experiencias a otro nivel; sal de la rutina y disfruta al máximo de tu
+            propia compañía y la de tu círculo social.</p>
         </div>
-    </div>
-
-    <!-- Canales de distribucion -->
-    <div class="blog hom-com pad-bot-0">
-        <div class="container">
-            <div class="row">
-                <div class="hom1-title">
-                    <h2>Un mundo de posibilidades</h2>
-                    <div class="head-title">
-                        <div class="hl-1 hl-1-block"></div>
-                        <div class="hl-2 hl-2-block"></div>
-                        <div class="hl-3 hl-3-block"></div>
-                    </div>
-                    <p>Explora un portafolio de servicios y experiencias a otro nivel; sal de la rutina y disfruta al máximo de tu propia compañía y la de tu círculo social.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div class="col-md-3 n2-event">
-                        <!--event IMAGE-->
-                        <div class="n21-event hovereffect">
-                          <img src="{% static 'images/servicios1.jpeg' %}" alt="" width="320" height="250">
-                            {% comment %}<div class="overlay">
+      </div>
+      <div class="row">
+        <div>
+          <div class="col-md-3 n2-event">
+            <!--event IMAGE-->
+            <div class="n21-event hovereffect">
+              <img src="{% static 'images/servicios1.jpeg' %}" alt="" width="320" height="250">
+              {% comment %}<div class="overlay">
                               <a href="booking.html">
                                 <span class="ev-book">Book Now</span>
                               </a>
                             </div>{% endcomment %}
-                        </div>
-                        <!--event DETAILS-->
-                        <div class="n22-event n22-event-block">
-                            <a href="#!"><h4>Servicios de alquiler</h4></a> 
-                            <span class="event-date">Precios desde $25.000</span> 
-                            <p>Además de habitaciones en alquiler, te brindamos la posibilidad de renta de artículos de interés como consolas de video juegos, portátiles y Bicicletas.</p>
-                            <!--event SHARE-->
-                        </div>
-                    </div>
-                    <div class="col-md-3 n2-event">
-                        <!--event IMAGE-->
-                        <div class="n21-event hovereffect">
-                          <img src="{% static 'images/amoblados.jpeg' %}" alt="" width="320" height="250">
-                            {% comment %}<div class="overlay">
-                              <a href="booking.html">
-                                <span class="ev-book">Book Now</span>
-                              </a>
-                            </div>{% endcomment %}
-                        </div>
-                        <!--event DETAILS-->
-                        <div class="n22-event n22-event-block">
-                            <a href="#!"><h4>Amoblados</h4></a>
-                            <span class="event-date">Precios desde $25.000</span>
-                            <p>Disponemos de aparta estudios amoblados independientes para estancias cortas, además de alojamiento, te ofrecemos planes Románticos en este sitio y también plan de video juegos nachos y cerveza.</p>
-                            <!--event SHARE-->
-                        </div>
-                    </div>
-                    <div class="col-md-3 n2-event">
-                        <!--event IMAGE-->
-                        <div class="n21-event hovereffect">
-                          <img src="{% static 'images/campestre.jpeg' %}" alt="" width="320" height="250">
-                            {% comment %}<div class="overlay">
-                              <a href="booking.html">
-                                <span class="ev-book">Book Now</span>
-                              </a>
-                            </div>{% endcomment %}
-                        </div>
-                        <!--event DETAILS-->
-                        <div class="n22-event n22-event-block">
-                            <a href="#!"><h4>Casa Campestre</h4></a>
-                            <span class="event-date">Precios desde $60.000</span>
-                            <p>Goza de un ambiente muy confortable y tranquilo a las afueras de la ciudad, disfruta en nuestra sede campestre de alojamiento, planes románticos y tarde de parejas y amigos.</p>
-                            <!--event SHARE-->
-                        </div>
-                    </div>
-                    <div class="col-md-3 n2-event">
-                        <!--event IMAGE-->
-                        <div class="n21-event hovereffect">
-                          <img src="{% static 'images/excursiones.jpeg' %}" alt="" width="320" height="250">
-                            {% comment %}<div class="overlay">
-                              <a href="booking.html">
-                                <span class="ev-book">Book Now</span>
-                              </a>
-                            </div>{% endcomment %}
-                        </div>
-                        <!--event DETAILS-->
-                        <div class="n22-event n22-event-block">
-                            <a href="#!"><h4>Excursiones</h4></a>
-                            <span class="event-date">Precios desde $120.000</span>
-                            <p>Viaja y conoce la magia de nuestra región, disfruta de los planes turísticos todo incluido que hemos diseñado para ti.</p>
-                            <!--event SHARE-->
-                        </div>
-                    </div>
-                </div>
             </div>
+            <!--event DETAILS-->
+            <div class="n22-event n22-event-block">
+              <a href="#!"><h4>Servicios de alquiler</h4></a>
+              <span class="event-date">Precios desde $25.000</span>
+              <p>Además de habitaciones en alquiler, te brindamos la posibilidad de renta de artículos de interés como
+                consolas de video juegos, portátiles y Bicicletas.</p>
+              <!--event SHARE-->
+            </div>
+          </div>
+          <div class="col-md-3 n2-event">
+            <!--event IMAGE-->
+            <div class="n21-event hovereffect">
+              <img src="{% static 'images/amoblados.jpeg' %}" alt="" width="320" height="250">
+              {% comment %}<div class="overlay">
+                              <a href="booking.html">
+                                <span class="ev-book">Book Now</span>
+                              </a>
+                            </div>{% endcomment %}
+            </div>
+            <!--event DETAILS-->
+            <div class="n22-event n22-event-block">
+              <a href="#!"><h4>Amoblados</h4></a>
+              <span class="event-date">Precios desde $25.000</span>
+              <p>Disponemos de aparta estudios amoblados independientes para estancias cortas, además de alojamiento, te
+                ofrecemos planes Románticos en este sitio y también plan de video juegos nachos y cerveza.</p>
+              <!--event SHARE-->
+            </div>
+          </div>
+          <div class="col-md-3 n2-event">
+            <!--event IMAGE-->
+            <div class="n21-event hovereffect">
+              <img src="{% static 'images/campestre.jpeg' %}" alt="" width="320" height="250">
+              {% comment %}<div class="overlay">
+                              <a href="booking.html">
+                                <span class="ev-book">Book Now</span>
+                              </a>
+                            </div>{% endcomment %}
+            </div>
+            <!--event DETAILS-->
+            <div class="n22-event n22-event-block">
+              <a href="#!"><h4>Casa Campestre</h4></a>
+              <span class="event-date">Precios desde $60.000</span>
+              <p>Goza de un ambiente muy confortable y tranquilo a las afueras de la ciudad, disfruta en nuestra sede
+                campestre de alojamiento, planes románticos y tarde de parejas y amigos.</p>
+              <!--event SHARE-->
+            </div>
+          </div>
+          <div class="col-md-3 n2-event">
+            <!--event IMAGE-->
+            <div class="n21-event hovereffect">
+              <img src="{% static 'images/excursiones.jpeg' %}" alt="" width="320" height="250">
+              {% comment %}<div class="overlay">
+                              <a href="booking.html">
+                                <span class="ev-book">Book Now</span>
+                              </a>
+                            </div>{% endcomment %}
+            </div>
+            <!--event DETAILS-->
+            <div class="n22-event n22-event-block">
+              <a href="#!"><h4>Excursiones</h4></a>
+              <span class="event-date">Precios desde $120.000</span>
+              <p>Viaja y conoce la magia de nuestra región, disfruta de los planes turísticos todo incluido que hemos
+                diseñado para ti.</p>
+              <!--event SHARE-->
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Unicaciones estrategicas -->
-    <div class="blog hom-com pad-bot-0">
-        <div class="container">
-            <div class="row">
-                <div class="hom1-title">
-                    <h2>Ubicaciones estratégicas</h2>
-                    <div class="head-title">
-                        <div class="hl-1 hl-1-block"></div>
-                        <div class="hl-2 hl-2-block"></div>
-                        <div class="hl-3 hl-3-block"></div>
-                    </div>
-                    <p>Ubícate en un alojamiento según tu conveniencia, evita desplazamientos innecesarios, y disfruta mejor de tu tiempo libre. Como En Casa HBT dispone de sedes estratégicamente bien ubicadas para que no llegues tarde a clase o no tardes mucho de regreso a casa al finalizar tu día de trabajo.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="inn-services head-typo typo-com typo-com-block mar-bot-0">
-                        <div id="portfoliolist">
-                            <div class="portfolio logo" data-cat="logo">
-                                <div class="portfolio-wrapper"> <img src="{% static 'images/andina.jpg' %}" alt="" width="245" height="185"/>
-                                    <div class="label">
-                                        <div class="label-text"> <a class="text-title">Universidad Andina</a> <span class="text-category">Logo</span> </div>
-                                        <div class="label-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio logo" data-cat="logo">
-                                <div class="portfolio-wrapper"> <img src="{% static 'images/parque-lago.jpg' %}" alt="" width="245" height="185" />
-                                    <div class="label">
-                                        <div class="label-text"> <a class="text-title">Parque el lago</a> <span class="text-category">Logo</span> </div>
-                                        <div class="label-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio logo" data-cat="logo">
-                                <div class="portfolio-wrapper"> <img src="{% static 'images/sena.jpg' %}" alt="" width="245" height="185" />
-                                    <div class="label">
-                                        <div class="label-text"> <a class="text-title">Sena Pereira</a> <span class="text-category">Logo</span> </div>
-                                        <div class="label-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio logo" data-cat="logo">
-                                <div class="portfolio-wrapper"> <img src="{% static 'images/colombo.jpg' %}" alt="" width="245" height="185" />
-                                    <div class="label">
-                                        <div class="label-text"> <a class="text-title">Colombo Americano</a> <span class="text-category">Logo</span> </div>
-                                        <div class="label-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio logo" data-cat="logo">
-                                <div class="portfolio-wrapper"> <img src="{% static 'images/parque-banderas.jpg' %}" alt="" width="245" height="185" />
-                                    <div class="label">
-                                        <div class="label-text"> <a class="text-title">Parque Banderas</a> <span class="text-category">Logo</span> </div>
-                                        <div class="label-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio logo" data-cat="logo">
-                                <div class="portfolio-wrapper"> <img src="{% static 'images/rosales.jpg' %}" alt="" width="245" height="185" />
-                                    <div class="label">
-                                        <div class="label-text"> <a class="text-title">Clínica los Rosales</a> <span class="text-category">Logo</span> </div>
-                                        <div class="label-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio logo" data-cat="logo">
-                                <div class="portfolio-wrapper"> <img src="{% static 'images/libre.jpg' %}" alt="" width="245" height="185" />
-                                    <div class="label">
-                                        <div class="label-text"> <a class="text-title">Universidad libre Sede Belmonte</a> <span class="text-category">Logo</span> </div>
-                                        <div class="label-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio logo" data-cat="logo">
-                                <div class="portfolio-wrapper"> <img src="{% static 'images/utp.jpeg' %}" alt="" width="245" height="185" />
-                                    <div class="label">
-                                        <div class="label-text"> <a class="text-title">Universidad Tecnológica</a> <span class="text-category">Logo</span> </div>
-                                        <div class="label-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Unicaciones estrategicas -->
+  <div class="blog hom-com pad-bot-0">
+    <div class="container">
+      <div class="row">
+        <div class="hom1-title">
+          <h2>Ubicaciones estratégicas</h2>
+          <div class="head-title">
+            <div class="hl-1 hl-1-block"></div>
+            <div class="hl-2 hl-2-block"></div>
+            <div class="hl-3 hl-3-block"></div>
+          </div>
+          <p>Ubícate en un alojamiento según tu conveniencia, evita desplazamientos innecesarios, y disfruta mejor de tu
+            tiempo libre. Como En Casa HBT dispone de sedes estratégicamente bien ubicadas para que no llegues tarde a
+            clase o no tardes mucho de regreso a casa al finalizar tu día de trabajo.</p>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="inn-services head-typo typo-com typo-com-block mar-bot-0">
+            <div id="portfoliolist">
+              <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper"><img src="{% static 'images/andina.jpg' %}" alt="" width="245"
+                                                    height="185"/>
+                  <div class="label">
+                    <div class="label-text"><a class="text-title">Universidad Andina</a> <span class="text-category">Logo</span>
+                    </div>
+                    <div class="label-bg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper"><img src="{% static 'images/parque-lago.jpg' %}" alt="" width="245"
+                                                    height="185"/>
+                  <div class="label">
+                    <div class="label-text"><a class="text-title">Parque el lago</a> <span
+                      class="text-category">Logo</span></div>
+                    <div class="label-bg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper"><img src="{% static 'images/sena.jpg' %}" alt="" width="245"
+                                                    height="185"/>
+                  <div class="label">
+                    <div class="label-text"><a class="text-title">Sena Pereira</a> <span
+                      class="text-category">Logo</span></div>
+                    <div class="label-bg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper"><img src="{% static 'images/colombo.jpg' %}" alt="" width="245"
+                                                    height="185"/>
+                  <div class="label">
+                    <div class="label-text"><a class="text-title">Colombo Americano</a> <span
+                      class="text-category">Logo</span></div>
+                    <div class="label-bg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper"><img src="{% static 'images/parque-banderas.jpg' %}" alt="" width="245"
+                                                    height="185"/>
+                  <div class="label">
+                    <div class="label-text"><a class="text-title">Parque Banderas</a> <span
+                      class="text-category">Logo</span></div>
+                    <div class="label-bg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper"><img src="{% static 'images/rosales.jpg' %}" alt="" width="245"
+                                                    height="185"/>
+                  <div class="label">
+                    <div class="label-text"><a class="text-title">Clínica los Rosales</a> <span class="text-category">Logo</span>
+                    </div>
+                    <div class="label-bg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper"><img src="{% static 'images/libre.jpg' %}" alt="" width="245"
+                                                    height="185"/>
+                  <div class="label">
+                    <div class="label-text"><a class="text-title">Universidad libre Sede Belmonte</a> <span
+                      class="text-category">Logo</span></div>
+                    <div class="label-bg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio logo" data-cat="logo">
+                <div class="portfolio-wrapper"><img src="{% static 'images/utp.jpeg' %}" alt="" width="245"
+                                                    height="185"/>
+                  <div class="label">
+                    <div class="label-text"><a class="text-title">Universidad Tecnológica</a> <span
+                      class="text-category">Logo</span></div>
+                    <div class="label-bg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- TEstimonios -->
-    <div class="blog hom-com">
-        <div class="container">
-            <div class="row">
-                <div class="hom1-title">
-                    <h2>Testimonios</h2>
-                    <div class="head-title">
-                        <div class="hl-1 hl-1-block"></div>
-                        <div class="hl-2 hl-2-block"></div>
-                        <div class="hl-3 hl-3-block"></div>
-                    </div>
-                    <p>
-                        Comentarios de nuestra comunidad
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    {% for t in testimonies %}
-                        <div class="col-md-4 n2-event">
-                            <!--event IMAGE-->
-                            <div class="img" 
-                                style="background-image: url(media/{{t.image}});">
-                            </div>
-                            <!--event DETAILS-->
-                            <div class="n22-event n22-event-block m-t-50">
-                                <a href="#!"><h4 class="text-center">{{t.name}}</h4></a> 
-                                <span class="event-date">{{t.profesion}}</span> 
-                                <p class="text-justify">
-                                        {{t.detail}}
-                                </p>
-                                <!--event SHARE-->
-                            </div>
-                        </div>
-                    {% endfor %}
-                    
-                </div>
-            </div>
+  <!-- TEstimonios -->
+  <div class="blog hom-com">
+    <div class="container">
+      <div class="row">
+        <div class="hom1-title">
+          <h2>Testimonios</h2>
+          <div class="head-title">
+            <div class="hl-1 hl-1-block"></div>
+            <div class="hl-2 hl-2-block"></div>
+            <div class="hl-3 hl-3-block"></div>
+          </div>
+          <p>
+            Comentarios de nuestra comunidad
+          </p>
         </div>
+      </div>
+      <div class="row">
+        <div>
+          {% for t in testimonies %}
+            <div class="col-md-4 n2-event">
+              <!--event IMAGE-->
+              <div class="img"
+                   style="background-image: url(media/{{ t.image }});">
+              </div>
+              <!--event DETAILS-->
+              <div class="n22-event n22-event-block m-t-50">
+                <a href="#!"><h4 class="text-center">{{ t.name }}</h4></a>
+                <span class="event-date">{{ t.profesion }}</span>
+                <p class="text-justify">
+                  {{ t.detail }}
+                </p>
+                <!--event SHARE-->
+              </div>
+            </div>
+          {% endfor %}
+
+        </div>
+      </div>
     </div>
+  </div>
 {% endblock %}

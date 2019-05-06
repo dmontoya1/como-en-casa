@@ -2925,7 +2925,7 @@ a.ui-button:active,
     font-size: 45px;
     display: block;
     text-transform: capitalize;
-    color: #f4364f;
+    color: #f4364f !important;
     font-weight: 600;
     font-family: 'Quicksand', sans-serif;
 }
@@ -2934,7 +2934,7 @@ a.ui-button:active,
     line-height: 20px;
     letter-spacing: 5px;
     border-bottom: 1px solid;
-    color: #333;
+    color: #333 !important;
 }
 .or-2 {
     color: #fff;

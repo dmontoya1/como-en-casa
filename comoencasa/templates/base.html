@@ -4,217 +4,229 @@
 <html lang="es">
 
 <head>
-    <title>Como en Casa HBT (Hospitalidad, Bienestar, Tranquilidad)</title>
-    <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Como En Casa HBT, es un complejo habitaciónal de universitarios y jóvenes empleados que buscan un lugar adecuado donde vivir; disfruta de total Hospitalidad, Bienestar y Tranquilidad.">
-	<meta name="keywords" content="alquiler, habitaciones, tranquilidad, eje cafetero, amor y amistad, tours, airbnb, alquiler consolas, bicicletas, alquiler bicicletas, alquiler individual, alquiler apartaestudios, alquiler apartamento, 
+  <title>Como en Casa HBT (Hospitalidad, Bienestar, Tranquilidad)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Como En Casa HBT, es un complejo habitaciónal de universitarios y jóvenes empleados que buscan un lugar adecuado donde vivir; disfruta de total Hospitalidad, Bienestar y Tranquilidad.">
+  <meta name="keywords" content="alquiler, habitaciones, tranquilidad, eje cafetero, amor y amistad, tours, airbnb, alquiler consolas, bicicletas, alquiler bicicletas, alquiler individual, alquiler apartaestudios, alquiler apartamento,
 									transporte, experiencias, excursiones, alojamientos universitarios, alojamientos estudiantes, estudiantes, universidad, ">
-	<meta name="google-site-verification" content="dK7fhkYnF4ZiFtuNTcjf5HSnyY33YqXt5v2NtdRX2MQ" />
-	<meta name=“robots” content=“noindex”>
-	<!-- META TAGS -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- FAV ICON(BROWSER TAB ICON) -->
-	<link rel="icon" type="image/png" href="{% static 'icons/favicon.png' %}"/>>
-	<!-- GOOGLE FONT -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:500,700" rel="stylesheet">
-	<!-- FONTAWESOME ICONS -->
-	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
-	<!-- ALL CSS FILES -->
-	<link href="{% static 'css/materialize.css' %}" rel="stylesheet">
-	<link href="{% static 'css/style.css' %}" rel="stylesheet">
-	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" />
-	<!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
-	<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
-	<link href="{% static 'css/util.css' %}" rel="stylesheet">
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
+  <meta name="google-site-verification" content="dK7fhkYnF4ZiFtuNTcjf5HSnyY33YqXt5v2NtdRX2MQ"/>
+  <meta name=“robots” content=“noindex”>
+  <!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FAV ICON(BROWSER TAB ICON) -->
+  <link rel="icon" type="image/png" href="{% static 'icons/favicon.png' %}"/>
+  >
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:500,700" rel="stylesheet">
+  <!-- FONTAWESOME ICONS -->
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <!-- ALL CSS FILES -->
+  <link href="{% static 'css/materialize.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css"/>
+  <!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+  <link href="{% static 'css/util.css' %}" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
 	<script src="{% static 'js/html5shiv.js' %}"></script>
 	<script src="{% static 'js/respond.min.js' %}"></script>
     <![endif]-->
-    {% block extra_css%}{% endblock %}
+  {% block extra_css %}{% endblock %}
 </head>
 
 <body data-ng-app="">
-	<!--MOBILE MENU-->
-	<section>
-		<div class="mm">
-			<div class="mm-inn">
-				<div class="mm-logo">
-					<a href="{% url 'webclient:home' %}">
+<!--MOBILE MENU-->
+<section>
+  <div class="mm">
+    <div class="mm-inn">
+      <div class="mm-logo">
+        <a href="{% url 'webclient:home' %}">
+          <img src="{% static 'images/logo1.png' %}" alt="" width="160"/>
+        </a>
+      </div>
+      <div class="mm-icon"><span><i class="fa fa-bars show-menu" aria-hidden="true"></i></span>
+      </div>
+      <div class="mm-menu">
+        <div class="mm-close"><span><i class="fa fa-times hide-menu" aria-hidden="true"></i></span>
+        </div>
+        <ul>
+          <li><a href="/">Inicio</a>
+          </li>
+          <li><a href="{% url 'webclient:room_list' %}">Nuestras habitaciones</a>
+          </li>
+          <li><a href="{% url 'webclient:acommodation_types' %}">Tipos de alojamientos</a>
+          </li>
+          <li><a href="#">Ubicaciones estratégicas</a>
+          </li>
+          <li><a href="{% url 'webclient:services_list' %}">Servicios</a>
+          </li>
+          <li><a href="{% url 'webclient:experiences_list' %}">Experiencias</a>
+          </li>
+          <li><a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
+          </li>
+          <li><a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!--HEADER SECTION-->
+<section class="home-block">
+  <!--TOP SECTION-->
+  <div class="menu-section">
+    <div class="container">
+      <div class="row">
+        <div class="all-drop-down">
+          <!-- Dropdown Structure -->
+          <!-- ROOM Dropdown Structure -->
+          <ul id='drop-room' class='dropdown-content drop-con-man'>
+            <li><a href="{% url 'webclient:room_list' %}">Nuestras habitaciones</a>
+            </li>
+            <li><a href="{% url 'webclient:acommodation_types' %}">Tipos de alojamientos</a>
+            </li>
+            <li><a href="#">Ubicaciones Estratégicas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="logo">
+          <a href="{% url 'webclient:home' %}">
             <img src="{% static 'images/logo1.png' %}" alt="" width="160"/>
-					</a>
-				</div>
-				<div class="mm-icon"><span><i class="fa fa-bars show-menu" aria-hidden="true"></i></span>
-				</div>
-				<div class="mm-menu">
-					<div class="mm-close"><span><i class="fa fa-times hide-menu" aria-hidden="true"></i></span>
-					</div>
-					<ul>
-						<li><a href="/">Inicio</a>
-						</li>
-						<li><a href="{% url 'webclient:room_list' %}">Nuestras habitaciones</a>
-						</li>
-						<li><a href="{% url 'webclient:acommodation_types' %}">Tipos de alojamientos</a>
-						</li>
-						<li><a href="#">Ubicaciones estratégicas</a>
-						</li>
-						<li><a href="{% url 'webclient:services_list' %}">Servicios</a>
-						</li>
-						<li><a href="{% url 'webclient:experiences_list' %}">Experiencias</a>
-						</li>
-						<li><a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
-						</li>
-						<li><a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--HEADER SECTION-->
-	<section class="home-block">
-		<!--TOP SECTION-->
-		<div class="menu-section">
-			<div class="container">
-				<div class="row">
-					<div class="all-drop-down">
-						<!-- Dropdown Structure -->
-						<!-- ROOM Dropdown Structure -->
-						<ul id='drop-room' class='dropdown-content drop-con-man'>
-							<li><a href="{% url 'webclient:room_list' %}">Nuestras habitaciones</a>
-							</li>
-							<li><a href="{% url 'webclient:acommodation_types' %}">Tipos de alojamientos</a>
-							</li>
-							<li><a href="#">Ubicaciones Estratégicas</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="logo">
-						<a href="{% url 'webclient:home' %}">
-                            <img src="{% static 'images/logo1.png' %}" alt="" width="160"/>
-						</a>
-					</div>
-					<div class="menu-bar">
-						<ul>
-							<li><a href="{% url 'webclient:home' %}">Inicio</a>
-							</li>
-							<li><a href="#" class='dropdown-button' data-activates='drop-room'>Habitaciones <i class="fa fa-angle-down"></i></a>
-							</li>
-							<li><a href="{% url 'webclient:services_list' %}">Servicios</a>
-							</li>
-							<li><a href="{% url 'webclient:experiences_list' %}">Experiencias</a>
-							</li>
-							<li><a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
-							</li>
-							<li><a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--TOP SECTION-->
-        <!--Check Availability SECTION-->
-        {% block content %}
-        {% endblock %}	
-	</section>
-    <!--END HEADER SECTION-->
-    {% block footer %}
-        <footer class="site-footer footer-block clearfix">
-            <div class="sidebar-container">
-                <div class="sidebar-inner">
-                    <div class="widget-area clearfix">
-                        <div class="widget widget_azh_widget">
-                            <div>
-                                <div class="container">
-                                    <div class="row">
-                                      <div class="col-sm-12 col-md-3">
-                                        <h4>Que te ofrecemos</h4>
-                                        <ul>
-                                          <li><a href="{% url 'webclient:room_list' %}">Habitaciones</a>
-                                          </li>
-                                          <li><a href="{% url 'webclient:acommodation_types' %}">Tipos de alojamiento</a>
-                                          </li>
-                                          <li><a href="#">Ubicaciones Estrategicas</a>
-                                          </li>
-                                          <li><a href="{% url 'webclient:services_list' %}">Servicios</a>
-                                          </li>
-                                          <li><a href="{% url 'webclient:experiences_list' %}">Experiencias</a>
-                                          </li>
-                                          <li><a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
-                                          </li>
-                                        </ul>
-                                      </div>
+          </a>
+        </div>
+        <div class="menu-bar">
+          <ul>
+            <li><a href="{% url 'webclient:home' %}">Inicio</a>
+            </li>
+            <li><a href="#" class='dropdown-button' data-activates='drop-room'>Habitaciones <i
+              class="fa fa-angle-down"></i></a>
+            </li>
+            <li><a href="{% url 'webclient:services_list' %}">Servicios</a>
+            </li>
+            <li><a href="{% url 'webclient:experiences_list' %}">Experiencias</a>
+            </li>
+            <li><a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
+            </li>
+            <li><a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--TOP SECTION-->
+  <!--Check Availability SECTION-->
+  {% block content %}
+  {% endblock %}
+</section>
+<!--END HEADER SECTION-->
+{% block footer %}
+  <footer class="site-footer footer-block clearfix">
+    <div class="sidebar-container">
+      <div class="sidebar-inner">
+        <div class="widget-area clearfix">
+          <div class="widget widget_azh_widget">
+            <div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12 col-md-3">
+                    <h4>Que te ofrecemos</h4>
+                    <ul>
+                      <li><a href="{% url 'webclient:room_list' %}">Habitaciones</a>
+                      </li>
+                      <li><a href="{% url 'webclient:acommodation_types' %}">Tipos de alojamiento</a>
+                      </li>
+                      <li><a href="#">Ubicaciones Estrategicas</a>
+                      </li>
+                      <li><a href="{% url 'webclient:services_list' %}">Servicios</a>
+                      </li>
+                      <li><a href="{% url 'webclient:experiences_list' %}">Experiencias</a>
+                      </li>
+                      <li><a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
+                      </li>
+                    </ul>
+                  </div>
 
-                                        <div class="col-sm-12 col-md-3">
-                                            <h4>Servicios populares</h4>
-                                            <ul>
-                                                <li><a href="all-hotels.html">Apartamentos Amoblados</a>
-                                                </li>
-                                                <li><a href="about-us.html">Casa Campestre</a>
-                                                </li>
-                                                <li><a href="contact-us.html">Excursiones</a>
-                                                </li>
-                                                <li><a href="all-rooms.html">Alquiler de artículos</a>
-                                                </li>
-                                                <li><a href="all-rooms.html">Planes románticos</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-12 col-md-3">
-                                            <h4>Ponte en contacto</h4>
-                                            <p>Cra 10 # 26-29, Centro, Pereira, Colombia</p>
-                                            <p> <span class="foot-phone-block">Celular: </span> <span class="foot-phone-block">(+57) 3003430556</span> </p>
-                                            <p> <span class="foot-phone-block">Email: </span> <span class="foot-phone-block">comoencasahbt@gmail.com</span> </p>
-                                        </div>
-                                      <div class="col-sm-12 col-md-3 foot-social foot-social-block">
-                                        <h4>Síguenos</h4>
-                                        <p>Síguenos en nuestras redes sociales</p>
-                                        <ul>
-                                          <li><a href="https://www.facebook.com/comoencasaHbt14/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-                                          <li><a href="https://www.instagram.com/comoencasahbt" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
-                                          <li><a href="https://wa.me/573003430556?text=Quisiera%20información%20acerca%20de%20los%20servicios%20"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="foot-sec2">
-                                <div class="container">
-                                    <div class="row">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- .widget-area -->
+                  <div class="col-sm-12 col-md-3">
+                    <h4>Servicios populares</h4>
+                    <ul>
+                      <li><a href="all-hotels.html">Apartamentos Amoblados</a>
+                      </li>
+                      <li><a href="about-us.html">Casa Campestre</a>
+                      </li>
+                      <li><a href="contact-us.html">Excursiones</a>
+                      </li>
+                      <li><a href="all-rooms.html">Alquiler de artículos</a>
+                      </li>
+                      <li><a href="all-rooms.html">Planes románticos</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 col-md-3">
+                    <h4>Ponte en contacto</h4>
+                    <p>Carrera 9 numero 22-36 Oficina 501 Centro, Pereira, Colombia</p>
+                    <p><span class="foot-phone-block">Celular: </span> <span
+                      class="foot-phone-block">(+57) 3003430556</span></p>
+                    <p><span class="foot-phone-block">Email: </span> <span class="foot-phone-block">comoencasahbt@gmail.com</span>
+                    </p>
+                  </div>
+                  <div class="col-sm-12 col-md-3 foot-social foot-social-block">
+                    <h4>Síguenos</h4>
+                    <p>Síguenos en nuestras redes sociales</p>
+                    <ul>
+                      <li><a href="https://www.facebook.com/comoencasaHbt14/" target="_blank"><i class="fa fa-facebook"
+                                                                                                 aria-hidden="true"></i></a>
+                      </li>
+                      <li><a href="https://www.instagram.com/comoencasahbt" target="_blank"><i class="fa fa-instagram"
+                                                                                               aria-hidden="true"></i></a>
+                      </li>
+                      <li><a
+                        href="https://wa.me/573003430556?text=Quisiera%20información%20acerca%20de%20los%20servicios%20"><i
+                        class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
                 </div>
-                <!-- .sidebar-inner -->
+              </div>
             </div>
-            <!-- #quaternary -->
-        </footer>
-	{% endblock %}
-	<a href="https://wa.me/573003430556?text=Quisiera%20información%20acerca%20de%20los%20servicios%20" class="float" target="_blank">
-		<i class="fa fa-whatsapp" style="padding-top: 10px;font-size: 1.3em;"></i>
-	</a>
-	<section class="copy copy-block">
-		<div class="container">
-			<p>copyright © 2019 Como En Casa HBT. &nbsp;&nbsp;Todos los derechos reservados. </p>
-		</div>
-	</section>
-	<!--ALL SCRIPT FILES-->
-	<script src="{% static 'js/jquery.min.js' %}"></script>
-	<script src="{% static 'js/jquery-ui.js' %}"></script>
-	<script src="{% static 'js/angular.min.js' %}"></script>
-	<script src="{% static 'js/bootstrap.js' %}" type="text/javascript"></script>
-	<script src="{% static 'js/materialize.min.js' %}" type="text/javascript"></script>
-	<script src="{% static 'js/jquery.mixitup.min.js' %}" type="text/javascript"></script>
-	<script src="{% static 'js/custom.js' %}"></script>
+            <div class="foot-sec2">
+              <div class="container">
+                <div class="row">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .widget-area -->
+      </div>
+      <!-- .sidebar-inner -->
+    </div>
+    <!-- #quaternary -->
+  </footer>
+{% endblock %}
+<a href="https://wa.me/573003430556?text=Quisiera%20información%20acerca%20de%20los%20servicios%20" class="float"
+   target="_blank">
+  <i class="fa fa-whatsapp" style="padding-top: 10px;font-size: 1.3em;"></i>
+</a>
+<section class="copy copy-block">
+  <div class="container">
+    <p>copyright © 2019 Como En Casa HBT. &nbsp;&nbsp;Todos los derechos reservados. </p>
+  </div>
+</section>
+<!--ALL SCRIPT FILES-->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/angular.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/materialize.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/jquery.mixitup.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/custom.js' %}"></script>
 </body>
 
 </html>
