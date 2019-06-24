@@ -2,15 +2,11 @@ from django.conf import settings
 from django.urls import include, path
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.views.generic import TemplateView
 from django.views import defaults as default_views
 
 urlpatterns = [
-    # path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
     path("",include("comoencasa.webclient.urls", namespace="webclient")),
-    # Django Admin, use {% url 'admin:index' %}
     path(settings.ADMIN_URL, admin.site.urls),
-    # User management
     path(
         "users/",
         include("comoencasa.users.urls", namespace="users"),
@@ -18,7 +14,6 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path('jet/', include('jet.urls', 'jet')),
     path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),  # Django JET dashboard URLS
-    # Your stuff: custom urls includes go here
 ] + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
 )

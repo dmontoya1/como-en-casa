@@ -6,6 +6,7 @@ from .models.room_items import RoomItems
 from .models.category import Category
 from .models.category_benefits import CategoryBenefits
 from .models.category_services import CategoryServices
+from .models.sectors import Sector
 
 
 class RoomItemsInline(admin.StackedInline):
@@ -59,3 +60,9 @@ class CategoryAdmin(admin.ModelAdmin):
     search_fields = ["name", ]
     readonly_fields = ('slug', )
     inlines = [CategoryBenefitsInline, CategoryServicesInline]
+
+
+@admin.register(Sector)
+class SectorAdmin(admin.ModelAdmin):
+
+    list_display = ('name',)

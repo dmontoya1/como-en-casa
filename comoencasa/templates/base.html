@@ -30,6 +30,7 @@
   <!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
   <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
   <link href="{% static 'css/util.css' %}" rel="stylesheet">
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -67,9 +68,9 @@
           </li>
           <li><a href="{% url 'webclient:experiences_list' %}">Experiencias</a>
           </li>
-          <li><a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
+          <li><a href="{% url 'webclient:about' %}">Store Como en Casa</a>
           </li>
-          <li><a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
+          <li><a href="{% url 'webclient:contact_form' %}">Nuestra Comunidad</a>
           </li>
         </ul>
       </div>
@@ -93,6 +94,34 @@
             <li><a href="#">Ubicaciones Estratégicas</a>
             </li>
           </ul>
+          <ul id='drop-services' class='dropdown-content drop-con-man'>
+            <li><a href="{% url 'webclient:services_list' %}">Alquiler de articulos</a>
+            </li>
+            <li><a href="{% url 'webclient:services_list' %}">Guia del hogar</a>
+            </li>
+            <li><a href="{% url 'webclient:services_list' %}">Asesoria inmobiliaria</a>
+            </li>
+          </ul>
+          <ul id='drop-experiences' class='dropdown-content drop-con-man'>
+            <li><a href="{% url 'webclient:experiences_list' %}">Experiencias Romanticas</a>
+            </li>
+            <li><a href="{% url 'webclient:experiences_list' %}">Excursiones</a>
+            </li>
+            <li><a href="{% url 'webclient:experiences_list' %}">Plan Amigos</a>
+            </li>
+          </ul>
+          <ul id='drop-comunity' class='dropdown-content drop-con-man'>
+            <li><a href="/accounts/login/">Iniciar Sesion</a>
+            </li>
+            <li><a href="/accounts/signup/">Registrarse</a>
+            </li>
+            <li><a href="{% url 'webclient:about' %}">Acerca de Nosotros</a>
+            </li>
+            <li><a href="#">Beneficios</a>
+            </li>
+            <li><a href="#">Convenios</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="row">
@@ -108,13 +137,19 @@
             <li><a href="#" class='dropdown-button' data-activates='drop-room'>Habitaciones <i
               class="fa fa-angle-down"></i></a>
             </li>
-            <li><a href="{% url 'webclient:services_list' %}">Servicios</a>
+            <li><a href="{% url 'webclient:services_list' %}" class='dropdown-button' data-activates='drop-services'>Servicios
+              <i
+                class="fa fa-angle-down"></i></a>
             </li>
-            <li><a href="{% url 'webclient:experiences_list' %}">Experiencias</a>
+            <li><a href="{% url 'webclient:experiences_list' %}" class='dropdown-button'
+                   data-activates='drop-experiences'>Experiencias <i
+              class="fa fa-angle-down"></i></a>
             </li>
-            <li><a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
+            <li><a href="{% url 'webclient:about' %}">Store Como en Casa</a>
             </li>
-            <li><a href="{% url 'webclient:contact_form' %}">Contáctenos</a>
+            <li><a href="{% url 'webclient:contact_form' %}" class='dropdown-button' data-activates='drop-comunity'>Nuestra
+              Comunidad<i
+                class="fa fa-angle-down"></i></a>
             </li>
           </ul>
         </div>
@@ -149,7 +184,7 @@
                       </li>
                       <li><a href="{% url 'webclient:experiences_list' %}">Experiencias</a>
                       </li>
-                      <li><a href="{% url 'webclient:about' %}">Acerca de nosotros</a>
+                      <li><a href="{% url 'webclient:about' %}">Store Como en Casa</a>
                       </li>
                     </ul>
                   </div>
@@ -227,6 +262,10 @@
 <script src="{% static 'js/materialize.min.js' %}" type="text/javascript"></script>
 <script src="{% static 'js/jquery.mixitup.min.js' %}" type="text/javascript"></script>
 <script src="{% static 'js/custom.js' %}"></script>
+
+
+{% block extra_js %}{% endblock %}
+
 </body>
 
 </html>

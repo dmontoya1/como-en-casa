@@ -4,6 +4,16 @@
 {% load crispy_forms_tags %}
 {% load range %}
 
+{% block extra_css %}
+  <style>
+    .btn-filter {
+      margin-top: 10px;
+      background: #ab9465;
+      font-weight: 600;
+    }
+  </style>
+{% endblock %}
+
 
 {% block content %}
 
@@ -38,16 +48,21 @@
             <p>Nuestras habitaciones se encuentran adecuadas para qué disfrutes de HOSPITALIDAD BIENESTAR Y TRANQUILIDAD
               en tu estancia, disfruta de confort pleno y siéntete Como En Casa.</p>
           </div>
-          {% comment %}<div class="flex-w flex-l-m filter-tope-group m-tb-10">
-            <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-              Todas las habitaciones
-            </button>
-            {% for cat in categories %}
-              <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".{{ cat.slug }}">
-                {{ cat }}
-              </button>
-            {% endfor %}
-          </div>{% endcomment %}
+          <div class="flex-w flex-l-m filter-tope-group m-tb-10 typo-com collap-expand book-form inn-com-form">
+            <form class="col s12 ng-pristine ng-valid" method="get" action=".">
+              <div class="row">
+                <div class="input-field col s12">
+                  <select class="category-select" name="category">
+                    <option value="" selected disabled>Selecciona una categoria</option>
+                    {% for cat in categories %}
+                      <option value="{{ cat.pk }}">{{ cat }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-filter mb-2">Filtrar</button>
+            </form>
+          </div>
           <div class="isotope-grid">
             {% if object_list %}
               {% for room in object_list %}
@@ -122,8 +137,8 @@
                 </div>
               {% endif %}
             {% else %}
-              <h3>My Cars</h3>
-              <p>No cars found!!! :(</p>
+              <h3>Habitaciones</h3>
+              <p>No hay habitaciones con estas caracteristicas!!! :(</p>
             {% endif %}
           </div>
         </div>
@@ -133,5 +148,9 @@
   </section>
   <!--END HEADER SECTION-->
 {% endblock %}
+
+{% block extra_js %}
+{% endblock %}
+
 
 

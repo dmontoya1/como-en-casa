@@ -293,86 +293,20 @@
         <div class="col-md-12">
           <div class="inn-services head-typo typo-com typo-com-block mar-bot-0">
             <div id="portfoliolist">
-              <div class="portfolio logo" data-cat="logo">
-                <div class="portfolio-wrapper"><img src="{% static 'images/andina.jpg' %}" alt="" width="245"
-                                                    height="185"/>
-                  <div class="label">
-                    <div class="label-text"><a class="text-title">Universidad Andina</a> <span class="text-category">Logo</span>
+              {% for sector in sectors %}
+                <a href="{% url 'webclient:room_list' %}?sector={{ sector.pk }}">
+                  <div class="portfolio logo" data-cat="logo">
+                    <div class="portfolio-wrapper"><img src="{{ sector.image.url }}" alt="" width="245"
+                                                        height="185"/>
+                      <div class="label">
+                        <div class="label-text"><a class="text-title">{{ sector.name }}</a> <span class="text-category">Logo</span>
+                        </div>
+                        <div class="label-bg"></div>
+                      </div>
                     </div>
-                    <div class="label-bg"></div>
                   </div>
-                </div>
-              </div>
-              <div class="portfolio logo" data-cat="logo">
-                <div class="portfolio-wrapper"><img src="{% static 'images/parque-lago.jpg' %}" alt="" width="245"
-                                                    height="185"/>
-                  <div class="label">
-                    <div class="label-text"><a class="text-title">Parque el lago</a> <span
-                      class="text-category">Logo</span></div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio logo" data-cat="logo">
-                <div class="portfolio-wrapper"><img src="{% static 'images/sena.jpg' %}" alt="" width="245"
-                                                    height="185"/>
-                  <div class="label">
-                    <div class="label-text"><a class="text-title">Sena Pereira</a> <span
-                      class="text-category">Logo</span></div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio logo" data-cat="logo">
-                <div class="portfolio-wrapper"><img src="{% static 'images/colombo.jpg' %}" alt="" width="245"
-                                                    height="185"/>
-                  <div class="label">
-                    <div class="label-text"><a class="text-title">Colombo Americano</a> <span
-                      class="text-category">Logo</span></div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio logo" data-cat="logo">
-                <div class="portfolio-wrapper"><img src="{% static 'images/parque-banderas.jpg' %}" alt="" width="245"
-                                                    height="185"/>
-                  <div class="label">
-                    <div class="label-text"><a class="text-title">Parque Banderas</a> <span
-                      class="text-category">Logo</span></div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio logo" data-cat="logo">
-                <div class="portfolio-wrapper"><img src="{% static 'images/rosales.jpg' %}" alt="" width="245"
-                                                    height="185"/>
-                  <div class="label">
-                    <div class="label-text"><a class="text-title">Clínica los Rosales</a> <span class="text-category">Logo</span>
-                    </div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio logo" data-cat="logo">
-                <div class="portfolio-wrapper"><img src="{% static 'images/libre.jpg' %}" alt="" width="245"
-                                                    height="185"/>
-                  <div class="label">
-                    <div class="label-text"><a class="text-title">Universidad libre Sede Belmonte</a> <span
-                      class="text-category">Logo</span></div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio logo" data-cat="logo">
-                <div class="portfolio-wrapper"><img src="{% static 'images/utp.jpeg' %}" alt="" width="245"
-                                                    height="185"/>
-                  <div class="label">
-                    <div class="label-text"><a class="text-title">Universidad Tecnológica</a> <span
-                      class="text-category">Logo</span></div>
-                    <div class="label-bg"></div>
-                  </div>
-                </div>
-              </div>
+                </a>
+              {% endfor %}
             </div>
           </div>
         </div>

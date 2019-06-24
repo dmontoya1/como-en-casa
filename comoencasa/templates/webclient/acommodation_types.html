@@ -46,7 +46,6 @@
             <div class="col-md-4">
               <div class="head-typo typo-com collap-expand">
                 <h2>{{ cat }}</h2>
-                {% comment %}<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>{% endcomment %}
                 <ul class="collapsible popout" data-collapsible="accordion">
                   <li>
                     <div class="collapsible-header"><i class="material-icons">filter_drama</i>Servicios</div>
@@ -71,45 +70,10 @@
                     </div>
                   </li>
                 </ul>
+                <a href="{% url 'webclient:room_list' %}?acomodation={{ cat.pk }}" class="acommodation-btn waves-effect waves-light">Ver las habitaciones</a>
               </div>
             </div>
           {% endfor %}
-          {% comment %}<div class="col-md-4">
-						<div class="head-typo typo-com collap-expand">
-							<h2>Apartamento Moderno</h2>
-							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-							<ul class="collapsible popout" data-collapsible="accordion">
-								<li>
-									<div class="collapsible-header"><i class="material-icons">filter_drama</i>Servicios</div>
-									<div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-									</div>
-								</li>
-								<li>
-									<div class="collapsible-header"><i class="material-icons">place</i>Beneficios</div>
-									<div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-          <div class="col-md-4">
-						<div class="head-typo typo-com collap-expand">
-							<h2>Casas Confortables</h2>
-							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-							<ul class="collapsible popout" data-collapsible="accordion">
-								<li>
-									<div class="collapsible-header"><i class="material-icons">filter_drama</i>Servicios</div>
-									<div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-									</div>
-								</li>
-								<li>
-									<div class="collapsible-header"><i class="material-icons">place</i>Beneficios</div>
-									<div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>{% endcomment %}
           <!--END TYPOGRAPHY SECTION-->
         </div>
       </div>

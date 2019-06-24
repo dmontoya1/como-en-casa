@@ -5,474 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04cf5364-213e-45fa-95d0-d578f81f4dc5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.coveragerc" beforeDir="false" afterPath="$PROJECT_DIR$/.coveragerc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.envs/.local/.django" beforeDir="false" afterPath="$PROJECT_DIR$/.envs/.local/.django" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.envs/.local/.postgres" beforeDir="false" afterPath="$PROJECT_DIR$/.envs/.local/.postgres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.envs/.production/.caddy" beforeDir="false" afterPath="$PROJECT_DIR$/.envs/.production/.caddy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.envs/.production/.django" beforeDir="false" afterPath="$PROJECT_DIR$/.envs/.production/.django" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.envs/.production/.postgres" beforeDir="false" afterPath="$PROJECT_DIR$/.envs/.production/.postgres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/comoencasa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/comoencasa.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pylintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.pylintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contact_form/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contact_form/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contact_form/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contact_form/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contact_form/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contact_form/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contact_form/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contact_form/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contact_form/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contact_form/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contact_form/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contact_form/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contact_form/models/contact_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contact_form/models/contact_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contact_form/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contact_form/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contact_form/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contact_form/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contrib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contrib/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contrib/sites/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contrib/sites/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contrib/sites/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contrib/sites/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contrib/sites/migrations/0002_alter_domain_unique.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contrib/sites/migrations/0002_alter_domain_unique.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contrib/sites/migrations/0003_set_site_domain_and_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contrib/sites/migrations/0003_set_site_domain_and_name.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/contrib/sites/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/contrib/sites/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/migrations/0002_experiencesimage_experiencesitems.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/migrations/0002_experiencesimage_experiencesitems.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/migrations/0003_auto_20190206_0303.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/migrations/0003_auto_20190206_0303.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/migrations/0004_experiences_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/migrations/0004_experiences_price.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/migrations/0005_auto_20190224_1708.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/migrations/0005_auto_20190224_1708.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/models/experieces_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/models/experieces_items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/models/experiences.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/models/experiences.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/models/experiences_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/models/experiences_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/models/experiences_option.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/models/experiences_option.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/experiences/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/experiences/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/general_config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/general_config/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/general_config/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/general_config/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/general_config/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/general_config/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/general_config/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/general_config/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/general_config/migrations/0002_companyinfo_about.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/general_config/migrations/0002_companyinfo_about.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/general_config/migrations/0003_auto_20190224_1621.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/general_config/migrations/0003_auto_20190224_1621.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/general_config/migrations/0004_auto_20190224_1708.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/general_config/migrations/0004_auto_20190224_1708.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/general_config/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/general_config/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/general_config/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/general_config/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/general_config/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/general_config/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/general_config/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/general_config/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/rooms/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0002_auto_20190121_0456.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0002_auto_20190121_0456.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0003_category.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0003_category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0004_auto_20190121_0508.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0004_auto_20190121_0508.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0005_room_category.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0005_room_category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0006_category_description.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0006_category_description.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0007_auto_20190124_0250.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0007_auto_20190124_0250.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0008_roomimages.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0008_roomimages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0009_category_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0009_category_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0010_room_short_description.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0010_room_short_description.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0011_room_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0011_room_price.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0012_auto_20190128_0309.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0012_auto_20190128_0309.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0013_categorybenefits_categoryservices.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0013_categorybenefits_categoryservices.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0014_auto_20190128_0423.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0014_auto_20190128_0423.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0015_auto_20190201_0259.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0015_auto_20190201_0259.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0016_room_available.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0016_room_available.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0017_auto_20190306_0134.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0017_auto_20190306_0134.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0018_auto_20190306_0207.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0018_auto_20190306_0207.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/0019_auto_20190306_0213.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/0019_auto_20190306_0213.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/rooms/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/models/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/models/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/models/category_benefits.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/models/category_benefits.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/models/category_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/models/category_services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/models/room_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/models/room_images.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/models/room_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/models/room_items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/rooms/models/rooms.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/models/rooms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/rooms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/rooms/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/migrations/0002_auto_20190202_0247.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/migrations/0002_auto_20190202_0247.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/migrations/0003_auto_20190202_0253.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/migrations/0003_auto_20190202_0253.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/migrations/0004_auto_20190206_0332.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/migrations/0004_auto_20190206_0332.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/migrations/0005_remove_services_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/migrations/0005_remove_services_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/migrations/0006_services_location.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/migrations/0006_services_location.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/models/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/models/services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/models/services_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/models/services_images.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/services/models/services_option.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/models/services_option.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/services/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/services/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/css/auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/css/auth.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/css/font-awesome.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/css/materialize.css" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/css/materialize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/css/project.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/fonts/micon.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/fonts/micon.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/icons/ICONOS-27.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/icons/ICONOS-27.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/icons/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/icons/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/about.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/about.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/agua.svg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/agua.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/ami/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/ami/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/ami/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/ami/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/ami/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/ami/11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/ami/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/ami/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/ami/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/ami/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/ami/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/ami/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/ami/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/ami/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/ami/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/ami/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/ami/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/ami/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/ami/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/ami/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/ami/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/ami/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/amoblados.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/amoblados.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/andina.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/andina.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/bienestar.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/bienestar.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/bienestar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/bienestar.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/bread.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/bread.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/campestre.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/campestre.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/cancel.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/cancel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/card.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/card.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/checked.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/checked.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/cocina.svg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/cocina.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/colombo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/colombo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/detailed-banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/detailed-banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/energia.svg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/energia.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/event/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/event/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/event/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/event/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/event/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/event/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/event/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/event/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/excursiones.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/excursiones.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/home.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/home.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/home1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/home1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/home2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/home2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/home3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/home3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/extra/home4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/extra/home4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/fav.ico" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/fav.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/fav.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/fav.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/favicons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/favicons/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/h-check-block.1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/h-check-block.1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/h-check-block.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/h-check-block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/h-check.1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/h-check.1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/h-check.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/h-check.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/h-detail.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/h-detail.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/h-detail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/h-detail.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/h-hotel.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/h-hotel.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/h-room.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/h-room.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/h-star.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/h-star.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/h-trip.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/h-trip.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/hospitalidad.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/hospitalidad.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/hospitalidad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/hospitalidad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/hotel/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/hotel/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/hotel/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/hotel/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/hotel/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/hotel/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/hotel/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/hotel/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/hotel/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/hotel/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/hotel/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/hotel/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/hotel/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/hotel/bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/14.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/17.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/17.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/20.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/20.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/21.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/21.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/22.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/22.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a10.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a11.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a12.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a13.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a2.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a3.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a4.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a5.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a6.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a7.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a8.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/a9.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/a9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/call.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/call.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/db1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/db1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/db2.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/db2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/db3.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/db3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/db4.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/db4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/db5.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/db5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/db6.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/db6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/db7.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/db7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/db8.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/db8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc2.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc3.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc4.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc5.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc6.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbc6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dbr8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dis1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dis1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dis3.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dis3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dis4.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dis4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/dis5.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/dis5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/h1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/h1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/h2.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/h2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/h3.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/h3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/h4.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/h4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/h5.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/h5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/h6.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/h6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/icon/h7.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/icon/h7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/inn-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/inn-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/inn-bg1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/inn-bg1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/inn-bg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/inn-bg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/inn-bg2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/inn-bg2.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/left-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/left-arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/libre.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/libre.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/login.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/login.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/logo.1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/logo.1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/logo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/logo1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/logo2.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/logo2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/los-rosales.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/los-rosales.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/15.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/17.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/menu/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/menu/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/mobiliario.svg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/mobiliario.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/offer-bg.1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/offer-bg.1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/offer-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/offer-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/parque-banderas.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/parque-banderas.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/parque-lago.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/parque-lago.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/payment.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/payment.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/right-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/right-arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/room/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/room/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/room/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/room/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/room/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/room/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/room/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/room/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/room/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/room/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/room/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/room/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/rosales.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/rosales.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/see-all.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/see-all.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/see-all.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/see-all.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/sena.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/sena.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/servicios1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/servicios1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/slide1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/slide1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/slide2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/slide2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/slide3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/slide3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/slide4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/slide4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/slide5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/slide5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/slider/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/slider/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/slider/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/slider/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/slider/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/slider/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/slider/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/slider/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/stars.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/stars.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/tranquilidad.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/tranquilidad.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/tranquilidad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/tranquilidad.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/u-libre.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/u-libre.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/user.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/user.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/user1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/user1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/users/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/users/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/users/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/users/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/users/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/users/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/users/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/users/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/users/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/users/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/users/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/users/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/users/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/users/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/users/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/users/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/utp.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/utp.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/images/wifi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/images/wifi.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/js/angular.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/js/angular.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/js/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/js/html5shiv.js" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/js/html5shiv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/js/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/js/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/js/jquery.mixitup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/js/jquery.mixitup.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/js/materialize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/js/materialize.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/js/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/js/project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/js/respond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/js/respond.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/sass/custom_bootstrap_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/sass/custom_bootstrap_vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/static/sass/project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/static/sass/project.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/403_csrf.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/403_csrf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/account_inactive.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/account_inactive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/base_auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/base_auth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/email.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/email_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/email_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/password_change.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/password_change.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/password_reset.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/password_reset_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/password_reset_from_key.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/password_reset_from_key.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/password_reset_from_key_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/password_reset_from_key_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/password_set.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/password_set.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/signup_closed.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/signup_closed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/verification_sent.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/verification_sent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/account/verified_email_required.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/account/verified_email_required.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/base_.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/base_.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/experiences/experiences_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/experiences/experiences_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/experiences/experiences_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/experiences/experiences_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/experiences/experiences_list_.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/experiences/experiences_list_.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/rooms/room_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/rooms/room_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/templates/rooms/room_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/rooms/room_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/services/services_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/services/services_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/services/services_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/services/services_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/users/user_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/users/user_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/users/user_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/users/user_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/users/user_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/users/user_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/webclient/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/webclient/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/templates/webclient/acommodation_types.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/webclient/acommodation_types.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/templates/webclient/contact_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/webclient/contact_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/templates/webclient/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/templates/webclient/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/testimonies/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/testimonies/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/testimonies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/testimonies/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/testimonies/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/testimonies/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/testimonies/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/testimonies/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/testimonies/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/testimonies/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/testimonies/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/testimonies/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/testimonies/models/testimonies.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/testimonies/models/testimonies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/testimonies/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/testimonies/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/testimonies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/testimonies/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/adapters.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/adapters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/migrations/0002_auto_20190121_0353.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/migrations/0002_auto_20190121_0353.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/migrations/0003_auto_20190121_0445.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/migrations/0003_auto_20190121_0445.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/tests/factories.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/tests/factories.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/tests/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/tests/test_forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/tests/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/tests/test_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/tests/test_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/tests/test_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/webclient/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/webclient/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/webclient/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/webclient/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/webclient/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/webclient/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/webclient/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/webclient/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/webclient/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/webclient/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comoencasa/webclient/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/webclient/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/webclient/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/webclient/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comoencasa/webclient/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comoencasa/webclient/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/local/django/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/compose/local/django/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/local/django/start" beforeDir="false" afterPath="$PROJECT_DIR$/compose/local/django/start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/caddy/Caddyfile" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/caddy/Caddyfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/caddy/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/caddy/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/django/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/django/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/django/entrypoint" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/django/entrypoint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/django/start" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/django/start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/postgres/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/postgres/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/postgres/maintenance/_sourced/constants.sh" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/postgres/maintenance/_sourced/constants.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/postgres/maintenance/_sourced/countdown.sh" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/postgres/maintenance/_sourced/countdown.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/postgres/maintenance/_sourced/messages.sh" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/postgres/maintenance/_sourced/messages.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/postgres/maintenance/_sourced/yes_no.sh" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/postgres/maintenance/_sourced/yes_no.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/postgres/maintenance/backup" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/postgres/maintenance/backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/postgres/maintenance/backups" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/postgres/maintenance/backups" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose/production/postgres/maintenance/restore" beforeDir="false" afterPath="$PROJECT_DIR$/compose/production/postgres/maintenance/restore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/production.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/deploy.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/deploy.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/docker_ec2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docker_ec2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/install.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/locale/README.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_production_dotenvs_in_dotenv.py" beforeDir="false" afterPath="$PROJECT_DIR$/merge_production_dotenvs_in_dotenv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/production.yml" beforeDir="false" afterPath="$PROJECT_DIR$/production.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/base.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/local.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/local.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/production.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/production.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -486,22 +33,59 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/comoencasa/templates/rooms/room_list.html">
+        <entry file="file://$PROJECT_DIR$/comoencasa/templates/webclient/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="124" column="25" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="25" />
+            <state relative-caret-position="780">
+              <caret line="276" column="37" selection-start-line="276" selection-start-column="37" selection-end-line="276" selection-end-column="37" />
+              <folding>
+                <element signature="n#div#1;n#!!top" />
+                <element signature="n#div#2;n#!!top" />
+                <element signature="n#div#3;n#!!top" />
+                <element signature="n#div#4;n#!!top" />
+                <element signature="n#div#5;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comoencasa/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="115" column="42" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comoencasa/webclient/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/comoencasa/webclient/views.py">
+        <entry file="file://$PROJECT_DIR$/comoencasa/templates/account/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-              <folding>
-                <element signature="e#1#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="416">
+              <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -526,6 +110,10 @@
       <find>cancel</find>
       <find>images/cancel.png</find>
       <find>filter-tope-group</find>
+      <find>caddy</find>
+      <find>scheme</find>
+      <find>My Cars</find>
+      <find>.page-head p</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -537,28 +125,36 @@
         <option value="$PROJECT_DIR$/comoencasa/templates/rooms/room_list1.html" />
         <option value="$PROJECT_DIR$/comoencasa/templates/rooms/room_list_.html" />
         <option value="$PROJECT_DIR$/comoencasa/rooms/models/category.py" />
-        <option value="$PROJECT_DIR$/comoencasa/rooms/models/rooms.py" />
         <option value="$PROJECT_DIR$/comoencasa/rooms/models/category_services.py" />
         <option value="$PROJECT_DIR$/comoencasa/templates/rooms/room_detail.html" />
         <option value="$PROJECT_DIR$/comoencasa/templates/webclient/about.html" />
         <option value="$PROJECT_DIR$/comoencasa/templates/webclient/contact_form.html" />
         <option value="$PROJECT_DIR$/comoencasa/static/css/responsive.css" />
         <option value="$PROJECT_DIR$/comoencasa/static/js/custom.js" />
-        <option value="$PROJECT_DIR$/comoencasa/templates/webclient/home.html" />
-        <option value="$PROJECT_DIR$/comoencasa/static/css/style.css" />
-        <option value="$PROJECT_DIR$/comoencasa/templates/base.html" />
-        <option value="$PROJECT_DIR$/comoencasa/templates/webclient/acommodation_types.html" />
         <option value="$PROJECT_DIR$/comoencasa/templates/services/services_list.html" />
         <option value="$PROJECT_DIR$/comoencasa/rooms/templatetags/range.py" />
+        <option value="$PROJECT_DIR$/comoencasa/services/models/services_option.py" />
+        <option value="$PROJECT_DIR$/comoencasa/rooms/models/sectors.py" />
+        <option value="$PROJECT_DIR$/comoencasa/rooms/models/__init__.py" />
+        <option value="$PROJECT_DIR$/comoencasa/rooms/models/rooms.py" />
+        <option value="$PROJECT_DIR$/comoencasa/rooms/admin.py" />
+        <option value="$PROJECT_DIR$/comoencasa/templates/webclient/home.html" />
         <option value="$PROJECT_DIR$/comoencasa/templates/rooms/room_list.html" />
+        <option value="$PROJECT_DIR$/comoencasa/templates/webclient/acommodation_types.html" />
+        <option value="$PROJECT_DIR$/comoencasa/static/css/style.css" />
         <option value="$PROJECT_DIR$/comoencasa/webclient/views.py" />
+        <option value="$PROJECT_DIR$/comoencasa/webclient/urls.py" />
+        <option value="$PROJECT_DIR$/config/urls.py" />
+        <option value="$PROJECT_DIR$/comoencasa/templates/base.html" />
+        <option value="$PROJECT_DIR$/comoencasa/static/css/login.css" />
+        <option value="$PROJECT_DIR$/comoencasa/templates/account/signup.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="9" />
-    <option name="width" value="1221" />
-    <option name="height" value="686" />
+    <option name="y" value="30" />
+    <option name="width" value="1920" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -595,40 +191,32 @@
               <item name="como-en-casa" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Projects/como-en-casa" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="comoencasa" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="rooms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="como-en-casa" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Projects/como-en-casa" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="comoencasa" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="rooms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="templatetags" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="como-en-casa" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Projects/como-en-casa" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="comoencasa" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="como-en-casa" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Projects/como-en-casa" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="comoencasa" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="rooms" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="como-en-casa" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Projects/como-en-casa" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="comoencasa" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="webclient" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="account" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="como-en-casa" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Projects/como-en-casa" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="comoencasa" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="webclient" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="config" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -641,7 +229,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cajas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -727,7 +315,13 @@
       <workItem from="1553467145201" duration="16000" />
       <workItem from="1553467172710" duration="4447000" />
       <workItem from="1557185799890" duration="1581000" />
-      <workItem from="1559513280985" duration="2888000" />
+      <workItem from="1559513280985" duration="4101000" />
+      <workItem from="1559580548090" duration="12000" />
+      <workItem from="1560707095693" duration="613000" />
+      <workItem from="1560773296914" duration="1633000" />
+      <workItem from="1560818858352" duration="6610000" />
+      <workItem from="1560864678823" duration="76000" />
+      <workItem from="1561403849186" duration="5654000" />
     </task>
     <task id="LOCAL-00001" summary="Updating room list and room detail views">
       <created>1551671517449</created>
@@ -740,13 +334,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27468000" />
+    <option name="totallyTimeSpent" value="43279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2324468" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17446809" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -792,16 +386,6 @@
     <entry file="file://$PROJECT_DIR$/comoencasa/rooms/views.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/comoencasa/rooms/models/rooms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comoencasa/rooms/models/category_services.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -809,13 +393,6 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comoencasa/templates/rooms/room_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -853,16 +430,6 @@
         <state relative-caret-position="-614" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comoencasa/rooms/models/category.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comoencasa/static/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="767">
@@ -870,46 +437,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comoencasa/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="2936" column="27" selection-start-line="2936" selection-start-column="27" selection-end-line="2936" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comoencasa/templates/webclient/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4088">
-          <caret line="70" column="33" lean-forward="true" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comoencasa/templates/base_.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comoencasa/templates/webclient/acommodation_types.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comoencasa/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="173" column="57" selection-start-line="173" selection-start-column="57" selection-end-line="173" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comoencasa/webclient/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/comoencasa/templates/services/services_list.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -921,13 +450,6 @@
     <entry file="file://$PROJECT_DIR$/comoencasa/rooms/templatetags/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/comoencasa/templates/rooms/room_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="124" column="25" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comoencasa/rooms/templatetags/range.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -935,13 +457,214 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/compose/production/django/start">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compose/production/django/entrypoint">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compose/production/django/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compose/production/caddy/Caddyfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compose/production/caddy/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.envs/.production/.caddy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/production.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/remote_sources/-1540876464/-337502517/django/views/generic/list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/rooms/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/rooms/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/rooms/models/room_images.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="17" selection-start-line="17" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/services/models/services_option.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/templates/rooms/room_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/services/models/services.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/rooms/models/sectors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/experiences/models/experiences.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/rooms/models/category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="796">
+          <caret line="5743" column="1" selection-start-line="5743" selection-start-column="1" selection-end-line="5743" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/templates/webclient/acommodation_types.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/rooms/models/rooms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="48" column="11" lean-forward="true" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/comoencasa/webclient/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        <state relative-caret-position="533">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
           <folding>
             <element signature="e#1#36#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/templates/rooms/room_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="140" column="62" selection-start-line="140" selection-start-column="62" selection-end-line="140" selection-end-column="62" />
+          <folding>
+            <element signature="n#for#0;n#!!top" />
+            <element signature="n#if#2;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/webclient/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/templates/webclient/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="276" column="37" selection-start-line="276" selection-start-column="37" selection-end-line="276" selection-end-column="37" />
+          <folding>
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#div#2;n#!!top" />
+            <element signature="n#div#3;n#!!top" />
+            <element signature="n#div#4;n#!!top" />
+            <element signature="n#div#5;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="115" column="42" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/static/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="183" column="30" selection-start-line="183" selection-start-column="30" selection-end-line="183" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comoencasa/templates/account/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
         </state>
       </provider>
     </entry>

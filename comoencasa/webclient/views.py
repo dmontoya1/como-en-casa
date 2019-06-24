@@ -1,8 +1,7 @@
 
 from django.contrib import messages
 from django.db.models import Q
-from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render
+from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.views.generic import TemplateView
 from django.views.generic.detail import DetailView
@@ -13,6 +12,7 @@ from experiences.models.experiences import Experiences
 from general_config.models import CompanyInfo, CorporativeValues
 from rooms.models.category import Category
 from rooms.models.rooms import Room
+from rooms.models.sectors import Sector
 from services.models.services import Services
 from testimonies.models.testimonies import Testimonies
 
@@ -25,16 +25,12 @@ class Home(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(Home, self).get_context_data(**kwargs)
-        categories = Category.objects.filter(parent=None)
-        rooms = Room.objects.all()[:6]
-        testimonies = Testimonies.objects.all()
-        services = Services.objects.all()
-        experiences = Experiences.objects.all()
-        context['categories'] = categories
-        context['rooms'] = rooms
-        context['testimonies'] = testimonies
-        context['services'] = services
-        context['experiences'] = experiences
+        context['categories'] = Category.objects.filter(parent=None)
+        context['rooms'] = Room.objects.all()[:6]
+        context['testimonies'] = Testimonies.objects.all()
+        context['services'] = Services.objects.all()
+        context['experiences'] = Experiences.objects.all()
+        context['sectors'] = Sector.objects.all()
         return context
 
 
@@ -57,6 +53,18 @@ class RoomListView(ListView):
 
     model = Room
     paginate_by = 6
+
+    def get_queryset(self):
+        category = self.request.GET.get('category', None)
+        sector = self.request.GET.get('sector', None)
+        acomodation = self.request.GET.get('acomodation', None)
+        if category:
+            return Room.objects.filter(category__pk=category)
+        if sector:
+            return Room.objects.filter(room_sector__pk=sector)
+        if acomodation:
+            return Room.objects.filter(category__parent__pk=acomodation)
+        return Room.objects.all()
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

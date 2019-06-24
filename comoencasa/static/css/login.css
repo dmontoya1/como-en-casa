@@ -181,7 +181,7 @@ body {
   
   .login100-form-title {
     font-size: 2em;
-    color: #333333;
+    color: #333333 !important;
     line-height: 1.2;
     text-align: center;
     width: 100%;

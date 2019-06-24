@@ -3,6 +3,7 @@ from django.contrib.auth import get_user_model
 from django.db import models
 
 from .category import Category
+from .sectors import Sector
 
 User = get_user_model()
 
@@ -23,10 +24,12 @@ class Room(models.Model):
         'Precio de la habitacion',
         default=0,
     )
-    sector = models.CharField(
-        'Sector',
-        max_length=255,
-        default=''
+    room_sector = models.ForeignKey(
+        Sector,
+        verbose_name='Sector',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
     )
     short_description = models.CharField(
         'Descripcion Corta',
@@ -58,7 +61,6 @@ class Room(models.Model):
 
     def get_related_rooms(self):
         rooms = Room.objects.filter(category=self.category)
-        print(rooms)
         return rooms
 
     class Meta:
